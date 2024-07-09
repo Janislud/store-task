@@ -28,3 +28,7 @@ Route::get('/tech', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
+
+Route::get('/productId', function () {
+    return view('pdp');
+});
