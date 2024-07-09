@@ -18,8 +18,8 @@
         <!-- Styles -->
         <style>
             * {
-                /* padding: 50px 30px 50px 80px;
-                margin: 25px 50px 75px 100px; */
+                padding: 10px;
+                margin: 25px;
             }
             h1 {
                 font-family: Poppins, Inter;
