@@ -45,6 +45,10 @@
     background-color: rgb(221, 179, 72);
 }
 
+.products-background {
+    height: 800px;
+}
+
 .products {
     margin: 3%;
     display: flex;
@@ -56,5 +60,5 @@
 
 .products p {
     color: rgba(94, 110, 137, 1);
-    
 }
+
