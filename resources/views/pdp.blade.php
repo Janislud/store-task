@@ -18,8 +18,8 @@
         <!-- Styles -->
         <style>
             * {
-                /* padding: 50px 30px 50px 80px;
-                margin: 25px 50px 75px 100px; */
+                padding: 10px;
+                margin: 25px;
             }
             h1 {
                 font-family: Poppins, Inter;
@@ -62,7 +62,13 @@
     </div>
     <div class="column"></div>
         <h1>Product name</h1>
+    <div class="row">
+        <div class="column">
         <p class="price">$ 9.99</p>
+    </div>
+        <div class="column">
+    </div>
+    </div>
     </div> 
     </body>
 </html>
