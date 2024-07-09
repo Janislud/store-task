@@ -62,7 +62,13 @@
     </div>
     <div class="column"></div>
         <h1>Product name</h1>
+    <div class="row">
+        <div class="column">
         <p class="price">$ 9.99</p>
+    </div>
+        <div class="column">
+    </div>
+    </div>
     </div> 
     </body>
 </html>
