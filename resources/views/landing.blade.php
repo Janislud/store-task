@@ -13,10 +13,16 @@
             <p>Take time to browse our select in-store goods.
                 enjoy your shoppig experience with Storefront!
             </p>
-            <div class="yellow-box">
-                <p>Discover our collection</p>
-            </div>
+
+            <button class="yellow-box">
+                Discover our collection
+            </button>
         </div>
     </div>
+    <div class="products">
+        <h1>Products</h1>
+        <p>Order it for you or for your beloved ones</p>
+    </div>
+    
 </body>
 </html>
