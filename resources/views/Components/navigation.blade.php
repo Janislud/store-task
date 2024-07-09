@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav>
-            <img src="" alt="main-logo">
+            <img src="./assets/Main-logo.svg" alt="main-logo">
             <ul>
                 <a href="/">Products</a>
                 <a href="/clothes">Clothes</a>
@@ -20,12 +20,12 @@
             <div>
                 <button>
                     <a href="/profile">
-                        <img src="" alt="profile-icon">
+                        <img src="./assets/Profile.svg" alt="profile-icon">
                     </a>
                 </button>
                 <button>
                     <a href="/cart">
-                        <img src="" alt="cart-icon">
+                        <img src="./assets/Cart.svg" alt="cart-icon">
                     </a>
                 </button>
             </div>

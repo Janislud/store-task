@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('landing');
+    return view('home');
 });
 
 Route::get('/clothes', function () {
@@ -27,4 +27,8 @@ Route::get('/tech', function () {
 
 Route::get('/profile', function () {
     return view('profile');
+});
+
+Route::get('/cart', function () {
+    return view('cart');
 });
