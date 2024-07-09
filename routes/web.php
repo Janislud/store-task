@@ -28,3 +28,7 @@ Route::get('/tech', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
+
+Route::get('/cart', function () {
+    return view('cart');
+});
