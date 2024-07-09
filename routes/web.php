@@ -29,10 +29,10 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
-Route::get('/cart', function () {
-    return view('cart');
+Route::get('/productId', function () {
+    return view('pdp');
 });
 
-Route::get('', function () {
-    return view('');
+Route::get('/cart', function () {
+    return view('cart');
 });
