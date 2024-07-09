@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <title>Navbar</title>
 </head>
-
 <body>
     <header>
         <nav>
-            <img src="./assets/Main-logo.svg" alt="main-logo">
-            <ul>
-                <a href="/">Products</a>
-                <a href="/clothes">Clothes</a>
-                <a href="/tech">Tech</a>
+            <a href="/" class="logo">
+                <img src="./assets/Main-logo.svg" alt="main-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Products</a></li>
+                <li><a href="/clothes">Clothes</a></li>
+                <li><a href="/tech">Tech</a></li>
             </ul>
-
-            <div>
+            <div class="icons">
                 <button>
                     <a href="/profile">
                         <img src="./assets/Profile.svg" alt="profile-icon">
@@ -29,8 +30,7 @@
                     </a>
                 </button>
             </div>
-            </nav>
+        </nav>
     </header>
 </body>
-
 </html>
