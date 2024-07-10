@@ -11,7 +11,7 @@
 
     </head>
     <body>
-    <!-- @include('Components.navigation') -->
+    @include('Components.navigation')
         <div class="main-wrapper">
         <div class="container">
         <div class="product-div row">
@@ -35,19 +35,19 @@
         <div class="details-div-right column">
             <form>
         <input type="radio" name="subscription" id="choice1" checked></input>
-        <label>One time purchaise
+        <label class="form-control">One time purchaise
         </label>
         <div class="subsrc-radio">
         <input type="radio" name="subscription" id="choice2" ></input>
-        <label>Subscribe and delivery every 
+        <label class="form-control">Subscribe and delivery every 
             <select>
             <option value="4-weeks">4 weeks</option>
             <option value="8-weeks">8 weeks</option>
             <option value="16-weeks">16 weeks</option>
             </select>
-            <p class="subscr-details">Subscribe now and get the 10% of discount on every recurring order.  The discount will be applied at checkout. <p class="see-subscr-details">See details</p></p>
         </label>
         </form>
+        <p class="subscr-details">Subscribe now and get the 10% of discount on every recurring order.  The discount will be applied at checkout. <p class="see-subscr-details">See details</p></p>
         <button class="product-cart-btn">🛒 + Add to cart</button>
         </div>
     <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.</p>
