@@ -39,5 +39,35 @@ Route::get('/cart', function () {
     return view('cart');
 });
 
+// Checkout stagin routes
+Route::get('/details', function () {
+    return view('CheckoutStages.stageDetails', [
+        "stageIndex" => 1,
+        "totalOrderPrice" => "9.99",
+        "shipping" => "Calculated at the next step"
+    ]);
+});
+
+Route::get('/shipping', function () {
+    return view('CheckoutStages.stageShipping', [
+        "stageIndex" => 2,
+        "totalOrderPrice" => "9.99",
+        "shipping" => "Free shipping"
+    ]);
+});
+
+Route::get('/payment', function () {
+    return view('CheckoutStages.stagePayment', [
+        "stageIndex" => 3,
+        "totalOrderPrice" => "9.99",
+        "shipping" => "Free shipping"
+    ]);
+});
+
+Route::get('/success', function () {
+    return view('CheckoutStages.stageSuccess');
+});
+// ----------------------------------
+
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/', [ProductController::class, 'index']);
