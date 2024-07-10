@@ -111,50 +111,14 @@ h1 {
     width: auto;
 }
 
-.form-control {
+label{
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
     text-align: left;
     cursor: pointer;
     padding: 10px 6px 10px 16px;
-    line-height: 1.1;
-    grid-template-columns: 1em auto;
-    gap: 0.5em;
 }
-
-input[type="radio"] {
-    appearance: none;
-    background-color: #fff;
-    margin: 0;
-    color: #CCA43B;
-    width: 1.15em;
-    height: 1.15em;
-    border: 0.15em solid #dbdbdb;
-    border-radius: 50%;
-  }
-
-input[type="radio"]::before {
-    content: "";
-    width: 0.65em;
-    height: 0.65em;
-    border-radius: 50%;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em #CCA43B;
-    background-color: #CCA43B;
-  }
-  
-input[type="radio"]:checked::before {
-    transform: scale(1);
-  }
-input[type="radio"]:focus {
-    outline: max(2px, 0.15em) solid #CCA43B;
-    outline-offset: max(2px, 0.15em);
-  }
-label:focus-within {
-    color: #CCA43B;
-  }
   
 .description {
     font-family: Inter;
