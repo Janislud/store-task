@@ -128,3 +128,68 @@
 #image-7 {background-image: url("../media/candle7.png");}
 #image-8 {background-image: url("../media/candle8.png");}
 
+/* /MOBILE / */
+
+@media screen and (min-width: 275px)  {
+    .inner-box p {
+        max-width: 400px;
+        text-align: center;
+        line-height: 2;
+        font-size: 13px;
+    }
+
+    .inner-box h1 {
+        max-width: 400px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    .inner-box h1 {
+        font-size: 24px;
+    }
+
+    .yellow-box {
+        width: 64%;
+    } 
+
+    .inner-box {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 275px) and (max-width: 399px) {
+    .inner-box h1 {
+        font-size: 20px;
+    }
+
+    .yellow-box {
+        width: 80%;
+    }
+
+    .inner-box {
+        width: 80%;
+    }
+}
+
+
+/* / TABS / */
+
+@media screen and (min-width:275px) and (max-width:900) {
+    .yellow-box {
+        width: 64%;
+    }
+
+    .inner-box {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    .inner-box {
+        width: 80%;
+    }
+}
+/* / DESC */
