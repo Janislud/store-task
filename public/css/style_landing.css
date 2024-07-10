@@ -25,7 +25,7 @@
     height: 50%;
     width: 53%;
     color: black;
-    background-color: rgba(233, 231, 231, 0.89); /* Black w/opacity/see-through */
+    background-color: rgba(233, 231, 231, 0.89); 
     box-shadow: rgb(128, 128, 128) 0 0 15px;
 }
 
@@ -39,6 +39,7 @@
     color: white;
     font-size: 1rem;
     border: 0;
+    cursor: pointer;
 }
 
 .yellow-box:hover {
