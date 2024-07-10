@@ -60,6 +60,11 @@ img {
     padding: 20px;
 }
 
+.product-div-left {
+    text-align: justify;
+    position: relative;
+}
+
 .price {
     color: #CCA43B;
     font-family: Poppins, Inter;
@@ -107,6 +112,11 @@ label {
     border: 1px solid #E6E6E6;
     border-radius: 6px;
     padding: 10px 6px
+}
+
+.item-count {
+    font: Roboto;
+    font-size: 18px;
 }
 
 .item-minus, .item-plus {
@@ -175,30 +185,27 @@ input:checked {
     border: 1px solid #CCA43B;
   }
 
-  input[type='radio']:after {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #d1d3d1;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
-}
+  @media screen and (min-width: 275px) and (max-width: 992px) {
+    .container {
+        display:block;
+        padding:1rem;
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .product-div-right {
+t       text-align: center;
+    }
+    .description {
+        max-width: 400;
+        margin-right: auto;
+        margin-left: auto;
+    }
+  }
 
-input[type='radio']:checked:after {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #CCA43B;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
-}
+  @media screen and (min-width: 275px) and (max-width: 400px) {
+    btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+  }

@@ -11,27 +11,28 @@
 
     </head>
     <body>
+    @include('Components.navigation')
         <div class="main-wrapper">
         <div class="container">
         <div class="product-div row">
-    <div class="product-div-right column">
-        <img src="https://ecommerce-nine-bay.vercel.app/static/media/product1.fab5cc0599d70de19607.png" alt=""></img>
+    <div class="product-div-left column">
+        <img src="https://ecommerce-nine-bay.vercel.app/static/media/product1.fab5cc0599d70de19607.png" alt="Product Image"></img>
         <div class="headline">Selected with care for best customer experience</div>
         <div class="shipping">🚚 FREE SHIPPING</div>
     </div>
-    <div class="product-div row">
-    <div class="product-div-left column">
+    <div class="details-div row">
+    <div class="product-div-right column">
         <h1>Product name</h1>
-        <div class="details-div-right column">
+        <div class="details-div-left column">
         <p class="price">$ 9.99</p>
         <p class="quantity">Quantity</p>
         <div class="item-quantity-toggle">
             <button type="button" class="item-plus">+</button>
-            <p>1</p>
+            <p class="item-count">1</p>
             <button type="button" disabled="true" class="item-minus">-</button>
         </div>
         </div>
-        <div class="details-div-left column">
+        <div class="details-div-right column">
             <form>
         <input type="radio" name="subscription" id="choice1"></input>
         <label>One time purchaise
