@@ -15,6 +15,19 @@ section#checkout {
   background-color: white;
   height: 100%;
 }
+section#checkout input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 15px;
+  background-color: white;
+  border: 1px solid #CCA43B;
+}
+section#checkout input[type=radio]:checked {
+  background-color: #CCA43B;
+}
 section#checkout .img__wrapper {
   position: absolute;
   top: 20px;
@@ -39,12 +52,19 @@ section#checkout .order {
   flex-direction: column;
 }
 section#checkout .stages {
-  justify-content: center;
+  padding: 0;
+  display: flex;
+  height: 100%;
   align-items: center;
 }
 section#checkout .stages__wrapper {
   max-width: 445px;
+  height: 100%;
   width: 100%;
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 section#checkout .stages__content {
   margin-top: 45px;
@@ -73,7 +93,7 @@ section#checkout .stages__acount-check p.order__text:nth-child(2) {
   color: #CCA43B;
 }
 section#checkout .stages__bottom {
-  margin-top: 60px;
+  margin-top: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,6 +131,61 @@ section#checkout .stages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 15.6px;
+}
+section#checkout .stages__edit {
+  color: #CCA43B;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15.6px;
+}
+section#checkout .stages__fancybox {
+  padding: 0px 16px;
+  border: 1px solid #c7b382;
+  border-radius: 8px;
+}
+section#checkout .stages__fancybox-radio {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+section#checkout .stages__fancybox-radio label {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100%;
+}
+section#checkout .stages__fancybox-radio label p:nth-child(2) {
+  font-weight: 700;
+}
+section#checkout .stages__fancybox-item {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c7b382;
+}
+section#checkout .stages__fancybox-item:last-child {
+  border: none;
+}
+section#checkout .stages__fancybox-item div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+section#checkout .stages__fancybox-descr {
+  color: rgb(129, 129, 129);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15.6px;
+}
+section#checkout .stages__shipping-method {
+  margin-top: 40px;
+}
+section#checkout .stages__shipping-method .stages__fancybox {
+  margin-top: 20px;
 }
 section#checkout .stages__checkbox {
   -webkit-appearance: none;
