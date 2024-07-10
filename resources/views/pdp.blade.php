@@ -11,12 +11,12 @@
 
     </head>
     <body>
-    @include('Components.navigation')
+    <!-- @include('Components.navigation') -->
         <div class="main-wrapper">
         <div class="container">
         <div class="product-div row">
     <div class="product-div-left column">
-        <img src="https://ecommerce-nine-bay.vercel.app/static/media/product1.fab5cc0599d70de19607.png" alt="Product Image"></img>
+        <img class="product-img" src="https://ecommerce-nine-bay.vercel.app/static/media/product1.fab5cc0599d70de19607.png" alt="Product Image"></img>
         <div class="headline">Selected with care for best customer experience</div>
         <div class="shipping">🚚 FREE SHIPPING</div>
     </div>
@@ -48,8 +48,8 @@
             <p class="subscr-details">Subscribe now and get the 10% of discount on every recurring order.  The discount will be applied at checkout. <p class="see-subscr-details">See details</p></p>
         </label>
         </form>
-        </div>
         <button class="product-cart-btn">🛒 + Add to cart</button>
+        </div>
     <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.</p>
     </div>
     </div>
@@ -59,6 +59,5 @@
     </div>
     </div>
     @include('Components.footer')
-
     </body>
 </html>
