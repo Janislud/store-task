@@ -21,7 +21,6 @@
             </button>
         </div>
     </div>
-<<<<<<< HEAD
         </section>
 
         <section>
@@ -110,12 +109,5 @@
                 </div>
         </section>
     </main>
-=======
-    <div class="products">
-        <h2>Products</h1>
-        <p>Order it for you or for your beloved ones</p>
-    </div>
-    
->>>>>>> main
 </body>
 </html>
