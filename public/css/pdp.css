@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: Poppins, Inter;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.main-wrapper {
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.product-div {
+    margin: 1rem 0;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    background-color: #fff;
+    border-radius: 3px;
+    column-gap: 10px;
+}
+
+.product-div-left, .product-div-right, .details-div-left, .details-div-right{
+    padding: 20px;
+}
+
+.price {
+    color: #CCA43B;
+    font-family: Poppins, Inter;
+    font-size: 26px;
+    font-weight: 600;
+}
+.row {
+    display: flex;
+}           
+.headline {
+    font-family: Poppins, Inter;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}  
+.shipping {
+    color: #CCA43B;
+    font-family: Roboto, Inter;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}  
+
+.column {
+    width: auto;
+}
+label {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    cursor: pointer;
+    padding: 10px 6px 10px 16px;
+    line-height: 2;
+
+}
+
+.description {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 2;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    padding: 10px 6px
+}
+
+.item-minus, .item-plus {
+    color: #CCA43B;
+    border: none;
+    background-color: #fff;
+    font: Roboto;
+    font-size: 18px;
+}
+
+.item-minus:disabled, .item-plus:disabled  {
+    color: black;
+}
+
+.item-quantity-toggle {
+    border: 1px solid #CCA43B;
+    padding: 2px 5px;
+    width: 75px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.cart-btn {
+    font-family: Roboto;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 8px 100px;
+    background: #CCA43B;
+    color: #fff;
+    line-height: 24px;
+    letter-spacing: 0px;
+    cursor: pointer;
+    margin: 25px 50px 75px 0px;
+}
+
+.subscr-details {
+    font-family: inter;
+    font-size: 15px;
+    color: #818181;
+}
+
+.see-subscr-details {
+    color: #CCA43B;
+}
+
+select {
+    font-family: Roboto;
+    font-size: 14px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #E7E7E7;
+    padding: 2px 6px;
+}
+
+.quantity {
+    font-family: Roboto;
+    font-size: 18px;
+    padding: 5px 3px 5px 3px;
+}
+
+input:checked {
+    border: 1px solid #CCA43B;
+  }
+
+  input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #CCA43B;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}

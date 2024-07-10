@@ -7,68 +7,56 @@
         <title>Produt details page</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/pdp.css">
 
-        <!-- Styles -->
-        <style>
-            * {
-                padding: 10px;
-                margin: 25px;
-            }
-            h1 {
-                font-family: Poppins, Inter;
-                font-size: 26;
-                font-weight: 500;
-            }
-
-            .price {
-                color: #CCA43B;
-                font-family: Poppins, Inter;
-                font-size: 26;
-                font-weight: 600;
-            }
-            .row {
-                display: flex;
-            }           
-            .headline {
-                font-family: Poppins, Inter;
-                font-size: 26;
-                font-weight: 500;
-            }  
-            .shipping {
-                color: #CCA43B;
-                font-family: Roboto, Inter;
-                font-size: 20;
-                font-weight: 700;
-            }  
-
-            .column {
-                flex: 50%;
-            }
-        </style>
     </head>
-    <body class="antialiased">
-    <div class="row">
-    <div class="column">
-        <img></img>
+    <body>
+        <div class="main-wrapper">
+        <div class="container">
+        <div class="product-div row">
+    <div class="product-div-right column">
+        <img src="https://ecommerce-nine-bay.vercel.app/static/media/product1.fab5cc0599d70de19607.png" alt=""></img>
         <div class="headline">Selected with care for best customer experience</div>
         <div class="shipping">🚚 FREE SHIPPING</div>
     </div>
-    <div class="column"></div>
+    <div class="product-div row">
+    <div class="product-div-left column">
         <h1>Product name</h1>
-    <div class="row">
-        <div class="column">
+        <div class="details-div-right column">
         <p class="price">$ 9.99</p>
+        <p class="quantity">Quantity</p>
+        <div class="item-quantity-toggle">
+            <button type="button" class="item-plus">+</button>
+            <p>1</p>
+            <button type="button" disabled="true" class="item-minus">-</button>
+        </div>
+        </div>
+        <div class="details-div-left column">
+            <form>
+        <input type="radio" name="subscription" id="choice1"></input>
+        <label>One time purchaise
+        </label>
+        <div class="subsrc-radio">
+        <input type="radio" name="subscription" id="choice2" ></input>
+        <label>Subscribe and delivery every 
+            <select>
+            <option value="4-weeks">4 weeks</option>
+            <option value="8-weeks">8 weeks</option>
+            <option value="16-weeks">16 weeks</option>
+            </select>
+            <p class="subscr-details">Subscribe now and get the 10% of discount on every recurring order.  The discount will be applied at checkout. <p class="see-subscr-details">See details</p></p>
+        </label>
+        </form>
+        </div>
+        <button class="cart-btn">🛒 + Add to cart</button>
+    <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.</p>
+
     </div>
-        <div class="column">
+    </div>
     </div>
     </div>
     </div> 
+    </div>
+    </div>
     </body>
 </html>

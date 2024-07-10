@@ -21,15 +21,40 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 55px;
-    height: 400px;
-    width: 800px;
+    gap: 15%;
+    height: 50%;
+    width: 53%;
     color: black;
     background-color: rgba(233, 231, 231, 0.89); /* Black w/opacity/see-through */
     box-shadow: rgb(128, 128, 128) 0 0 15px;
 }
 
 .yellow-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(204, 164, 59, 1);
+    height: 10%;
+    width: 30%;
+    color: white;
+    font-size: 1rem;
+    border: 0;
+}
 
+.yellow-box:hover {
+    background-color: rgb(221, 179, 72);
+}
+
+.products {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.products p {
+    color: rgba(94, 110, 137, 1);
+    
 }
