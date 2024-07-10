@@ -9,7 +9,7 @@
 }
 h1 {
     font-family: Poppins, Inter;
-    font-size: 26;
+    font-size: 26px;
     font-weight: 500;
 }
 
@@ -18,6 +18,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    height: auto;
     align-items: center;
 }
 .main-wrapper {
@@ -62,7 +63,7 @@ img {
 .price {
     color: #CCA43B;
     font-family: Poppins, Inter;
-    font-size: 26;
+    font-size: 26px;
     font-weight: 600;
 }
 .row {
@@ -70,14 +71,15 @@ img {
 }           
 .headline {
     font-family: Poppins, Inter;
-    font-size: 26;
+    font-size: 22px;
     font-weight: 500;
     text-align: center;
+    margin-bottom: 20px;
 }  
 .shipping {
     color: #CCA43B;
     font-family: Roboto, Inter;
-    font-size: 20;
+    font-size: 20px;
     font-weight: 700;
     text-align: center;
 }  
@@ -87,21 +89,24 @@ img {
 }
 label {
     font-family: Inter;
-    font-size: 14;
+    font-size: 16px;
     font-weight: 400;
     text-align: left;
     cursor: pointer;
+    padding: 10px 6px 10px 16px;
+    line-height: 2;
 
 }
+
 .description {
     font-family: Inter;
-    font-size: 14;
+    font-size: 14px;
     font-weight: 400;
     text-align: left;
-    line-height: 1.5;
+    line-height: 2;
     border: 1px solid #E6E6E6;
     border-radius: 6px;
-    padding: 10px 4px;
+    padding: 10px 6px
 }
 
 .item-minus, .item-plus {
@@ -138,6 +143,7 @@ label {
     line-height: 24px;
     letter-spacing: 0px;
     cursor: pointer;
+    margin: 25px 50px 75px 0px;
 }
 
 .subscr-details {
@@ -148,4 +154,51 @@ label {
 
 .see-subscr-details {
     color: #CCA43B;
+}
+
+select {
+    font-family: Roboto;
+    font-size: 14px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #E7E7E7;
+    padding: 2px 6px;
+}
+
+.quantity {
+    font-family: Roboto;
+    font-size: 18px;
+    padding: 5px 3px 5px 3px;
+}
+
+input:checked {
+    border: 1px solid #CCA43B;
+  }
+
+  input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #CCA43B;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
 }
