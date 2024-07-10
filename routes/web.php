@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,7 +43,7 @@ Route::get('/cart', function () {
 Route::get('/details', function () {
     return view('CheckoutStages.stageDetails', [
         "stageIndex" => 1,
-        "totalOrderPrice" => "9.99",
+        "totalOrderPrice" => "$9.99",
         "shipping" => "Calculated at the next step"
     ]);
 });
@@ -69,4 +70,4 @@ Route::get('/success', function () {
 // ----------------------------------
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-
+Route::get('/', [ProductController::class, 'index']);
