@@ -1,0 +1,37 @@
+
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+footer .description-block p {
+    margin: 10px 0;
+}
+
+footer .footer-img {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  min-height: 100vh;
+}
