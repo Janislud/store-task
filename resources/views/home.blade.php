@@ -10,9 +10,5 @@
     @include('Components.navigation')
     @include('landing')
     <h1>Home page</h1>
-
-    @@foreach ($products as $item)
-        
-    @endforeach
 </body>
 </html>

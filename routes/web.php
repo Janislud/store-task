@@ -43,7 +43,7 @@ Route::get('/cart', function () {
 Route::get('/details', function () {
     return view('CheckoutStages.stageDetails', [
         "stageIndex" => 1,
-        "totalOrderPrice" => "9.99",
+        "totalOrderPrice" => "$9.99",
         "shipping" => "Calculated at the next step"
     ]);
 });
