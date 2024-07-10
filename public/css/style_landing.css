@@ -47,7 +47,7 @@
 }
 
 .products-background {
-    height: 800px;
+    height: 150px;
 }
 
 .products {
@@ -63,3 +63,40 @@
     color: rgba(94, 110, 137, 1);
 }
 
+.listing-section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70%;
+}
+  
+.store-product {
+    border: 5px solid black;
+    height: 30%;
+    width: 15%;
+    margin: 5%;
+
+  }
+
+.image-box {
+    width: auto;
+    overflow: hidden;
+    border-radius: 2% 2% 0 0;
+    border: 5px solid rgb(153, 105, 105);
+  }
+
+.images {
+    height: 15em;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    border-radius: 2% 2% 0 0;
+    
+  }
+
+.product-desc {
+    border: 5px solid orange;
+    height: 10%;
+}
+
+
+#image-1 {background-image: url("../media/candle1.png");}
