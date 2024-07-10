@@ -57,6 +57,7 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
+    
 }
 
 .products p {
@@ -65,27 +66,32 @@
 
 .listing-section {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    height: 70%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6em;
+    row-gap: 1.5em;
+      
 }
-  
-.store-product {
-    border: 5px solid black;
-    height: 30%;
-    width: 15%;
-    margin: 5%;
 
+.store-product {
+    /* border: 5px solid black; */
+    height: 16rem;
+    width: 15%;
+    margin: 10px;
+    box-shadow: rgb(199, 198, 198) 0 0 15px;
   }
 
 .image-box {
     width: auto;
     overflow: hidden;
     border-radius: 2% 2% 0 0;
-    border: 5px solid rgb(153, 105, 105);
+    /* border: 5px solid rgb(153, 105, 105); */
   }
 
 .images {
-    height: 15em;
+    height: 11em;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -94,9 +100,30 @@
   }
 
 .product-desc {
-    border: 5px solid orange;
-    height: 10%;
+    /* border: 5px solid orange; */
+    height: 24%;
 }
 
+.product-desc h2 {
+    text-align: left;
+    margin-top: 4%;
+    margin-left: 8%;
+    font-size: 20px;
+}
+
+.product-desc h3 {
+    text-align: right;
+    margin-right: 7%;
+    margin-bottom: 5%;
+    color: rgba(204, 164, 59, 1);
+    font-size: 20px;
+}
 
 #image-1 {background-image: url("../media/candle1.png");}
+#image-2 {background-image: url("../media/candle2.png");}
+#image-3 {background-image: url("../media/candle3.png");}
+#image-4 {background-image: url("../media/candle4.png");}
+#image-5 {background-image: url("../media/candle5.png");}
+#image-6 {background-image: url("../media/candle6.png");}
+#image-7 {background-image: url("../media/candle7.png");}
+#image-8 {background-image: url("../media/candle8.png");}
