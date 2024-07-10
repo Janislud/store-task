@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="products">
-        <h1>Products</h1>
+        <h2>Products</h1>
         <p>Order it for you or for your beloved ones</p>
     </div>
     

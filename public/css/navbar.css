@@ -8,7 +8,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4vh;
+    height: 6vh;
+    padding: 10px;
 }
 
 .logo img {
@@ -54,9 +55,13 @@ nav {
 
 .burger div {
     width: 25px;
-    height: 4px;
+    height: 2px;
     background: black;
     border-radius: 10px;
+}
+
+button {
+    width: 33px;
 }
 
 @media screen and (max-width: 768px) {
@@ -65,11 +70,16 @@ nav {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 3vh;
+        top: 5vh;
         left: 0;
         background: white;
     }
     
+    .icons {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+
     .nav-links li {
         text-align: center;
         padding: 15px 0;
@@ -86,7 +96,7 @@ nav {
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-7px, 3px);
+    transform: rotate(-45deg) translate(-9px, 3px);
 }
 
 .toggle .line2 {
@@ -94,5 +104,6 @@ nav {
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-9px, -4px);
+    transform: rotate(45deg) translate(-10px, -4px);
 }
+

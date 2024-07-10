@@ -9,5 +9,6 @@
 <body>
     @include('Components.navigation')
     <h1>PROFILE</h1>
+    @include('Components.footer')
 </body>
 </html>
