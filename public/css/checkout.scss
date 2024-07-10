@@ -17,6 +17,18 @@ section#checkout {
     background-color: white;
     height: 100%;
 
+    input[type="radio"] {
+        appearance: none;
+        border-radius: 50%;
+        width: 16px;
+        height: 15px;
+        background-color: white;
+        border: 1px solid #CCA43B;
+        &:checked {
+            background-color: #CCA43B;
+        }
+    }
+
     .img__wrapper {
         position: absolute;
         top: 20px;
@@ -46,11 +58,20 @@ section#checkout {
     }
 
     .stages {
-        justify-content: center;
+        // justify-content: center;
+        padding: 0;
+        display: flex;
+        height: 100%;
         align-items: center;
+
         &__wrapper {
             max-width: 445px;
+            height: 100%;
             width: 100%;
+            padding: 80px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             // margin: 0 auto;
             // margin-top: 20px;
         }
@@ -88,7 +109,7 @@ section#checkout {
         }
 
         &__bottom {
-            margin-top: 60px;
+            margin-top: auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -128,13 +149,76 @@ section#checkout {
             flex-basis: 50%;
         }
 
-        // &__3input > * {
-        //  flex-basis: 33%;
-        // }
         &__text {
             font-size: 14px;
             font-weight: 400;
             line-height: 15.6px;
+        }
+
+        &__edit {
+            color: #CCA43B;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 15.6px;
+        }
+
+        &__fancybox {
+            padding: 0px 16px;
+            border: 1px solid #c7b382;
+            border-radius: 8px;
+
+            &-radio {
+                padding: 20px 0px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                label {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    font-weight: 400;
+                    // line-height: 15.6px;
+                    height: 100%;
+                    p:nth-child(2) {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            &-item {
+                padding: 20px 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #c7b382;
+
+                &:last-child {
+                    border: none;
+                }
+
+                div {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                }
+            }
+
+            &-descr {
+                color: rgb(129, 129, 129);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 15.6px;
+            }
+        }
+
+        &__shipping-method {
+            margin-top: 40px;
+
+            .stages__fancybox {
+                margin-top: 20px;
+            }
         }
 
         &__checkbox {
