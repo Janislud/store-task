@@ -19,12 +19,12 @@
                 <li><a href="/about">About</a></li>
             </ul>
             <div class="icons">
-                <button>
+                <button class="btn">
                     <a href="/profile">
                         <img src="./assets/Profile.svg" alt="profile-icon">
                     </a>
                 </button>
-                <button>
+                <button class="btn">
                     <a href="/cart">
                         <img src="./assets/Cart.svg" alt="cart-icon">
                     </a>
