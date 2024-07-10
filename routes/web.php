@@ -18,12 +18,12 @@ use Illuminate\Support\Facades\Route;
 //     return view('home');
 // });
 
-Route::get('/clothes', function () {
-    return view('clothes');
+Route::get('/products', function () {
+    return view('products');
 });
 
-Route::get('/tech', function () {
-    return view('tech');
+Route::get('/about', function () {
+    return view('about');
 });
 
 Route::get('/profile', function () {
