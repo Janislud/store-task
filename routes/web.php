@@ -52,7 +52,9 @@ Route::get('/shipping', function () {
     return view('CheckoutStages.stageShipping', [
         "stageIndex" => 2,
         "totalOrderPrice" => "9.99",
-        "shipping" => "Free shipping"
+        "userEmail" => "test@email.com",
+        "shippingAddress" => "Via Firenze 23, blablablabla",
+        "shipping" => "Standart Shipping"
     ]);
 });
 

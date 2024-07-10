@@ -56,10 +56,10 @@
                                 <p class="stages__text">Save this informations for a future fast checkout</p>
                             </div>
                         </div>
-                        <div class="stages__bottom">
-                            <p class="stages__back">Back to cart</p>
-                            <button class="stages__forward">Go to shipping</button>
-                        </div>
+                    </div>
+                    <div class="stages__bottom">
+                        <p class="stages__back">Back to cart</p>
+                        <button class="stages__forward">Go to shipping</button>
                     </div>
                 </div>
             </div>
