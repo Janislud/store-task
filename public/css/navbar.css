@@ -4,16 +4,11 @@
     box-sizing: border-box;
 }
 
-header {
-    padding: 10px 0;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    padding: 0 20px;
+    height: 4vh;
 }
 
 .logo img {
@@ -21,82 +16,83 @@ nav {
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 100px;
+    list-style: none;
 }
 
 .nav-links li {
-    margin: 0 15px;
+    padding: 0 20px;
 }
 
 .nav-links a {
     color: black;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 18px;
 }
 
 .icons {
     display: flex;
-    align-items: center;
 }
 
 .icons button {
     background: none;
     border: none;
-    margin-left: 15px;
+    padding: 0 10px;
 }
 
-.icons button img {
-    height: 24px;
+.icons img {
+    height: 30px;
 }
 
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+}
 
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
+.burger div {
+    width: 25px;
+    height: 4px;
+    background: black;
+    border-radius: 10px;
+}
 
-    }
-
+@media screen and (max-width: 768px) {
     .nav-links {
+        display: none;
         flex-direction: column;
         width: 100%;
-        /* display: none; */
+        position: absolute;
+        top: 3vh;
+        left: 0;
+        background: white;
     }
-
-    .nav-links.active {
-        display: flex;
-    }
-
+    
     .nav-links li {
         text-align: center;
-        margin: 10px 0;
+        padding: 15px 0;
+        width: 100%;
     }
-
-    .icons {
-        margin-top: 10px;
-    }
-}
-
-
-.menu-toggle {
-    /* display: none; */
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toggle span {
-    height: 3px;
-    width: 25px;
-    background-color: #fff;
-    margin: 4px;
-    border-radius: 5px;
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
+    
+    .burger {
         display: flex;
     }
+}
+
+.nav-active {
+    display: flex !important;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-7px, 3px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-9px, -4px);
 }
