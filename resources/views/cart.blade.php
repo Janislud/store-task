@@ -87,4 +87,5 @@
         </div>
     </div>
 </section>
+@include('Components.footer')
 </body>

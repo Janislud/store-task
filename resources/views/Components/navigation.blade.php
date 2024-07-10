@@ -11,12 +11,12 @@
     <header>
         <nav>
             <a href="/" class="logo">
-                <img src="./assets/Main-logo.svg" alt="main-logo">
+                <img src="./assets/Main-logo-footer.png" alt="main-logo">
             </a>
             <ul class="nav-links">
-                <li><a href="/">Products</a></li>
-                <li><a href="/clothes">Clothes</a></li>
-                <li><a href="/tech">Tech</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/about">About</a></li>
             </ul>
             <div class="icons">
                 <button>
