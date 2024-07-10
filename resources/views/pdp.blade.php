@@ -34,7 +34,7 @@
         </div>
         <div class="details-div-right column">
             <form>
-        <input type="radio" name="subscription" id="choice1"></input>
+        <input type="radio" name="subscription" id="choice1" checked></input>
         <label>One time purchaise
         </label>
         <div class="subsrc-radio">
@@ -49,9 +49,8 @@
         </label>
         </form>
         </div>
-        <button class="cart-btn">🛒 + Add to cart</button>
+        <button class="product-cart-btn">🛒 + Add to cart</button>
     <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.</p>
-
     </div>
     </div>
     </div>
@@ -59,5 +58,7 @@
     </div> 
     </div>
     </div>
+    @include('Components.footer')
+
     </body>
 </html>
