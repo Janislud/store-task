@@ -22,5 +22,7 @@ class Product extends Model
 
     //Price understand
 
-    
+    public static function all () {
+        
+    }
 }

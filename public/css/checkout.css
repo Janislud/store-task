@@ -14,6 +14,7 @@ body {
 section#checkout {
   background-color: white;
   height: 100%;
+  max-height: 100vh;
 }
 section#checkout input[type=radio] {
   -webkit-appearance: none;
@@ -38,13 +39,15 @@ section#checkout #checkout-logo {
   height: auto;
 }
 section#checkout .container {
+  max-width: 100%;
   display: flex;
-  padding: 0px 20px;
+  padding-left: 20px;
   height: 100%;
 }
 section#checkout .stages,
 section#checkout .order {
   padding: 20px 0px;
+  padding-right: 20px;
   flex-basis: 100%;
   display: flex;
   justify-content: flex-start;
@@ -58,7 +61,7 @@ section#checkout .stages {
   align-items: center;
 }
 section#checkout .stages__wrapper {
-  max-width: 445px;
+  max-width: 465px;
   height: 100%;
   width: 100%;
   padding: 80px 0px;
@@ -67,7 +70,70 @@ section#checkout .stages__wrapper {
   justify-content: space-between;
 }
 section#checkout .stages__content {
-  margin-top: 45px;
+  margin: 45px 0px;
+  padding: 0 10px;
+}
+section#checkout .stages__content_success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#checkout .stages__content_success .stages__forward {
+  margin-top: 50px;
+}
+section#checkout .stages__content_payment {
+  overflow-y: scroll;
+}
+section#checkout .stages__content_payment::-webkit-scrollbar {
+  width: 2px;
+  background: rgb(196, 196, 196);
+}
+section#checkout .stages__content_payment::-webkit-scrollbar-thumb {
+  background: #c7b382;
+}
+section#checkout .stages__card {
+  margin-top: 25px;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}
+section#checkout .stages__card-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 58px;
+  background: linear-gradient(92.34deg, rgba(204, 164, 59, 0.2) 0.042%, rgba(204, 164, 59, 0.4) 97.949%);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: rgb(204, 164, 59);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 15.6px;
+}
+section#checkout .stages__card-inputs {
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+section#checkout .stages__payment-method {
+  margin-top: 40px;
+}
+section#checkout .stages__tax {
+  margin-top: 40px;
+}
+section#checkout .stages__tax-inputs {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+section#checkout .stages__billing {
+  margin-top: 40px;
+}
+section#checkout .stages__billing .stages__fancybox {
+  margin-top: 25px;
 }
 section#checkout .stages__contact {
   display: flex;
@@ -127,6 +193,27 @@ section#checkout .stages__2input {
 section#checkout .stages__2input > * {
   flex-basis: 50%;
 }
+section#checkout .stages__title {
+  margin-top: 15px;
+  color: rgb(39, 39, 39);
+  font-size: 26px;
+  font-weight: 500;
+}
+section#checkout .stages-orderId {
+  margin-top: 15px;
+  color: rgb(204, 164, 59);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15.6px;
+}
+section#checkout .stages__descr {
+  margin-top: 15px;
+  text-align: center;
+  color: rgb(129, 129, 129);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15.6px;
+}
 section#checkout .stages__text {
   font-size: 14px;
   font-weight: 400;
@@ -140,7 +227,7 @@ section#checkout .stages__edit {
 }
 section#checkout .stages__fancybox {
   padding: 0px 16px;
-  border: 1px solid #c7b382;
+  border: 1px solid #c7bda5;
   border-radius: 8px;
 }
 section#checkout .stages__fancybox-radio {
@@ -327,4 +414,47 @@ section#checkout .order__total {
 }
 section#checkout .order__total .order__bold {
   font-size: 24px;
+}
+
+@media (max-width: 1150px) {
+  section#checkout {
+    max-height: 100%;
+  }
+  section#checkout .container {
+    flex-direction: column;
+    padding: 0;
+  }
+  section#checkout .stages, section#checkout .order {
+    height: auto;
+  }
+  section#checkout .stages__navigation {
+    padding: 0 15px;
+  }
+  section#checkout .stages__wrapper {
+    padding-bottom: 40px;
+  }
+  section#checkout .stages__content_payment {
+    overflow-y: visible;
+  }
+  section#checkout .order {
+    background-color: white;
+    padding: 0px 10px;
+    padding-bottom: 45px;
+    align-items: center;
+  }
+  section#checkout:not(.show-checkoutTotal-mob) .order {
+    display: none;
+  }
+}
+@media (max-width: 525px) {
+  .stages__bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .order__coupon {
+    flex-direction: column;
+  }
+  .order__coupon-addBtn {
+    width: 100% !important;
+  }
 }

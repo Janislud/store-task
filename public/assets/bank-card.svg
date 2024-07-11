@@ -1,0 +1,15 @@
+<svg width="31.000000" height="31.000000" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip6_586">
+			<rect id="CreditCardFill" rx="-0.500000" width="30.000000" height="30.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="CreditCardFill" rx="-0.500000" width="30.000000" height="30.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip6_586)">
+		<path id="Vector" d="M0 7.75C0 6.72 0.4 5.73 1.13 5.01C1.86 4.28 2.84 3.87 3.87 3.87L27.12 3.87C28.15 3.87 29.13 4.28 29.86 5.01C30.59 5.73 31 6.72 31 7.75L31 9.68L0 9.68L0 7.75Z" fill="#CCA43B" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M0 13.56L0 23.25C0 24.27 0.4 25.26 1.13 25.99C1.86 26.71 2.84 27.12 3.87 27.12L27.12 27.12C28.15 27.12 29.13 26.71 29.86 25.99C30.59 25.26 31 24.27 31 23.25L31 13.56L0 13.56ZM5.81 17.43C5.29 17.43 4.8 17.64 4.44 18C4.07 18.36 3.87 18.86 3.87 19.37L3.87 21.31C3.87 21.82 4.07 22.31 4.44 22.68C4.8 23.04 5.29 23.25 5.81 23.25L7.75 23.25C8.26 23.25 8.75 23.04 9.12 22.68C9.48 22.31 9.68 21.82 9.68 21.31L9.68 19.37C9.68 18.86 9.48 18.36 9.12 18C8.75 17.64 8.26 17.43 7.75 17.43L5.81 17.43Z" fill="#CCA43B" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>
