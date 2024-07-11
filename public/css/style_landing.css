@@ -46,6 +46,9 @@
     background-color: rgb(221, 179, 72);
 }
 
+/* products part */
+
+
 .products-background {
     height: 150px;
 }
@@ -117,6 +120,7 @@
     margin-bottom: 5%;
     color: rgba(204, 164, 59, 1);
     font-size: 20px;
+    padding: 0.2em;
 }
 
 /* exclusive deals part */
@@ -137,6 +141,7 @@
 .deals-heading {
     border: 3px solid orange;
     height: 7em;
+    row-gap: 2;
 }
 
 .deals-heading p {
