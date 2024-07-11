@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/cart.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style_landing.css') }}">
     <link rel="stylesheet" href="{{ asset('css/pdp.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/products.css') }}">
     <title>@yield('title')</title>
 </head>
 <body>

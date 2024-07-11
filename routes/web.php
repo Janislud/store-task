@@ -67,7 +67,11 @@ Route::get('/payment', function () {
 });
 
 Route::get('/success', function () {
-    return view('CheckoutStages.stageSuccess');
+    return view('CheckoutStages.stageSuccess', [
+        "stageIndex" => 4,
+        "totalOrderPrice" => "9.99",
+        "shipping" => "Free shipping"
+    ]);
 });
 // ----------------------------------
 

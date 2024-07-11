@@ -29,7 +29,7 @@
     box-shadow: rgb(128, 128, 128) 0 0 15px;
 }
 
-.yellow-box{
+.yellow-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,6 +45,9 @@
 .yellow-box:hover {
     background-color: rgb(221, 179, 72);
 }
+
+/* products part */
+
 
 .products-background {
     height: 150px;
@@ -74,6 +77,12 @@
     row-gap: 1.5em;
       
 }
+
+@media (max-width: 800px) {
+    .listing-section {
+      flex-direction: column;
+    }
+  }
 
 .store-product {
     /* border: 5px solid black; */
@@ -117,40 +126,100 @@
     margin-bottom: 5%;
     color: rgba(204, 164, 59, 1);
     font-size: 20px;
+    padding: 0.2em;
+}
+
+.pr-item {
+    
 }
 
 /* exclusive deals part */
 
 
 .deals-box {
+    display: flex;
+    column-gap: 1%;
     height: 40em;
     border: 3px solid black;
 }
 
 .deals-left{
-    width: 40em;
+    width: 35em;
+    height: 30em;
+    margin: 8em 4em 8em 16em;
+    border: 3px solid chartreuse;
 }
 
 .deals-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     border: 3px solid orange;
+    height: 11em;
+    text-align: left;
+
+}
+
+.deals-heading h2 {
+    text-align: left;
+    font-size: 40px;
+}
+
+.deals-heading p {
+    font-size: 16px;
+    color: rgba(204, 164, 59, 1);
 }
 
 .deals-list{
     border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.deals-list ul li {
+    list-style: none;
+    margin-bottom: 1em;
+    padding-top: 5px;
+}
+
+.deals-list ul li img {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.deals-btn {
+    border: 3px solid violet;
+    width: 20em;
+    height: 3em;
+}
+
+.deals-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(204, 164, 59, 1);
+    height: 70%;
+    width: 50%;
+    color: white;
+    font-size: 1rem;
+    border: 0;
+    cursor: pointer;
+    border-radius: 3px;
 }
 
 .deals-right{
+    margin: 8em;
     width: 40em;
     height: 20em;
     border: 3px solid blue;
-}
-
-
-.deals-image {
     background-image: url(../media/Deals.jpg);
     background-size: cover;
-    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+
 
 /* .deals-offers {
     display: flex;

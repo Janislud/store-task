@@ -1,11 +1,10 @@
 @extends('layouts.layout')
 
-@section('title', 'pdp')
+@section('title', 'Product page')
 
 @section('content')
         <div class="main-wrapper">
             <div class="container">
-                <h1>Product name</h1>
                 <div class="product-div row">
                     <div class="product-div-left column">
                         <img class="product-img" src="https://ecommerce-nine-bay.vercel.app/static/media/product1.fab5cc0599d70de19607.png" alt="Product Image"></img>
@@ -13,6 +12,7 @@
                         <div class="shipping">🚚 FREE SHIPPING</div>
                     </div>
                     <div class="product-div-right column">
+                        <h1>Product name</h1>
                         <p class="price">$ 9.99</p>
                         <p class="quantity">Quantity</p>
                         <div class="item-quantity-toggle">
