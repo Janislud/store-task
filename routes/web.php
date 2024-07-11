@@ -76,4 +76,4 @@ Route::get('/success', function () {
 // ----------------------------------
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/', [ProductController::class, 'index']);
+Route::get('/products', [ProductController::class, 'index']);
