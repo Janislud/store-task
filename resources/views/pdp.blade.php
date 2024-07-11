@@ -1,7 +1,8 @@
 @extends('layouts.layout')
 
 @section('title', 'pdp')
-        
+
+@section('content')
         <div class="main-wrapper">
             <div class="container">
                 <div class="product-div row">
@@ -44,4 +45,4 @@
                 </div>
             </div> 
         </div>
-
+@endsection
