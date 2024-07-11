@@ -107,25 +107,24 @@
     height: 24%;
 }
 
-.product-desc h2 {
+/* .pr-item {
     text-align: left;
     margin-top: 4%;
     margin-left: 8%;
     font-size: 20px;
-}
+} */
 
-.product-desc h3 {
+.item-price {
     text-align: right;
     margin-right: 7%;
-    margin-bottom: 5%;
+    margin-bottom: 1em;
     color: rgba(204, 164, 59, 1);
-    font-size: 20px;
-    padding: 0.2em;
-}
-
-.pr-item {
+    font-size: 22px;
+    padding: 0.4em;
     
 }
+
+
 
 /* exclusive deals part */
 
@@ -139,7 +138,7 @@
 
 .deals-left{
     width: 35em;
-    height: 30em;
+    height: 28em;
     margin: 8em 4em 8em 16em;
     border: 3px solid chartreuse;
 }
@@ -147,39 +146,49 @@
 .deals-heading {
     display: flex;
     flex-direction: column;
-    gap: 1em;
     border: 3px solid orange;
-    height: 11em;
-    text-align: left;
-
+    height: 12em;
+    gap: 0.8em;
 }
 
-.deals-heading h2 {
+.deals-heading-h2 {
     text-align: left;
     font-size: 40px;
+    margin-bottom: 0px!important;
+    margin-right: 5em;
 }
 
-.deals-heading p {
+.deals-heading-p {
+    text-align: left;
     font-size: 16px;
     color: rgba(204, 164, 59, 1);
+    margin-right: 19em;
 }
 
 .deals-list{
     border: 3px solid red;
     display: flex;
     flex-direction: column;
-    
+}
+
+.deals-list ul {
+    padding-left: 0;
 }
 
 .deals-list ul li {
+   
     list-style: none;
-    margin-bottom: 1em;
+    margin: 1em;
     padding-top: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .deals-list ul li img {
+    justify-items: center;
     width: 1.2em;
     height: 1.2em;
+    margin-right: 0.5em;
 }
 
 .deals-btn {
@@ -205,12 +214,13 @@
 .deals-right{
     margin: 8em;
     width: 40em;
-    height: 20em;
-    border: 3px solid blue;
+    height: 25em;
+    /* border: 3px solid blue; */
     background-image: url(../media/Deals.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: rgb(199, 198, 198) 0 0 15px;
 }
 
 

@@ -29,7 +29,7 @@
                         </div>
                         <div class="product-desc">
                             <p class="pr-item">Spiced Mint</p>
-                            <p class="price">9.99$</p>
+                            <p class="item-price">9.99$</p>
                         </div>
                     </div>
                     <div class="store-product">
@@ -38,7 +38,7 @@
                         </div>
                         <div class="product-desc">
                             <p class="pr-item">Sweet Strawberry</p>
-                            <p class="price">9.99$</p>
+                            <p class="item-price">9.99$</p>
                         </div>
                     </div>
                     <div class="store-product">
@@ -47,7 +47,7 @@
                         </div>
                         <div class="product-desc">
                             <p class="pr-item">Cool Blueberries</p>
-                            <p class="price">9.99$</p>
+                            <p class="item-price">9.99$</p>
                         </div>
                     </div>
                     <div class="store-product">
@@ -56,7 +56,7 @@
                         </div>
                         <div class="product-desc">
                             <p class="pr-item">Juicy Lemon</p>
-                            <p class="price">9.99$</p>
+                            <p class="item-price">9.99$</p>
                         </div>
                     </div>
                     <div class="store-product">
@@ -64,17 +64,18 @@
                             <div class="images" id="image-5"></div>
                         </div>
                         <div class="product-desc">
-                            <p class="pr-item">Fresh Orange</p>
-                            <p class="price">9.99$</p>
+                            <p class="pr-item">Fragrant Cinnamon</p>
+                            <p class="item-price">9.99$</p>
                         </div>
                     </div>
+
                     <div class="store-product">
                         <div class="image-box">
                             <div class="images" id="image-6"></div>
                         </div>
                         <div class="product-desc">
-                            <p class="pr-item">Fragrant Cinnamon</p>
-                            <p class="price">9.99$</p>
+                            <p class="pr-item">Summer Cherries</p>
+                            <p class="item-price">9.99$</p>
                         </div>
                     </div>
 
@@ -84,7 +85,7 @@
                         </div>
                         <div class="product-desc">
                             <p class="pr-item">Summer Cherries</p>
-                            <p class="price">9.99$</p>
+                            <p class="item-price">9.99$</p>
                         </div>
                     </div>
                     <div class="store-product">
@@ -93,7 +94,7 @@
                         </div>
                         <div class="product-desc">
                             <p class="pr-item">Clean Lavander</p>
-                            <p class="price">9.99$</p>
+                            <p class="item-price">9.99$</p>
                         </div>
                     </div>
                 </div>
@@ -102,8 +103,8 @@
             <div class="deals-box">
               <div class="deals-left">
                 <div class="deals-heading">
-                    <h2>Exclusive deals <br> and offers</h2>
-                    <p>Made for your convenience</p>
+                    <h2 class="deals-heading-h2">Exclusive deals <br> and offers</h2>
+                    <p class="deals-heading-p">Made for your convenience</p>
                 </div>
                 <div class="deals-list">
                     <ul>
