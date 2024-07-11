@@ -3,7 +3,7 @@
 @section('title', 'Products')
 
 @section('content')
-<div class="pr-main-wrapper">
+
     <div class="pr-container">
         <header>
             <h1>Products</h1>
