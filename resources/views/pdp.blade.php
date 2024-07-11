@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title', 'pdp')
+@section('title', 'Product page')
 
 @section('content')
         <div class="main-wrapper">

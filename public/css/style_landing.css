@@ -123,6 +123,10 @@
     padding: 0.2em;
 }
 
+.pr-item {
+    
+}
+
 /* exclusive deals part */
 
 
@@ -135,26 +139,47 @@
 
 .deals-left{
     width: 35em;
-    margin: 8em;
+    height: 30em;
+    margin: 8em 4em 8em 16em;
+    border: 3px solid chartreuse;
 }
 
 .deals-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     border: 3px solid orange;
-    height: 7em;
-    row-gap: 2;
+    height: 11em;
+    text-align: left;
+
+}
+
+.deals-heading h2 {
+    text-align: left;
+    font-size: 40px;
 }
 
 .deals-heading p {
+    font-size: 16px;
     color: rgba(204, 164, 59, 1);
 }
 
 .deals-list{
     border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .deals-list ul li {
     list-style: none;
     margin-bottom: 1em;
+    padding-top: 5px;
+}
+
+.deals-list ul li img {
+    width: 1.2em;
+    height: 1.2em;
 }
 
 .deals-btn {

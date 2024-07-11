@@ -24,6 +24,7 @@
                 
                 <div class="listing-section">
                     <div class="store-product">
+
                         <a href="/productId">
                             <div class="image-box">
                                 <div class="images" id="image-1"></div>
@@ -78,8 +79,8 @@
                             </div>
                         </a>
                     </div>
-
                     <div class="store-product">
+
                         <a href="/productId">
                             <div class="image-box">
                                 <div class="images" id="image-6"></div>
@@ -124,9 +125,9 @@
                 </div>
                 <div class="deals-list">
                     <ul>
-                        <li><strong>Eco-sustainable:</strong>All recyclabe materials, 0% CO2 emissions</li>
-                        <li><strong>Hypoallergenic:</strong>100% natural, human friendly ingredients</li>
-                        <li><strong>Trendy:</strong>Accesorries and clothing items as seen in latest trends</li>
+                        <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Eco-sustainable:</strong>All recyclabe materials, 0% CO2 emissions</li>
+                        <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Hypoallergenic:</strong>100% natural, human friendly ingredients</li>
+                        <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Trendy:</strong>Accesorries and clothing items as seen in latest trends</li>
                     </ul>
                 </div>
                 <div class="deals-btn">
