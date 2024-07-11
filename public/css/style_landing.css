@@ -29,7 +29,7 @@
     box-shadow: rgb(128, 128, 128) 0 0 15px;
 }
 
-.yellow-box{
+.yellow-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,6 +77,12 @@
     row-gap: 1.5em;
       
 }
+
+@media (max-width: 800px) {
+    .listing-section {
+      flex-direction: column;
+    }
+  }
 
 .store-product {
     /* border: 5px solid black; */
