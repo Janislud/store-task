@@ -1,4 +1,7 @@
-    @include('Components.navigation')
-    <h1>About</h1>
-    @include('Components.footer')
+@extends('layouts.layout')
 
+@section('title', 'About')
+
+@section('content')
+    <h1>About</h1>
+@endsection
