@@ -1,7 +1,8 @@
 @extends('layouts.layout')
 
 @section('title', 'pdp')
-        
+
+@section('content')
         <div class="main-wrapper">
             <div class="container">
                 <h1>Product name</h1>
@@ -40,4 +41,4 @@
                 </div>
             </div> 
         </div>
-
+@endsection
