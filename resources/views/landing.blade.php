@@ -22,9 +22,10 @@
                 <p>Order it for you or for your beloved ones</p>
             </div>
         </div>
-            
-        <div class="listing-section">
+        <div>
             @foreach ($products as $product)
+        <div class="listing-section">
+           
                 <div class="store-product">
                     <a href="/products/{{ $product->id }}">
                         <div class="image-box">
@@ -36,8 +37,10 @@
                         </div>
                     </a>
                 </div>
-            @endforeach
         </div>
+        @endforeach
+        </div>
+
     </section>
 
     <section>
