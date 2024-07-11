@@ -107,3 +107,24 @@ nav {
     transform: rotate(45deg) translate(-10px, -4px);
 }
 
+.nav-item {
+    transition: 0.5s;
+}
+
+.nav-item:hover {
+    color: green;
+    text-decoration: underline green 2px;
+    transition: 0.5s;
+}
+
+.nav-links a.active {
+    color: green;
+}
+
+.cart-active {
+    border: 2px solid green;
+}
+
+.profile-active {
+    border: 2px solid green;
+}
