@@ -1,12 +1,3 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('css/style_landing.css') }}">
-    <title>Landing</title>
-</head>
-<body>
     <main>
         <section>
             <div class="background">
@@ -108,6 +99,27 @@
                     </div>
                 </div>
         </section>
+        <section>
+            <div class="deals-box">
+              <div class="deals-left">
+                <div class="deals-heading">
+                    <h2>Exclusive deals <br> and offers</h2>
+                    <p>Made for your convenience</p>
+                </div>
+                <div class="deals-list">
+                    <ul>
+                        <li><strong>Eco-sustainable:</strong>All recyclabe materials, 0% CO2 emissions</li>
+                        <li><strong>Hypoallergenic:</strong>100% natural, human friendly ingredients</li>
+                        <li><strong>Trendy:</strong>Accesorries and clothing items as seen in latest trends</li>
+                    </ul>
+                </div>
+                <div class="deals-btn">
+                    <button>Learn more</button>
+                </div>
+              </div>
+              <div class="deals-right">
+                <div class="deals-image"></div>
+              </div>
+            </div>
+        </section>
     </main>
-</body>
-</html>

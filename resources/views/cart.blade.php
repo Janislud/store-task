@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/cart.css">
-    <title>Cart</title>
-</head>
-<body>
-    @include('Components.navigation')
-    <section id="cart">
+@extends('layouts.layout')
+
+@section('title', 'Profile')
+
+@section('content')
+<section id="cart">
     <div class="container">
         <h3 class="cart__title">Your cart items</h3>
         <a  class="cart__backLink"="#">Back to shopping</a>
@@ -83,9 +77,7 @@
                 <div></div>
             </div>
             <button class="cart__checkout-btn">Check-out</button>
-            {{-- <a href="/test">test</a> --}}
         </div>
     </div>
 </section>
-@include('Components.footer')
-</body>
+@endsection

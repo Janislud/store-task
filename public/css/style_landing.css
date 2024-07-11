@@ -119,6 +119,54 @@
     font-size: 20px;
 }
 
+/* exclusive deals part */
+
+
+.deals-box {
+    height: 40em;
+    border: 3px solid black;
+}
+
+.deals-left{
+    width: 40em;
+}
+
+.deals-heading {
+    border: 3px solid orange;
+}
+
+.deals-list{
+    border: 3px solid red;
+}
+
+.deals-right{
+    width: 40em;
+    height: 20em;
+    border: 3px solid blue;
+}
+
+
+.deals-image {
+    background-image: url(../media/Deals.jpg);
+    background-size: cover;
+    height: auto;
+}
+
+/* .deals-offers {
+    display: flex;
+    border: 3px solid black;
+    height: 40em;
+    justify-content: center;
+    flex-direction: row;
+} */
+
+
+
+
+
+
+
+/* images for item listing */
 #image-1 {background-image: url("../media/candle1.png");}
 #image-2 {background-image: url("../media/candle2.png");}
 #image-3 {background-image: url("../media/candle3.png");}
@@ -127,6 +175,10 @@
 #image-6 {background-image: url("../media/candle6.png");}
 #image-7 {background-image: url("../media/candle7.png");}
 #image-8 {background-image: url("../media/candle8.png");}
+
+
+
+
 
 /* /MOBILE / */
 
