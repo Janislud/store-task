@@ -15,9 +15,11 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->decimal('total', 8, 2);
+            $table->string('status');
+            $table->date('date');
+            
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->decimal('total');
-            $table->timestamps();
         });
     }
 
