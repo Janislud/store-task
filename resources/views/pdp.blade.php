@@ -17,10 +17,9 @@
                         <div class="headline">Selected with care for best customer experience</div>
                         <div class="shipping">🚚 FREE SHIPPING</div>
                     </div>
-                    <div class="details-div row">
                         <div class="product-div-right column">
                             <h1>Product name</h1>
-                            <div class="details-div-left column">
+                            <div>
                                 <p class="price">$ 9.99</p>
                                 <p class="quantity">Quantity</p>
                                     <div class="item-quantity-toggle">
@@ -29,7 +28,7 @@
                                         <button type="button" disabled="true" class="item-minus">-</button>
                                     </div>
                             </div>
-                            <div class="details-div-right column">
+                            <div>
                                 <form>
                                     <input type="radio" name="subscription" id="choice1" value="onetime" checked></input>
                                     <label class="form-control">One time purchaise</label>
@@ -49,7 +48,6 @@
                                 <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.</p>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div> 
         </div>
