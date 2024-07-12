@@ -16,42 +16,6 @@ body {
     width: auto;
 }
 
-    .radio {
-        opacity: 0;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-    }
-    
-    .radio-look {  
-        width: 1em;
-        height: 1em;
-        display: inline-block;
-        vertical-align: middle;
-        padding: 5px;
-        border: 1px solid blue;
-        border-radius: 50%;
-        position: relative;
-    }
-    
-    .radio-look:after {
-        content: "";
-        position: absolute;
-        left: 5px;
-        top: 5px;
-        bottom: 5px;
-        right: 5px;
-        border: 1px solid blue;
-        border-radius: 50%;
-    }
-    
-    .radio:checked + .radio-look:after {
-        background: blue;
-    }
-
 h2 {
     font-family: Poppins, Inter;
     font-size: 18px;

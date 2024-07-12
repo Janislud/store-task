@@ -26,16 +26,17 @@
                                 <span class="radio-look"></span>
                             <label class="form-control">One time purchaise</label>
                             </div>
-                            <div class="enhanced-radio subsrc-radio">
-                                <input type="radio" class="radio" name="subscription" id="choice2" value="repeated" ></input>
-                                <span class="radio-look"></span>
-                                <label class="form-control">Subscribe and delivery every 
-                                    <select>
+                            <div class="subsrc-radio">
+                                <div class="enhanced-radio">
+                                    <input type="radio" class="radio" name="subscription" id="choice2" value="repeated" ></input>
+                                    <span class="radio-look"></span>
+                                    <label class="form-control">Subscribe and get new product delivered every </label>
+                                </div>
+                                <select>
                                         <option value="4-weeks">4 weeks</option>
                                         <option value="8-weeks">8 weeks</option>
                                         <option value="16-weeks">16 weeks</option>
-                                    </select>
-                                </label>
+                                </select>
                             </div>
                         </form>
                         <p class="subscr-details">Subscribe now and get the 10% of discount on every recurring order.  The discount will be applied at checkout.</p>
