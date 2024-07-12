@@ -16,11 +16,7 @@ class ProductController extends Controller
     {
         // Fetch products from the database
         $products = Product::all();
-        // $product = Product::all();
-        
-        // Pass products data to the view
-        return view('products.index', compact('products'));
+        return view('products', compact('products'));
     }
-
 
 }

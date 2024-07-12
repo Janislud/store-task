@@ -14,24 +14,23 @@
             </div>
         </div>
     </section>
-
     <section>
-        <div class="products-background">
+
+        <div class="product-section-wrapper">
             <div class="products">
                 <h1>Products</h1>
                 <p>Order it for you or your beloved ones</p>
             </div>
         </div>
-        <div>
-            @foreach ($products as $product)
-        <div class="listing-section">
-           
-                <div class="store-product">
-                    <a href="/products/{{ $product->id }}">
 
-                        <div class="image-box">
-                            <div class="images" style="background-image: url('{{ asset($product->image) }}');"></div>
-                        </div>
+    </section>
+
+    <section class="conteiner">
+        <div class="products-wrapper-conteiner">
+        @foreach ($sliced as $product)
+            <div class="listing-section">
+                    <a class="product-card-link" href="/products/{{ $product->id }}">
+                            <img class="images" style="background-image: url('{{ asset($product->image) }}');">
                         <div class="product-desc">
 
                             <p class="pr-item">Clean Lavander</p>
@@ -42,8 +41,7 @@
 
                         </div>
                     </a>
-                </div>
-        </div>
+            </div>
         @endforeach
         </div>
 
@@ -58,15 +56,9 @@
             </div>
             <div class="deals-list">
                 <ul>
-<<<<<<< HEAD
                     <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Eco-sustainable: </strong>All recyclable materials, 0% CO2 emissions</li>
                     <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Hypoallergenic: </strong>100% natural, human friendly ingredients</li>
                     <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Trendy: </strong>Scents and designs as seen in latest trends</li>
-=======
-                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Eco-sustainable:</strong>&nbsp;All recyclable materials, 0% CO2 emissions</li>
-                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Hypoallergenic:</strong>&nbsp;100% natural, human friendly ingredients</li>
-                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Trendy:</strong>&nbsp;Scents and designs as seen in latest trends</li>
->>>>>>> 9972633792883da601a78aa1e4d2ff63de49f1e8
                 </ul>
 
             </div>
