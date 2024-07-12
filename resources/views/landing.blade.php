@@ -32,13 +32,8 @@
                     <a class="product-card-link" href="/products/{{ $product->id }}">
                             <img class="images" style="background-image: url('{{ asset($product->image) }}');">
                         <div class="product-desc">
-
-                            <p class="pr-item">Clean Lavander</p>
-                            <p class="item-price">9.99$</p>
-
                             <h2 class="item">{{ $product->name }}</h2>
                             <h3 class="price">{{ number_format($product->price, 2) }}$</h3>
-
                         </div>
                     </a>
             </div>
