@@ -1,7 +1,86 @@
+@import "./keyframes.css";
 #about {
   height: 94vh;
   padding: 60px 0px;
 }
 #about h1 {
   font-size: 36px;
+  text-align: center;
+}
+
+.about .container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about__head p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.about__wrapper {
+  margin-top: 45px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.about__wrapper-item {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(204, 164, 59);
+  flex-basis: 100%;
+  min-height: 300px;
+  transition: 0.2s ease-in-out;
+}
+.about__wrapper-item:hover, .about__wrapper-item[data-hovered=true] {
+  flex-basis: 150%;
+  background-color: rgb(204, 164, 59);
+  box-shadow: inset 0px 0px 0px 3px white;
+}
+.about__wrapper-item:hover .about__sub, .about__wrapper-item[data-hovered=true] .about__sub {
+  color: white;
+  translate: 0% -50%;
+}
+.about__wrapper-item:hover .about__text, .about__wrapper-item[data-hovered=true] .about__text {
+  color: white;
+  font-size: 14px;
+  animation: fadeIn 0.4s linear;
+}
+.about__sub {
+  position: relative;
+  transition: 0.2s ease-in-out;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+.about__text {
+  transition: 0.2s ease-in-out;
+  max-width: 190px;
+  text-align: center;
+  font-size: 0px;
+}
+.about__thanks {
+  margin-top: 45px;
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  .about {
+    height: auto !important;
+  }
+  .about__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about__wrapper-item {
+    max-width: 400px;
+    min-height: auto;
+  }
 }
