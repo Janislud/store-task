@@ -67,30 +67,14 @@
     color: rgba(94, 110, 137, 1);
 }
 
-.listing-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    column-gap: 6em;
-    row-gap: 1.5em;
-      
-}
 
-@media (max-width: 800px) {
-    .listing-section {
-      flex-direction: column;
-    }
-  }
+/* .store-product {
 
-.store-product {
-    /* border: 5px solid black; */
     height: 16rem;
     width: 15%;
     margin: 10px;
     box-shadow: rgb(199, 198, 198) 0 0 15px;
-  }
+  } */
 
 .image-box {
     width: auto;
@@ -129,12 +113,25 @@
     padding: 0.2em;
 }
 
-.pr-item {
-    
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
 }
 
-/* exclusive deals part */
+.products-wrapper-conteiner {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
+.listing-section {
+    border: 1px solid blue;
+    max-width: 400px;
+
+}
 
 .deals-box {
     display: flex;

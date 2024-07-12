@@ -14,30 +14,32 @@
             </div>
         </div>
     </section>
-
     <section>
-        <div class="products-background">
+
+        <div class="product-section-wrapper">
             <div class="products">
                 <h1>Products</h1>
                 <p>Order it for you or for your beloved ones</p>
             </div>
         </div>
-        <div>
-            @foreach ($products as $product)
-        <div class="listing-section">
-           
-                <div class="store-product">
+    </section>
+
+    <section class="conteiner">
+        <div class="products-wrapper-conteiner">
+        @foreach ($sliced as $product)
+            <div class="listing-section">
+               
                     <a href="/products/{{ $product->id }}">
                         <div class="image-box">
-                            <div class="images" style="background-image: url('{{ asset($product->image) }}');"></div>
+                            <img class="images" style="background-image: url('{{ asset($product->image) }}');">
                         </div>
                         <div class="product-desc">
                             <h2 class="item">{{ $product->name }}</h2>
                             <h3 class="price">{{ number_format($product->price, 2) }}$</h3>
                         </div>
                     </a>
-                </div>
-        </div>
+              
+            </div>
         @endforeach
         </div>
 
