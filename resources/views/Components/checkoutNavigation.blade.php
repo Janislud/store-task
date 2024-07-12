@@ -18,5 +18,12 @@
             <p class="stages__navigation_completed">Shipping</p>
             <p class="stages__navigation_current">Payment</p>
             @break
+        @case(4)
+            <p class="stages__navigation_completed">Cart</p>
+            <p class="stages__navigation_completed">Details</p>
+            <p class="stages__navigation_completed">Shipping</p>
+            <p class="stages__navigation_completed">Payment</p>
+            <p class="stages__navigation_completed">Success</p>
+            @break
     @endswitch
 </div>
