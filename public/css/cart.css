@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import "./default.css";
+
 section#cart > * {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif!important;
@@ -11,38 +13,6 @@ section#cart button {
     outline: none;
     background: none;
     font-size: 18px;
-}
-
-.accent-btn {
-    background-color: rgb(204, 164, 59)!important;
-    border: 1px solid transparent!important;
-    transition: .15s ease-in-out!important;
-}
-
-.accent-btn:hover {
-    border: 1px solid rgb(204, 164, 59)!important;
-    background-color: transparent!important;
-    color: rgb(204, 164, 59)!important;
-}
-
-.underline {
-    position: relative;
-}
-
-.underline::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 50%;
-    translate: -50% 0%;
-    width: 0%;
-    height: 1px;
-    background-color: rgb(204, 164, 59);
-    transition: width .2s ease-in-out;
-}
-
-.underline:hover::after {
-    width: 100%;
 }
 
 section#cart {

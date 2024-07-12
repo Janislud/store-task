@@ -28,7 +28,7 @@
                             confirmed it will be ready to ship in 2 days. Please check your inbox in the future for your
                             order updates.
                         </p>
-                        <button class="stages__forward">Back to shopping</button>
+                        <button class="stages__forward accent-btn">Back to shopping</button>
                     </div>
 
                     {{-- very important to leave it here, or you be fired --}}

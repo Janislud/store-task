@@ -29,21 +29,21 @@
                                             <p class="stages__fancybox-descr">Contact:</p>
                                             <p class="stages__text">example@gmail.com</p>
                                         </div>
-                                        <p class="stages__edit">Edit</p>
+                                        <p class="stages__edit underline">Edit</p>
                                     </div>
                                     <div class="stages__fancybox-item">
                                         <div>
                                             <p class="stages__fancybox-descr">Ship to:</p>
                                             <p class="stages__text">address data</p>
                                         </div>
-                                        <p class="stages__edit">Edit</p>
+                                        <p class="stages__edit underline">Edit</p>
                                     </div>
                                     <div class="stages__fancybox-item">
                                         <div>
                                             <p class="stages__fancybox-descr">Method:</p>
                                             <p class="stages__text">Standart Shipping - FREE</p>
                                         </div>
-                                        <p class="stages__edit">Edit</p>
+                                        <p class="stages__edit underline">Edit</p>
                                     </div>
                                 </div>
                             </div>
@@ -87,8 +87,8 @@
                             </form>
                     </div>
                     <div class="stages__bottom">
-                        <p class="stages__back">Back to shipping</p>
-                        <button class="stages__forward">Pay now</button>
+                        <p class="stages__back underline">Back to shipping</p>
+                        <button class="stages__forward accent-btn">Pay now</button>
                     </div>
                 </div>
             </div>

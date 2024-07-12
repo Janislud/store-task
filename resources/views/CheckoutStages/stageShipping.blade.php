@@ -29,14 +29,14 @@
                                         <p class="stages__fancybox-descr">Contact:</p>
                                         <p class="stages__text">{{ $userEmail }}</p>
                                     </div>
-                                    <p class="stages__edit">Edit</p>
+                                    <p class="stages__edit underline">Edit</p>
                                 </div>
                                 <div class="stages__fancybox-item">
                                     <div>
                                         <p class="stages__fancybox-descr">Ship to:</p>
                                         <p class="stages__text">{{ $shippingAddress }}</p>
                                     </div>
-                                    <p class="stages__edit">Edit</p>
+                                    <p class="stages__edit underline">Edit</p>
                                 </div>
                             </div>
                         </div>
@@ -54,8 +54,8 @@
                         </div>
                     </div>
                     <div class="stages__bottom">
-                        <p class="stages__back">Back to details</p>
-                        <button class="stages__forward">Go to payment</button>
+                        <p class="stages__back underline">Back to details</p>
+                        <button class="stages__forward accent-btn">Go to payment</button>
                     </div>
                 </div>
             </div>

@@ -27,7 +27,7 @@
                                 <p class="stages__sub">Contact</p>
                                 <div class="stages__acount-check">
                                     <p class="order__text">Do you have an account?</p>
-                                    <p class="order__text">Login</p>
+                                    <p class="order__text underline">Login</p>
                                 </div>
                             </div>
                             <input type="text" class="stages__input" placeholder="Email or mobile phone number">
@@ -58,8 +58,8 @@
                         </div>
                     </div>
                     <div class="stages__bottom">
-                        <p class="stages__back">Back to cart</p>
-                        <button class="stages__forward">Go to shipping</button>
+                        <p class="stages__back underline">Back to cart</p>
+                        <button class="stages__forward accent-btn">Go to shipping</button>
                     </div>
                 </div>
             </div>
