@@ -69,5 +69,26 @@
           <div class="deals-right"></div>
         </div>
     </section>
+    <section class="testimonials">
+        <div class="testimonials-heading">
+            <h4 class="testimonials-heading-h4">Testimonials</h4>
+            <p class="testimonials-heading-p">Some quotes from our happy customers</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonials-container-box1">
+                <img src="{{ asset('assets/person1.png') }}" alt="person" class="testimonials-person">
+            </div>
+
+
+            <div class="testimonials-container-box2">
+                <img src="{{ asset('assets/person2.png') }}" alt="person" class="testimonials-person">
+            </div>
+
+
+            <div class="testimonials-container-box3">
+                <img src="{{ asset('assets/person3.png') }}" alt="person" class="testimonials-person">
+            </div>
+        </div>
+    </section>
 </main>
 @endsection

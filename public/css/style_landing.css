@@ -228,11 +228,51 @@
     background-position: center;
     background-image: url(../media/deals.png);
     box-shadow: rgb(199, 198, 198) 0 0 15px;
-    overflow: visible;
+    
+}
+
+/* Tesimonials */
+
+.testimonials {
+    background-color: rgba(204, 164, 59, 0.1);
+}
+
+.testimonials-heading {
+    padding-top: 3em;
+    padding-bottom: 1em;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    
+}
+
+.testimonials-heading-h4{
+    font-size: 40px;
+}
+
+.testimonials-heading-p {
+    font-size: 18px;
+}
+
+.testimonials-container{
+    display: flex;
+    flex-direction: row;
+    border: 3px red solid;
+}
+
+.testimonials-container-box1{
+    background-color: white;
+    padding: 5em;
+    border: 3px orange solid;
 }
 
 
-
+.testimonials-person{
+    border-radius: 50%;
+    width: 3em;
+    height: 2em;
+}
 
 /* images for item listing */
 #image-1 {background-image: url("../media/candle1.png");}
@@ -266,6 +306,8 @@
 
 }
 
+
+
 @media screen and (min-width: 400px) and (max-width: 500px) {
     .inner-box h1 {
         font-size: 24px;
@@ -294,6 +336,10 @@
     }
 }
 
+@media screen and (min-width: 275px)  {
+        
+
+}
 
 /* / TABS / */
 
