@@ -225,11 +225,13 @@
 
 .deals-right{
     margin: 8em 8em 8em 3em;
-    width: 40em;
+    padding: 15em 14em 15em 32.9em;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url(../media/deals.png);
     box-shadow: rgb(199, 198, 198) 0 0 15px;
+    overflow: visible;
 }
 
 
