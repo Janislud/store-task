@@ -13,8 +13,7 @@ class HomeController extends Controller
 
     public function index(){
         $products = Product::all();
-        return view('home', compact('products'));
+        $sliced = $products->slice(0, 5);
+        return view('home', compact('sliced'));
     }
-
-
 }
