@@ -19,7 +19,7 @@
         <div class="products-background">
             <div class="products">
                 <h1>Products</h1>
-                <p>Order it for you or for your beloved ones</p>
+                <p>Order it for you or your beloved ones</p>
             </div>
         </div>
         <div>
@@ -58,9 +58,9 @@
             </div>
             <div class="deals-list">
                 <ul>
-                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Eco-sustainable:</strong>All recyclable materials, 0% CO2 emissions</li>
-                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Hypoallergenic:</strong>100% natural, human friendly ingredients</li>
-                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Trendy:</strong>Scents and designs as seen in latest trends</li>
+                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Eco-sustainable: </strong>All recyclable materials, 0% CO2 emissions</li>
+                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Hypoallergenic: </strong>100% natural, human friendly ingredients</li>
+                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Trendy: </strong>Scents and designs as seen in latest trends</li>
                 </ul>
 
             </div>

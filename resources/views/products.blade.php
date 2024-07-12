@@ -7,7 +7,7 @@
     <div class="pr-container">
         <header>
             <h1>Products</h1>
-            <h2>Order it for you or for your beloved ones </h2>
+            <h2>Order it for you or your beloved ones </h2>
             <span class="pr-search">
                 <input class="pr-searchbar" type="text" placeholder="Search"></input>
                 <button type="submit" value="search">&nbsp;</button>
