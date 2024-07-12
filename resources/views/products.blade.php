@@ -8,10 +8,10 @@
         <header>
             <h1>Products</h1>
             <h2>Order it for you or for your beloved ones </h2>
-            <div class="search">
+            <span class="pr-search">
                 <input class="pr-searchbar" type="text" placeholder="Search"></input>
                 <button type="submit" value="search">&nbsp;</button>
-            </div>
+            </span>
         </header>
         <div class="listing-section">
             <div class="store-product">
