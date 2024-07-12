@@ -58,9 +58,15 @@
             </div>
             <div class="deals-list">
                 <ul>
+<<<<<<< HEAD
                     <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Eco-sustainable: </strong>All recyclable materials, 0% CO2 emissions</li>
                     <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Hypoallergenic: </strong>100% natural, human friendly ingredients</li>
                     <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Trendy: </strong>Scents and designs as seen in latest trends</li>
+=======
+                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Eco-sustainable:</strong>&nbsp;All recyclable materials, 0% CO2 emissions</li>
+                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Hypoallergenic:</strong>&nbsp;100% natural, human friendly ingredients</li>
+                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Trendy:</strong>&nbsp;Scents and designs as seen in latest trends</li>
+>>>>>>> 9972633792883da601a78aa1e4d2ff63de49f1e8
                 </ul>
 
             </div>
@@ -68,9 +74,7 @@
                 <button>Learn more</button>
             </div>
           </div>
-          <div class="deals-right">
-            <div class="deals-image"></div>
-          </div>
+          <div class="deals-right"></div>
         </div>
     </section>
 </main>
