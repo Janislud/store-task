@@ -53,8 +53,8 @@
         <div class="deals-box">
           <div class="deals-left">
             <div class="deals-heading">
-                <h2>Exclusive deals <br> and offers</h2>
-                <p>Made for your convenience</p>
+                <h2 class="deals-heading-h2">Exclusive deals <br> and offers</h2>
+                <p class="deals-heading-p">Made for your convenience</p>
             </div>
             <div class="deals-list">
                 <ul>
