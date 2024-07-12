@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "./default.css";
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto";
-
+    font-family: "Poppins", sans-serif;
 }
 
 html,
@@ -120,7 +119,6 @@ section#checkout {
                 align-items: center;
                 gap: 20px;
                 color: rgb(204, 164, 59);
-                font-family: Roboto;
                 font-size: 16px;
                 font-weight: 700;
                 line-height: 15.6px;
@@ -351,7 +349,6 @@ section#checkout {
 
         &__sub {
             color: rgb(39, 39, 39);
-            font-family: Roboto;
             font-size: 20px;
             font-weight: 500;
             line-height: 25.6px;
