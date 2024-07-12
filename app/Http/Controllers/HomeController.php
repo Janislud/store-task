@@ -7,7 +7,14 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    // public function index(){
+    //     return view('home');
+    // }
+
     public function index(){
-        return view('home');
+        $products = Product::all();
+        return view('home', compact('products'));
     }
+
+
 }
