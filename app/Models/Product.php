@@ -15,10 +15,6 @@ class Product extends Model
         'price',
     ];
 
-    
-
-    //Price understand
-
     // public static function all () {
         
     // }

@@ -21,7 +21,6 @@ return new class extends Migration
             $table->string('status')->nullable();
             $table->decimal('total', 8,2);
 
-            $table->foreignId('product_id')->constrained()->onDelete('cascade');
         });
     }
 

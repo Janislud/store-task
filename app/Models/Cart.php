@@ -14,10 +14,7 @@ class Cart extends Model
         'order_number',
         'email',
         'status',
+        'total',
     ];
-
-    protected $hidden = [
-        'created_at',
-        'updated_at',
-    ];
+    
 }
