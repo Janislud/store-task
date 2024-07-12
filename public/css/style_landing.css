@@ -164,7 +164,7 @@
 }
 
 .deals-heading-h2 {
-    text-align: right;
+    text-align: left;
     font-size: 40px;
     margin-bottom: 0px!important;
     margin-right: 4.3em;
@@ -172,7 +172,7 @@
 }
 
 .deals-heading-p {
-    text-align: right;
+    text-align: left;
     font-size: 16px;
     color: rgba(204, 164, 59, 1);
     margin-right: 17.6em;
