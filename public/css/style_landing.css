@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
+    
 }
 
 .background {
@@ -13,6 +16,7 @@
     background-size: cover;
     height: 800px;
     box-shadow: rgb(185, 185, 185) 0 0 15px;
+    background-color: rgba(247, 248, 250, 1);
 }
 
 .inner-box {
@@ -51,10 +55,11 @@
 
 .products-background {
     height: 150px;
+    background-color: rgba(247, 248, 250, 1);
 }
 
 .products {
-    margin: 3%;
+    padding: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,15 +71,6 @@
 .products p {
     color: rgba(94, 110, 137, 1);
 }
-
-
-/* .store-product {
-
-    height: 16rem;
-    width: 15%;
-    margin: 10px;
-    box-shadow: rgb(199, 198, 198) 0 0 15px;
-  } */
 
 .image-box {
     width: auto;
@@ -116,14 +112,15 @@
     display: flex;
     column-gap: 1%;
     height: 40em;
-    border: 3px solid black;
+    /* background-color: rgba(247, 248, 250, 1); */
+    background-color: rgba(247, 248, 250, 1);
+
 }
 
 .deals-left{
     width: 35em;
-    height: 30em;
-    margin: 8em 4em 8em 16em;
-    border: 3px solid chartreuse;
+    height: 28em;
+    margin: 8em 4em 8em 18em;
 }
 
 .product-desc {
@@ -158,43 +155,52 @@
 .deals-heading {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    border: 3px solid orange;
-    height: 11em;
-    text-align: left;
-
-}
-
-.deals-heading h2 {
-    text-align: left;
-    font-size: 40px;
-}
-
-.deals-heading p {
-    font-size: 16px;
-    color: rgba(204, 164, 59, 1);
-}
-
-.deals-list{
-    border: 3px solid red;
-    display: flex;
-    flex-direction: column;
+    height: 12em;
+    gap: 0.8em;
     
 }
 
+.deals-heading-h2 {
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 0px!important;
+    margin-right: 4.3em;
+    margin-top: 0.8em;
+}
+
+.deals-heading-p {
+    text-align: left;
+    font-size: 16px;
+    color: rgba(204, 164, 59, 1);
+    margin-right: 17.6em;
+}
+
+.deals-list{  
+    display: flex;
+    flex-direction: column;
+}
+
+.deals-list ul {
+    padding-left: 0;
+}
+
 .deals-list ul li {
+   
     list-style: none;
-    margin-bottom: 1em;
+    margin: 1em;
     padding-top: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .deals-list ul li img {
+    justify-items: center;
     width: 1.2em;
     height: 1.2em;
+    margin-right: 0.5em;
 }
 
 .deals-btn {
-    border: 3px solid violet;
     width: 20em;
     height: 3em;
 }
@@ -205,7 +211,8 @@
     align-items: center;
     background-color: rgba(204, 164, 59, 1);
     height: 70%;
-    width: 50%;
+    padding: 1.2em 2.5em 1.2em 2.5em;
+    margin-left: 2.9em;
     color: white;
     font-size: 1rem;
     border: 0;
@@ -214,28 +221,15 @@
 }
 
 .deals-right{
-    margin: 8em;
-    width: 40em;
-    height: 20em;
-    border: 3px solid blue;
-    background-image: url(../media/Deals.jpg);
+    margin: 8em 8em 8em 3em;
+    padding: 15em 14em 15em 32.9em;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url(../media/deals.png);
+    box-shadow: rgb(199, 198, 198) 0 0 15px;
+    overflow: visible;
 }
-
-
-
-/* .deals-offers {
-    display: flex;
-    border: 3px solid black;
-    height: 40em;
-    justify-content: center;
-    flex-direction: row;
-} */
-
-
-
 
 
 

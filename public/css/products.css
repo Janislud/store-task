@@ -1,6 +1,7 @@
 .pr-search {
-    align-items: center;
-
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
 }
 
 .pr-searchbar {
@@ -8,9 +9,11 @@
     font-family: Poppins, Inter;
     font-size: 16px;
     padding: 8px 20px;
-    margin-bottom: 4vh;
     border: none;
     box-shadow: rgb(199, 198, 198) 0 0 15px;
+    align-items: center;
+    width: auto;
+    margin: auto;
 }
 
 .products-wrapper-conteiner {
@@ -40,6 +43,10 @@
       border: 1px solid #ccc;
     
   }
+  .pr-search {
+    width: auto;
+
+}
 }
  
 .pr-main-wrapper {

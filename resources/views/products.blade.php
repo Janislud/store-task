@@ -6,8 +6,8 @@
     <div class="pr-container">
         <section class="order-description">
             <h1>Products</h1>
-            <h2>Order it for you or for your beloved ones </h2>
-            <div class="search">
+            <h2>Order it for you or your beloved ones </h2>
+            <span class="pr-search">
                 <input class="pr-searchbar" type="text" placeholder="Search"></input>
                 <button type="submit" value="search">&nbsp;</button>
             </div>
@@ -24,10 +24,11 @@
                                 <h3 class="price">{{ number_format($product->price, 2) }}$</h3>
                             </div>
                         </a>
+
+
                 </div>
             @endforeach
             </div>
-    
         </section>
         
 @endsection
