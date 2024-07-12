@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../media/menu_background.jpg);
+    background-image: url(../media/menu_background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -108,11 +108,12 @@
 
 }
 
+/* exclusive deals and */
+
 .deals-box {
     display: flex;
     column-gap: 1%;
     height: 40em;
-    /* background-color: rgba(247, 248, 250, 1); */
     background-color: rgba(247, 248, 250, 1);
 
 }
@@ -180,14 +181,11 @@
     flex-direction: column;
 }
 
-.deals-list ul {
-    padding-left: 0;
-}
 
 .deals-list ul li {
    
     list-style: none;
-    margin: 1em;
+    margin: 1em 1em 1em -0.2em;
     padding-top: 5px;
     display: flex;
     align-items: center;
@@ -200,10 +198,10 @@
     margin-right: 0.5em;
 }
 
-.deals-btn {
+/* .deals-btn {
     width: 20em;
     height: 3em;
-}
+} */
 
 .deals-btn button {
     display: flex;
@@ -211,8 +209,7 @@
     align-items: center;
     background-color: rgba(204, 164, 59, 1);
     height: 70%;
-    padding: 1.2em 2.5em 1.2em 2.5em;
-    margin-left: 2.9em;
+    padding: 0.6em 2.5em 0.6em 2.5em;
     color: white;
     font-size: 1rem;
     border: 0;
@@ -306,8 +303,6 @@
 
 }
 
-
-
 @media screen and (min-width: 400px) and (max-width: 500px) {
     .inner-box h1 {
         font-size: 24px;
@@ -336,8 +331,10 @@
     }
 }
 
-@media screen and (min-width: 275px)  {
-        
+@media screen and (max-width: 275px)  {
+        .deals-heading-h2{
+            color: red;
+        }
 
 }
 
