@@ -8,19 +8,11 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function index(){
-        // $products = Product::all();
-        // return view('home', compact('products'));
+        $products = Product::with('photos')->get();
+        return view('home', compact('products'));
     }
 
-    public function jancisIndex()
-    {
-        // Fetch products from the database
-        $products = Product::all();
-        // $product = Product::all();
-        
-        // Pass products data to the view
-        return view('products.index', compact('products'));
-    }
+   
 
 
 }

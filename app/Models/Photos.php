@@ -11,5 +11,10 @@ class Photos extends Model
 
     protected $fillable = [
         'image_url',
+        'product_id',
     ];
+
+    public function photos(){
+        return $this->belongsTo(Product::class);
+    }
 }

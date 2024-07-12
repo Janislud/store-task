@@ -15,7 +15,7 @@ class Product extends Model
         'price',
     ];
 
-    // public static function all () {
-        
-    // }
+    public function getPhotos(){
+        return $this->hasMany(Photos::class);
+    }
 }

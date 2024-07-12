@@ -23,7 +23,7 @@
             </div>
         </div>
         <div>
-            @foreach ($products as $product)
+            {{-- @foreach ($products as $product)
         <div class="listing-section">
            
                 <div class="store-product">
@@ -38,7 +38,17 @@
                     </a>
                 </div>
         </div>
+        @endforeach --}}
+
+        @foreach ($photos as $photo)
+        
+           
+                
+        <img src="{{$photo->image_url}}" alt="Photos">
+                
+        
         @endforeach
+
         </div>
 
     </section>

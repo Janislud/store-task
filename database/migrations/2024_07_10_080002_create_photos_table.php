@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Product;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -16,6 +17,9 @@ return new class extends Migration
         Schema::create('photos', function (Blueprint $table) {
             $table->id();
             $table->string('image_url');
+
+            $table->foreignId('product_id')->references('id')->on('products')->onDelete('cascade');
+
         });
     }
 
@@ -29,3 +33,5 @@ return new class extends Migration
         Schema::dropIfExists('photos');
     }
 };
+// $table->unsignedBigInteger('product_id');
+// $table->foreignIdFor(Product::class, 'product_id');
