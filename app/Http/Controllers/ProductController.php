@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function index(){
+<<<<<<< HEAD
         $products = Product::with('photos')->get();
         return view('home', compact('products'));
     }
@@ -15,4 +16,9 @@ class ProductController extends Controller
    
 
 
+=======
+        $products = Product::all();
+        return view('products', compact('products'));
+    }
+>>>>>>> main
 }

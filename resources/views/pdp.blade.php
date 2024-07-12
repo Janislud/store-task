@@ -13,7 +13,7 @@
                     </div>
                     <div class="product-div-right column">
                         <h1>Product name</h1>
-                        <p class="price">$ 9.99</p>
+                        <p class="pr-price">$ 9.99</p>
                         <p class="quantity">Quantity</p>
                         <div class="item-quantity-toggle">
                             <button type="button" class="item-plus">+</button>
@@ -21,21 +21,25 @@
                             <button type="button" disabled="true" class="item-minus">-</button>
                         </div>
                         <form class="subscr-form">
-                            <input type="radio" name="subscription" id="choice1" value="onetime" checked></input>
+                            <div class="enhanced-radio">
+                                <input type="radio" class="radio" name="subscription" id="choice1" value="onetime" checked></input>
+                                <span class="radio-look"></span>
                             <label class="form-control">One time purchaise</label>
+                            </div>
                             <div class="subsrc-radio">
-                                <input type="radio" name="subscription" id="choice2" value="repeated" ></input>
-                                <label class="form-control">Subscribe and delivery every 
-                                    <select>
+                                <div class="enhanced-radio">
+                                    <input type="radio" class="radio" name="subscription" id="choice2" value="repeated" ></input>
+                                    <span class="radio-look"></span>
+                                    <label class="form-control">Subscribe and get new product delivered every </label>
+                                </div>
+                                <select>
                                         <option value="4-weeks">4 weeks</option>
                                         <option value="8-weeks">8 weeks</option>
                                         <option value="16-weeks">16 weeks</option>
-                                    </select>
-                                </label>
+                                </select>
                             </div>
                         </form>
-                        <p class="subscr-details">Subscribe now and get the 10% of discount on every recurring order.  The discount will be applied at checkout. <p class="see-subscr-details">See details</p></p>
-                        <button class="product-cart-btn">🛒 + Add to cart</button>
+                        <p class="subscr-details">Subscribe now and get the 10% of discount on every recurring order.  The discount will be applied at checkout.</p>
                         <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.</p>
                     </div>
                 </div>

@@ -11,12 +11,12 @@
         <div class="icons">
             <button class="btn">
                 <a href="/profile">
-                    <img src="{{ request()->is('profile') ? 'assets/Profile-green.png' : 'assets/Profile.svg' }}" alt="profile-icon" class="">
+                    <img src="{{ request()->is('profile') ? 'assets/Profile-gold.svg' : 'assets/Profile.svg' }}" alt="profile-icon" class="">
                 </a>
             </button>
             <button class="btn">
                 <a href="/cart" >
-                    <img src="{{ asset(request()->is('cart') ? 'assets/Cart-green.png' : 'assets/Cart.svg') }}" alt="cart-icon">
+                    <img src="{{ asset(request()->is('cart') ? 'assets/Cart-gold.svg' : 'assets/Cart.svg') }}" alt="cart-icon">
                 </a>
             </button>
         </div>
