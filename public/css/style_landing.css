@@ -10,7 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../media/menu_background.png);
+    background-image: url(https://d2r3z0h7oyiawr.cloudfront.net/2023/01/13/19/45/11/d3b805c3-ddf9-4109-94bd-0098d0f978bf/candle-making-hot-throw-header.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -223,7 +224,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../media/deals.png);
+    background-image: url(https://images-cdn.ubuy.co.in/635f7bf7eea07a09b5459ed3-bubble-candle-soy-wax-candles-handmade.jpg);
     box-shadow: rgb(199, 198, 198) 0 0 15px;
     
 }
