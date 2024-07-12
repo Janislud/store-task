@@ -12,10 +12,8 @@ class ProductSearchController extends Controller
         $search = $request->input('search');
         
         if ($search) {
-            // Fetch products that match the search query
             $products = Product::where('name', 'like', '%' . $search . '%')->get();
         } else {
-            // Fetch all products if no search query
             $products = Product::all();
         }
 
