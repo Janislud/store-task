@@ -28,12 +28,18 @@
            
                 <div class="store-product">
                     <a href="/products/{{ $product->id }}">
+
                         <div class="image-box">
                             <div class="images" style="background-image: url('{{ asset($product->image) }}');"></div>
                         </div>
                         <div class="product-desc">
+
+                            <p class="pr-item">Clean Lavander</p>
+                            <p class="item-price">9.99$</p>
+
                             <h2 class="item">{{ $product->name }}</h2>
                             <h3 class="price">{{ number_format($product->price, 2) }}$</h3>
+
                         </div>
                     </a>
                 </div>
@@ -56,6 +62,7 @@
                     <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Hypoallergenic:</strong>100% natural, human friendly ingredients</li>
                     <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Trendy:</strong>Scents and designs as seen in latest trends</li>
                 </ul>
+
             </div>
             <div class="deals-btn">
                 <button>Learn more</button>
