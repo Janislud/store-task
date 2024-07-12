@@ -3,9 +3,9 @@
     <section>
         <div class="background">
             <div class="inner-box">
-                <h1>All your shopping needs satisfied</h1>
-                <p>Take time to browse our select in-store goods.
-                    enjoy your shopping experience with Storefront!
+                <h1>All your candle needs satisfied</h1>
+                <p>Take time to browse our select hand-crafted candles.
+                    Enjoy your shopping experience with Storefront!
                 </p>
 
                 <button class="yellow-box">
@@ -54,7 +54,7 @@
                 <ul>
                     <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Eco-sustainable:</strong>All recyclable materials, 0% CO2 emissions</li>
                     <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Hypoallergenic:</strong>100% natural, human friendly ingredients</li>
-                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Trendy:</strong>Accessories and clothing items as seen in latest trends</li>
+                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Trendy:</strong>Scents and designs as seen in latest trends</li>
                 </ul>
             </div>
             <div class="deals-btn">

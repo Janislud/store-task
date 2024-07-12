@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../media/menu_background.jpg);
+    background-image: url(../media/menu_background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -215,7 +215,7 @@
     width: 40em;
     height: 20em;
     border: 3px solid blue;
-    background-image: url(../media/Deals.jpg);
+    background-image: url(../media/deals.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
