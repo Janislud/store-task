@@ -51,9 +51,9 @@
             </div>
             <div class="deals-list">
                 <ul>
-                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Eco-sustainable: </strong>All recyclable materials, 0% CO2 emissions</li>
-                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Hypoallergenic: </strong>100% natural, human friendly ingredients</li>
-                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Trendy: </strong>Scents and designs as seen in latest trends</li>
+                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Eco-sustainable:</strong>&nbsp;All recyclable materials, 0% CO2 emissions</li>
+                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Hypoallergenic:</strong>&nbsp;100% natural, human friendly ingredients</li>
+                    <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><strong>Trendy:</strong>&nbsp;Scents and designs as seen in latest trends</li>
                 </ul>
 
             </div>
@@ -62,6 +62,27 @@
             </div>
           </div>
           <div class="deals-right"></div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="testimonials-heading">
+            <h4 class="testimonials-heading-h4">Testimonials</h4>
+            <p class="testimonials-heading-p">Some quotes from our happy customers</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonials-container-box1">
+                <img src="{{ asset('assets/person1.png') }}" alt="person" class="testimonials-person">
+            </div>
+
+
+            <div class="testimonials-container-box2">
+                <img src="{{ asset('assets/person2.png') }}" alt="person" class="testimonials-person">
+            </div>
+
+
+            <div class="testimonials-container-box3">
+                <img src="{{ asset('assets/person3.png') }}" alt="person" class="testimonials-person">
+            </div>
         </div>
     </section>
 </main>

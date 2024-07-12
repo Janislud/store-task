@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../media/menu_background.jpg);
+    background-image: url(../media/menu_background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -108,11 +108,12 @@
 
 }
 
+/* exclusive deals and */
+
 .deals-box {
     display: flex;
     column-gap: 1%;
     height: 40em;
-    /* background-color: rgba(247, 248, 250, 1); */
     background-color: rgba(247, 248, 250, 1);
 
 }
@@ -180,14 +181,11 @@
     flex-direction: column;
 }
 
-.deals-list ul {
-    padding-left: 0;
-}
 
 .deals-list ul li {
    
     list-style: none;
-    margin: 1em;
+    margin: 1em 1em 1em -0.2em;
     padding-top: 5px;
     display: flex;
     align-items: center;
@@ -200,10 +198,10 @@
     margin-right: 0.5em;
 }
 
-.deals-btn {
+/* .deals-btn {
     width: 20em;
     height: 3em;
-}
+} */
 
 .deals-btn button {
     display: flex;
@@ -211,8 +209,7 @@
     align-items: center;
     background-color: rgba(204, 164, 59, 1);
     height: 70%;
-    padding: 1.2em 2.5em 1.2em 2.5em;
-    margin-left: 2.9em;
+    padding: 0.6em 2.5em 0.6em 2.5em;
     color: white;
     font-size: 1rem;
     border: 0;
@@ -228,11 +225,51 @@
     background-position: center;
     background-image: url(../media/deals.png);
     box-shadow: rgb(199, 198, 198) 0 0 15px;
-    overflow: visible;
+    
+}
+
+/* Tesimonials */
+
+.testimonials {
+    background-color: rgba(204, 164, 59, 0.1);
+}
+
+.testimonials-heading {
+    padding-top: 3em;
+    padding-bottom: 1em;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    
+}
+
+.testimonials-heading-h4{
+    font-size: 40px;
+}
+
+.testimonials-heading-p {
+    font-size: 18px;
+}
+
+.testimonials-container{
+    display: flex;
+    flex-direction: row;
+    border: 3px red solid;
+}
+
+.testimonials-container-box1{
+    background-color: white;
+    padding: 5em;
+    border: 3px orange solid;
 }
 
 
-
+.testimonials-person{
+    border-radius: 50%;
+    width: 3em;
+    height: 2em;
+}
 
 /* images for item listing */
 #image-1 {background-image: url("../media/candle1.png");}
@@ -294,6 +331,12 @@
     }
 }
 
+@media screen and (max-width: 275px)  {
+        .deals-heading-h2{
+            color: red;
+        }
+
+}
 
 /* / TABS / */
 
