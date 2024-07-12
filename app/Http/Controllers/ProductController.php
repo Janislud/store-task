@@ -8,17 +8,11 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function index(){
-<<<<<<< HEAD
-        $products = Product::with('photos')->get();
-        return view('home', compact('products'));
-    }
+        // $products = Product::with('photos')->get();
+        // return view('home', compact('products'));
 
-   
-
-
-=======
         $products = Product::all();
         return view('products', compact('products'));
     }
->>>>>>> main
+
 }
