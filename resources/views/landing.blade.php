@@ -22,17 +22,6 @@
                 <p>Order it for you or your beloved ones</p>
             </div>
         </div>
-<<<<<<< HEAD
-        <div>
-            {{-- @foreach ($products as $product)
-        <div class="listing-section">
-           
-                <div class="store-product">
-                    <a href="/products/{{ $product->id }}">
-                        <div class="image-box">
-                            <div class="images" style="background-image: url('{{ asset($product->image) }}');"></div>
-                        </div>
-=======
 
     </section>
 
@@ -42,27 +31,12 @@
             <div class="listing-section">
                     <a class="product-card-link" href="/products/{{ $product->id }}">
                             <img class="images" style="background-image: url('{{ asset($product->image) }}');">
->>>>>>> main
                         <div class="product-desc">
                             <h2 class="item">{{ $product->name }}</h2>
                             <h3 class="price">{{ number_format($product->price, 2) }}$</h3>
                         </div>
                     </a>
-<<<<<<< HEAD
-                </div>
-        </div>
-        @endforeach --}}
-
-        @foreach ($photos as $photo)
-        
-           
-                
-        <img src="{{$photo->image_url}}" alt="Photos">
-                
-        
-=======
             </div>
->>>>>>> main
         @endforeach
 
         </div>
