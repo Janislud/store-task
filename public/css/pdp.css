@@ -39,7 +39,7 @@ body {
     padding: 0 16px;
 }
 
-.shipping, .pr-price, .quantity, .item-count, .item-quantity-toggle, .subscr-form, .subscr-details, .description {
+.headline, .shipping, .pr-price, .quantity, .item-count, .item-quantity-toggle, .subscr-form, .subscr-details, .description {
     margin-top: 20px;
     margin-bottom: 20px;
 }
