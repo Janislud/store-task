@@ -78,6 +78,8 @@ button[type="submit"]{
     border: none;
     cursor: pointer;
     align-items: center;
+    flex-wrap: wrap;
+
 }
 input[type="search"]:focus{
     outline: 0;
