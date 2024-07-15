@@ -31,7 +31,6 @@
                                 <button type="submit">Add to Cart</button>
                             </form>
                         </div>
-
                         
                         {{-- <form class="subscr-form">
                             <div class="enhanced-radio">
@@ -59,8 +58,6 @@
             </div> 
         </div>
 @endsection
-
-@extends('layouts.layout')
 
 @section('scripts')
     <script src="{{ asset('js/cart.js') }}"></script>

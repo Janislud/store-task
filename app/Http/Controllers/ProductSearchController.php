@@ -19,4 +19,5 @@ class ProductSearchController extends Controller
 
         return view('products', compact('products', 'search'));
     }
+
 }

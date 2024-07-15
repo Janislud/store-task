@@ -2,6 +2,9 @@
     display: flex;
     margin: 0 auto;
     width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
 }
 
 .pr-searchbar {
@@ -42,6 +45,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-direction: wrap;
+    margin-top: 25px;
 }
   
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
