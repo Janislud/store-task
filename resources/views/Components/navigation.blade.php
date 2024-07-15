@@ -11,7 +11,7 @@
         <div class="icons">
             <button class="btn">
                 <a href="/profile">
-                    <img src="{{ request()->is('profile') ? 'assets/Profile-gold.svg' : 'assets/Profile.svg' }}" alt="profile-icon">
+                    <img src="{{ request()->is('profile') ? asset('assets/Profile-gold.svg') : asset('assets/Profile.svg') }}" alt="profile-icon" class="">
                 </a>
             </button>
             <button class="btn">

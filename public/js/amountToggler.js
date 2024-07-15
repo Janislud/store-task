@@ -1,19 +1,13 @@
-const cartSection = document.querySelector("section#cart");
-
-const allTogglers = cartSection.querySelectorAll(".cart__item-quantityToggle");
-console.log(allTogglers)
-
+const allTogglers = document.querySelectorAll(".amountToggler");
 const moreThanOne = (num) => num > 1;
 
 // Make cart amount toggler work
 // * togglers value can't reach less than 1
 
 allTogglers.forEach(toggler => {
-    console.log(toggler)
-    const inc = toggler.querySelector("button#cart__item-plus");
-    const dec = toggler.querySelector("button#cart__item-minus");
-    console.log(inc, dec)
-    const value = toggler.querySelector("p#cart__item-quantityValue");
+    const inc = toggler.querySelector("button#amountToggler-plus");
+    const dec = toggler.querySelector("button#amountToggler-minus");
+    const value = toggler.querySelector("p#amountToggler-quantityValue");
     
 
     inc.addEventListener("click", () => {
@@ -35,5 +29,3 @@ allTogglers.forEach(toggler => {
     })
 
 })
-
-console.log(cartSection)
