@@ -10,7 +10,7 @@
             <span class="pr-search">
                 <form action="{{ route('products.index') }}" method="GET">
                     <input class="pr-searchbar" type="text" name="search" placeholder="Search" value="{{ request('search') }}">
-                    <button type="submit" value="search">&nbsp;</button>
+                    <button class="search-btn" type="submit" value="search">&nbsp;</button>
                 </form>
             </span>
         </section>
