@@ -124,90 +124,58 @@
 
 .deals-box {
     display: flex;
-    column-gap: 1%;
-    height: 40em;
-    background-color: rgba(247, 248, 250, 1);
-
-}
-
-.deals-left{
-    width: 35em;
-    height: 28em;
-    margin: 8em 4em 8em 18em;
-}
-
-.product-desc {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    background-color: rgba(247, 248, 250, 1);
+    padding: 12em;
 }
 
-.product-card-link {
-    text-decoration: none;
-    color: black;
+.deals-left, .deals-right {
+    flex: 1 1 45%;
+    margin: 1em;
+    box-sizing: border-box;
 }
 
-.item {
-    margin: 10px;
-    max-width: 230px;
-    text-align: center;
-}
-
-.price {
-    margin: 10px;
-    text-align: center;
-}
-
-.images {
-    height: 300px;
-    width: 300px;
+.deals-left {
+    border: 3px solid orange;
+    padding: 1em;
 }
 
 .deals-heading {
     display: flex;
     flex-direction: column;
-    height: 12em;
     gap: 0.8em;
-    
 }
 
 .deals-heading-h2 {
-    text-align: left;
-    font-size: 40px;
-    margin-bottom: 0px!important;
-    margin-right: 4.3em;
-    margin-top: 0.8em;
+    font-size: 32px;
+    margin: 0;
 }
 
 .deals-heading-p {
-    text-align: left;
-    font-size: 16px;
+    font-size: 1rem;
     color: rgba(204, 164, 59, 1);
-    margin-right: 17.6em;
 }
 
-.deals-list{  
-    display: flex;
-    flex-direction: column;
+.deals-list ul {
+    padding: 0;
+    margin: 0;
 }
-
 
 .deals-list ul li {
-   
+    font-size: 16px;
     list-style: none;
-    margin: 1em 1em 1em -0.2em;
-    padding-top: 5px;
+    margin: 1em 0;
     display: flex;
     align-items: center;
 }
 
 .deals-list ul li img {
-    justify-items: center;
     width: 1.2em;
     height: 1.2em;
     margin-right: 0.5em;
 }
+
 
 .deals-right{
     margin: 8em 8em 8em 3em;
@@ -217,8 +185,10 @@
     background-position: center;
     background-image: url(https://images-cdn.ubuy.co.in/635f7bf7eea07a09b5459ed3-bubble-candle-soy-wax-candles-handmade.jpg);
     box-shadow: rgb(199, 198, 198) 0 0 15px;
-    
+    border: 3px solid greenyellow;
 }
+
+
 
 /* Tesimonials */
 
@@ -331,12 +301,6 @@
     }
 }
 
-@media screen and (max-width: 275px)  {
-        .deals-heading-h2{
-            color: red;
-        }
-
-}
 
 /* / TABS / */
 
@@ -356,3 +320,114 @@
     }
 }
 /* / DESC */
+
+
+/* exclusive deals and offers */
+
+
+  @media screen and (max-width: 768px) {
+    .deals-heading-h2 {
+        font-size: 1.5rem;
+    }
+
+    .deals-heading-p {
+        font-size: 0.875rem;
+    }
+
+    .deals-btn button {
+        padding: 0.5em 2em;
+        font-size: 0.875rem;
+    }
+
+    .deals-right {
+        padding: 8em;
+    }
+
+    .testimonials-container div {
+        flex: 1 1 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .deals-heading-h2 {
+        font-size: 1.25rem;
+    }
+
+    .deals-heading-p {
+        font-size: 0.75rem;
+    }
+
+    .deals-btn button {
+        padding: 0.4em 1.5em;
+        font-size: 0.75rem;
+    }
+
+    .deals-right {
+        padding: 6em;
+    }
+
+    .testimonials-container div {
+        flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width: 1545px) {
+    .deals-list ul li{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1481px) {
+    
+    .deals-heading-h2{
+        font-size: 30px;
+    }
+    
+    
+    .deals-list ul li{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1417px) { 
+    .deals-box {
+        padding: 9em;
+    }
+}
+
+@media screen and (max-width: 1321px) { 
+    .deals-box {
+        padding: 7em;
+    }
+}
+
+@media screen and (max-width: 1257px) { 
+    .deals-box {
+        padding: 6em;
+    }
+}
+
+@media screen and (max-width: 1257px) { 
+    .deals-box {
+        padding: 5em;
+    }
+}
+
+@media screen and (max-width: 1193px) { 
+    .deals-box {
+        padding: 4.5em;
+    }
+}
+/* 
+@media screen and (min-width: 1257px) { 
+    .deals-box {
+        padding: 5em;
+    }
+} */
+
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    .deals-box {
+        flex-direction: column-reverse;
+    }
+}
