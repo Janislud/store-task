@@ -6,7 +6,7 @@
     <div class="pr-container">
         <section class="order-description">
             <h1>Products</h1>
-            <h2>Order it for you or your beloved ones </h2>
+            <p class="desc" >Order it for you or your beloved ones </p>
             <span class="pr-search">
                 <form action="{{ route('products.index') }}" method="GET">
                     <input class="pr-searchbar" type="text" name="search" placeholder="Search" value="{{ request('search') }}">
