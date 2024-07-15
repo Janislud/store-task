@@ -5,15 +5,15 @@
 @section('content')
         <div class="main-wrapper">
             <div class="container">
-                <div class="product-div row">
-                    <div class="product-div-left column">
+                <div>
+                    <div>
                             @foreach($product->photos as $photo)
                             <img class="product-img" src="{{ $photo->image_url }}" alt="{{ $photo->title }}"></img>
                             @endforeach
                         <div class="headline">Selected with care for best customer experience</div>
                         <div class="shipping">🚚 FREE SHIPPING</div>
                     </div>
-                    <div class="product-div-right column">
+                    <div>
                         <h1>{{ $product->name }}</h1>
                         <p class="pr-price">${{ $product->price }}</p>
 
