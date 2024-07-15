@@ -60,9 +60,7 @@
                 <a href="/about" class="yellow-box {{ request()->is('about') ? 'active' : '' }}">Learn more</a>
             </div>
           </div>
-          <div class="deals-right">
-            <img src="{{ $product->photos[0]->image_url }}" alt="{{ $product->photos[0]->title }}"></img>
-          </div>
+          <div class="deals-right"></div>
         </div>
     </section>
     <section class="testimonials">
