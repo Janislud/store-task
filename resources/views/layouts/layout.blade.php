@@ -22,5 +22,7 @@
     
     @include('Components.footer')
     <script src="{{ asset('js/navbar.js') }}"></script>
+
+    @yield('scripts')
 </body>
 </html>
