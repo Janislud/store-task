@@ -433,11 +433,9 @@
     }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 400px) and (max-width: 500px) {
     .deals-box {
         flex-direction: column;
     }
 }
-=======
->>>>>>> 94d879fb1b39685db154da1625f768dad220274c
+
