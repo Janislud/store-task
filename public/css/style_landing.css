@@ -417,11 +417,3 @@
     }
 }
 
-@media screen {
-    @media screen and (min-width: 0px) and (max-width: 10000px) {
-        .{
-            display: block; /* Make list items block elements */
-        }
-    }
-    
-}
