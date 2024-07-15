@@ -97,14 +97,12 @@
 }
 
 .products-wrapper-conteiner {
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 .listing-section {
-    border: 1px solid blue;
     max-width: 300px;
 
 }
