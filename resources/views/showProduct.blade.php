@@ -7,20 +7,33 @@
             <div class="container">
                 <div class="product-div row">
                     <div class="product-div-left column">
-                        <img class="product-img" src="https://ecommerce-nine-bay.vercel.app/static/media/product1.fab5cc0599d70de19607.png" alt="Product Image"></img>
+                            @foreach($product->photos as $photo)
+                            <img class="product-img" src="{{ $photo->image_url }}" alt="{{ $photo->title }}"></img>
+                            @endforeach
                         <div class="headline">Selected with care for best customer experience</div>
                         <div class="shipping">🚚 FREE SHIPPING</div>
                     </div>
                     <div class="product-div-right column">
-                        <h1>Product name</h1>
-                        <p class="pr-price">$ 9.99</p>
+                        <h1>{{ $product->name }}</h1>
+                        <p class="pr-price">${{ $product->price }}</p>
+
+                        {{-- SALABOT +/- ielikt grozā --}}
                         <p class="quantity">Quantity</p>
                         <div class="item-quantity-toggle">
-                            <button type="button" class="item-plus">+</button>
-                            <p class="item-count">1</p>
                             <button type="button" disabled="true" class="item-minus">-</button>
+                            <p class="item-count">1</p>
+                            <button type="button" class="item-plus">+</button>
                         </div>
-                        <form class="subscr-form">
+                        <div>
+                            <form action="{{ route('cart.add', ['id' => $product->id]) }}" method="POST" id="cart-form">
+                                @csrf
+                                <input type="hidden" name="quantity" value="1" min="1">
+                                <button type="submit">Add to Cart</button>
+                            </form>
+                        </div>
+
+                        
+                        {{-- <form class="subscr-form">
                             <div class="enhanced-radio">
                                 <input type="radio" class="radio" name="subscription" id="choice1" value="onetime" checked></input>
                                 <span class="radio-look"></span>
@@ -39,10 +52,16 @@
                                 </select>
                             </div>
                         </form>
-                        <p class="subscr-details">Subscribe now and get the 10% of discount on every recurring order.  The discount will be applied at checkout.</p>
-                        <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.</p>
+                        <p class="subscr-details">Subscribe now and get the 10% of discount on every recurring order.  The discount will be applied at checkout.</p> --}}
+                        <p class="description">{{ $product->description }}</p>
                     </div>
                 </div>
             </div> 
         </div>
+@endsection
+
+@extends('layouts.layout')
+
+@section('scripts')
+    <script src="{{ asset('js/cart.js') }}"></script>
 @endsection
