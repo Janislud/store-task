@@ -61,9 +61,7 @@
             </div>
           </div>
           <div class="deals-right">
-            @foreach($product->photos as $photo)
-            <img src="{{ $photo->image_url }}" alt="{{ $photo->title }}"></img>
-            @endforeach
+            <img src="{{ $product->photos[0]->image_url }}" alt="{{ $product->photos[0]->title }}"></img>
           </div>
         </div>
     </section>
