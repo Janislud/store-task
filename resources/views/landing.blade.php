@@ -60,8 +60,8 @@
                 </ul>
 
             </div>
-            <div class="deals-btn">
-                <button>Learn more</button>
+            <div>
+                <a href="/about" class="yellow-box {{ request()->is('about') ? 'active' : '' }}">Learn more</a>
             </div>
           </div>
           <div class="deals-right"></div>

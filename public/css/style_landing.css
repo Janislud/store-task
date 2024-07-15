@@ -39,7 +39,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(204, 164, 59, 1);
-    height: 10%;
+    height: 2em;
     width: 30%;
     color: white;
     font-size: 1rem;
@@ -198,20 +198,6 @@
     margin-right: 0.5em;
 }
 
-.deals-btn button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(204, 164, 59, 1);
-    height: 70%;
-    padding: 0.6em 2.5em 0.6em 2.5em;
-    color: white;
-    font-size: 1rem;
-    border: 0;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
 .deals-right{
     margin: 8em 8em 8em 3em;
     padding: 15em 14em 15em 32.9em;
@@ -264,6 +250,10 @@
     border-radius: 50%;
     width: 3em;
     height: 2em;
+}
+
+.learn-more-btn {
+    text-decoration: none;
 }
 
 /* images for item listing */

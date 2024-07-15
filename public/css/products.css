@@ -1,19 +1,11 @@
-.pr-search {
-    display: flex;
-    margin: 0 auto;
-    width: 50%;
-}
-
 .pr-searchbar {
-    margin: 8px 16px auto;
+    margin: 0 auto;
     font-family: Poppins, Inter;
     font-size: 16px;
     padding: 8px 20px;
     border: none;
     box-shadow: rgb(199, 198, 198) 0 0 15px;
-    align-items: center;
     width: auto;
-    margin: auto;
 }
 
 .product-img {
@@ -36,6 +28,11 @@
     gap: 50px;
     margin: 10px;
     padding: 20px;
+}
+
+.desc {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .order-description {
@@ -93,6 +90,9 @@ button[type="submit"]{
     background-size: 20px 20px;
     border: none;
     cursor: pointer;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
 input[type="search"]:focus{
     outline: 0;
