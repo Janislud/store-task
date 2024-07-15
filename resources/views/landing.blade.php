@@ -3,9 +3,8 @@
     <section>
         <div class="background">
             <div class="inner-box">
-                <h1>All your candle needs satisfied</h1>
-                <p>Take time to browse our select hand-crafted candles.
-                    Enjoy your shopping experience with Storefront!
+                <h1 >All your candle needs satisfied</h1>
+                <p>Take time to browse our select hand-crafted candles and please enjoy your shopping experience with Storefront!
                 </p>
 
                 <a class="yellow-box" href="/products">

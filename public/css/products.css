@@ -1,11 +1,18 @@
+.pr-search {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 4px 8px;
+  }
+
 .pr-searchbar {
-    margin: 0 auto;
-    font-family: Poppins, Inter;
+    margin: 8px 16px auto;
     font-size: 16px;
     padding: 8px 20px;
     border: none;
     box-shadow: rgb(199, 198, 198) 0 0 15px;
     width: auto;
+    margin-bottom: 4vh;
+    width: 80%;
 }
 
 .product-img {
@@ -39,24 +46,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-  
-  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-@media screen and (max-width: 600px) {
-    .pr-searchbar {
-      float: none;
-      display: block;
-      text-align: left;
-      width: auto;
-      margin: 0;
-      padding: 14px;
-      border: 1px solid #ccc;
-    
-  }
-  .pr-search {
-    width: auto;
-
-}
 }
  
 .pr-main-wrapper {
@@ -92,9 +81,13 @@
     cursor: pointer;
     align-items: center;
     flex-wrap: wrap;
-
 }
-input[type="search"]:focus{
+.pr-searchbar:focus {
     outline: 0;
 }
 
+@media screen and (max-width: 480px) { /* Adjust breakpoint as needed */
+    .pr-search {
+        content: ''; /* Hide search icon on very small screens */
+    }
+}
