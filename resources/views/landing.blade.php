@@ -4,7 +4,7 @@
         <div class="background">
             <div class="inner-box">
                 <h1 class="top-heading-h2">All your candle needs satisfied</h1>
-                <p class="top-heading-p">Take time to browse our select hand-crafted candles
+                <p class="top-heading-p">Take time to browse our select candles crafted with care and attention
                 </p>
                 <a class="yellow-box" href="/products">
                         Discover our collection
@@ -43,7 +43,6 @@
 
     <section>
         <div class="deals-box">
-            <div class="deals-right"></div>
           <div class="deals-left">
             <div class="deals-heading">
                 <h2 class="deals-heading-h2">Exclusive deals <br> and offers</h2>
@@ -61,7 +60,11 @@
                 <a href="/about" class="yellow-box {{ request()->is('about') ? 'active' : '' }}">Learn more</a>
             </div>
           </div>
-          {{-- <div class="deals-right"></div> --}}
+          <div class="deals-right">
+            @foreach($product->photos as $photo)
+            <img src="{{ $photo->image_url }}" alt="{{ $photo->title }}"></img>
+            @endforeach
+          </div>
         </div>
     </section>
     <section class="testimonials">
