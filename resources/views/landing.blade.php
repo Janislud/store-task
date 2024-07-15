@@ -28,9 +28,7 @@
         @foreach ($sliced as $product)
             <div class="listing-section">
                     <a class="product-card-link" href="/products/{{ $product->id }}">
-                            @foreach($product->photos as $photo)
-                                <img class="images" src="{{ $photo->image_url }}" alt="{{ $photo->title }}"></img>
-                            @endforeach
+                                <img class="images" src="{{ $product->photos[0]->image_url }}" alt="{{ $product->photos[0]->title }}"></img>
                         <div class="product-desc">
                             <h2 class="item">{{ $product->name }}</h2>
                             <h3 class="price">{{ number_format($product->price, 2) }}$</h3>

@@ -15,6 +15,29 @@
     width: 80%;
 }
 
+.product-card-link {
+    text-decoration: none;
+    color: black;
+}
+
+.product-desc {
+    text-align: center;
+    padding: 15px;
+}
+
+.item {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px 0px 10px 0px;
+}
+
+.images {
+    border-radius: 10px 10px 0px 0px;
+    width: 300px;
+    height: 300px;
+}
+
 .product-img {
     border-radius: 10px 10px 0px 0px;
 }
