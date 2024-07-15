@@ -8,6 +8,19 @@
     width: auto;
 }
 
+.product-img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.listing-section {
+    transition: 0.2s ease-in-out;
+}
+
+.listing-section:hover {
+    scale: 1.1;
+}
+
+
 .products-wrapper-conteiner {
     display: flex;
     flex-wrap: wrap;
