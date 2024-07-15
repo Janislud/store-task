@@ -127,7 +127,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgba(247, 248, 250, 1);
-    padding: 2em;
+    padding: 11em 12em 11em 12em;
 }
 
 .deals-left, .deals-right {
@@ -195,10 +195,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(https://images-cdn.ubuy.co.in/635f7bf7eea07a09b5459ed3-bubble-candle-soy-wax-candles-handmade.jpg);
+    /* background-image: url(https://images-cdn.ubuy.co.in/635f7bf7eea07a09b5459ed3-bubble-candle-soy-wax-candles-handmade.jpg); */
     box-shadow: rgb(199, 198, 198) 0 0 15px;
     border: 3px solid greenyellow;
-}
+    padding: 12em;
+}   
 
 
 
@@ -432,8 +433,11 @@
     }
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 400px) and (max-width: 500px) {
     .deals-box {
         flex-direction: column;
     }
 }
+=======
+>>>>>>> 94d879fb1b39685db154da1625f768dad220274c
