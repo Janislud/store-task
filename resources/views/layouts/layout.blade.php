@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{ asset('css/style_landing.css') }}">
     <link rel="stylesheet" href="{{ asset('css/pdp.css') }}">
     <link rel="stylesheet" href="{{ asset('css/products.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/default.css') }}">
     <title>@yield('title')</title>
 </head>
 <body>

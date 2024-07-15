@@ -8,4 +8,7 @@
             <p>Designed by Baltic Squad</p>
         </div>
     </div>
+
+    {{-- Amount togglers functionality if present on the page --}}
+    <script src={{asset("/js/amountToggler.js")}}></script>
 </footer>

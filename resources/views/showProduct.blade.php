@@ -19,16 +19,17 @@
 
                         {{-- SALABOT +/- ielikt grozā --}}
                         <p class="quantity">Quantity</p>
-                        <div class="item-quantity-toggle">
-                            <button type="button" disabled="true" class="item-minus">-</button>
-                            <p class="item-count">1</p>
-                            <button type="button" class="item-plus">+</button>
-                        </div>
+
+
+                        
+                        @include('Components.amountToggler', ['productId' => "HARDCODED_ID", "item" => ["quantity" => 1]])
+
+
                         <div>
                             <form action="{{ route('cart.add', ['id' => $product->id]) }}" method="POST" id="cart-form">
                                 @csrf
                                 <input type="hidden" name="quantity" value="1" min="1">
-                                <button class="yellow-box" type="submit">Add to Cart</button>
+                                <button class="yellow-box cart-btn" type="submit">Add to Cart</button>
                             </form>
                         </div>
 
@@ -60,7 +61,6 @@
         </div>
 @endsection
 
-@extends('layouts.layout')
 
 @section('scripts')
     <script src="{{ asset('js/cart.js') }}"></script>
