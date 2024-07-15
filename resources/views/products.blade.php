@@ -10,7 +10,7 @@
             <span class="pr-search">
                 <form action="{{ route('products.index') }}" method="GET">
                     <input class="pr-searchbar" type="text" name="search" placeholder="Search" value="{{ request('search') }}">
-                    <button type="submit" value="search">&nbsp;</button>
+                    <button class="search-btn" type="submit" value="search">&nbsp;</button>
                 </form>
             </span>
         </section>
@@ -22,7 +22,7 @@
                         <a class="product-card-link" href="/products/{{ $product->id }}">
                             {{-- <img class="images" style="background-image: url('{{ asset($product->image) }}');"> --}}
                             @foreach($product->photos as $photo)
-                                <img src="{{ $photo->image_url }}" alt="{{ $photo->title }}" width="300">
+                                <img class="product-img" src="{{ $photo->image_url }}" alt="{{ $photo->title }}" width="300">
                             @endforeach
                             <div class="product-desc">
                                 <h2 class="item">{{ $product->name }}</h2>
