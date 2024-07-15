@@ -8,9 +8,9 @@
                     Enjoy your shopping experience with Storefront!
                 </p>
 
-                <button class="yellow-box">
-                    Discover our collection
-                </button>
+                <a class="yellow-box" href="/products">
+                        Discover our collection
+                </a>
             </div>
         </div>
     </section>
@@ -30,7 +30,9 @@
         @foreach ($sliced as $product)
             <div class="listing-section">
                     <a class="product-card-link" href="/products/{{ $product->id }}">
-                            <img class="images" style="background-image: url('{{ asset($product->image) }}');">
+                            @foreach($product->photos as $photo)
+                                <img class="images" src="{{ $photo->image_url }}" alt="{{ $photo->title }}"></img>
+                            @endforeach
                         <div class="product-desc">
                             <h2 class="item">{{ $product->name }}</h2>
                             <h3 class="price">{{ number_format($product->price, 2) }}$</h3>
@@ -38,6 +40,7 @@
                     </a>
             </div>
         @endforeach
+
         </div>
 
     </section>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Product;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -13,12 +14,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('orders', function (Blueprint $table) {
+        Schema::create('photos', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->decimal('total', 8, 2);
-            $table->date('date');
-            
+            $table->string('title');
+            $table->string('image_url');
+
+
+            $table->foreignId('product_id')->references('id')->on('products')->onDelete('cascade');
+
         });
     }
 
@@ -29,6 +32,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('orders');
+        Schema::dropIfExists('photos');
     }
 };
+// $table->unsignedBigInteger('product_id');
+// $table->foreignIdFor(Product::class, 'product_id');

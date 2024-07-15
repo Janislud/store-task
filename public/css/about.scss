@@ -1,0 +1,100 @@
+@import "./keyframes.css";
+
+#about {
+    height: calc(100vh - 6vh) ;
+    padding: 60px 0px;
+
+    h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+}
+.about {
+    .container {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__head {
+        p{
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+    &__wrapper {
+        margin-top: 45px;
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        &-item {
+            // position: relative;
+            padding: 20px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(204, 164, 59, 1);
+            flex-basis: 100%;
+            min-height: 300px;
+            transition: .2s ease-in-out;
+            &:hover, &[data-hovered="true"] {
+                flex-basis: 150%;
+                background-color: rgba(204, 164, 59, 1);
+                box-shadow: inset 0px 0px 0px 3px white;
+                .about__sub {
+                    color: white;
+                    translate: 0% -50%;
+                }
+                .about__text {
+                    color: white;
+                    font-size: 14px;
+                    animation: fadeIn .4s linear;
+                }
+            }
+        }
+    }
+
+    &__sub {
+        position: relative;
+        transition: .2s ease-in-out;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        // translate: -50% -50%;
+        // top: 50%;
+        // left: 50%;
+        white-space: nowrap;
+    }
+
+    &__text {
+        transition: .2s ease-in-out;
+        max-width: 190px;
+        text-align: center;
+
+        font-size: 0px;
+        // margin-bottom: auto;
+    }
+
+    &__thanks {
+        margin-top: 45px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about {
+        height: auto!important;
+    }
+    .about__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        &-item {
+            max-width: 400px;
+            min-height: auto;
+        }
+    }
+}

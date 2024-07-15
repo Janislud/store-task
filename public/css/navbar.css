@@ -112,19 +112,19 @@ nav {
 }
 
 .nav-item:hover {
-    color: green;
-    text-decoration: underline green 2px;
+    color: #CCA43B;
+    text-decoration: underline #CCA43B 2px;
     transition: 0.5s;
 }
 
 .nav-links a.active {
-    color: green;
+    color: #CCA43B;
 }
 
 .cart-active {
-    border: 2px solid green;
+    border: 2px solid #CCA43B;
 }
 
 .profile-active {
-    border: 2px solid green;
+    border: 2px solid #CCA43B;
 }

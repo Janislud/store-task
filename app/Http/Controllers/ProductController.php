@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function index(){
-        $products = Product::all();
-        return view('products', compact('products'));
+    public function showProduct($id){
+        $product = Product::with('photos')->findOrFail($id);
+        return view('showProduct', compact('product'));
     }
 }

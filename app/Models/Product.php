@@ -13,13 +13,18 @@ class Product extends Model
         'name',
         'description',
         'price',
+        'quantity'
     ];
 
-    
+    public function photos(){
+        return $this->hasMany(Photos::class);
+    }
 
-    //Price understand
+    public function cartItems(){
+        return $this->hasMany(CartItem::class);
+    }
 
-    // public static function all () {
-        
-    // }
+    public function orderItems(){
+        return $this->hasMany(OrderItem::class);
+    }
 }
