@@ -47,6 +47,7 @@
 
     <section>
         <div class="deals-box">
+            <div class="deals-right"></div>
           <div class="deals-left">
             <div class="deals-heading">
                 <h2 class="deals-heading-h2">Exclusive deals <br> and offers</h2>
@@ -64,7 +65,7 @@
                 <button>Learn more</button>
             </div>
           </div>
-          <div class="deals-right"></div>
+          {{-- <div class="deals-right"></div> --}}
         </div>
     </section>
     <section class="testimonials">
