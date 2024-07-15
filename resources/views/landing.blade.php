@@ -72,17 +72,17 @@
             <p class="testimonials-heading-p">Some quotes from our happy customers</p>
         </div>
         <div class="testimonials-container">
-            <div class="testimonials-container-box1">
+            <div class="testimonials-container-box">
                 <img src="{{ asset('assets/person1.png') }}" alt="person" class="testimonials-person">
             </div>
 
 
-            <div class="testimonials-container-box2">
+            <div class="testimonials-container-box">
                 <img src="{{ asset('assets/person2.png') }}" alt="person" class="testimonials-person">
             </div>
 
 
-            <div class="testimonials-container-box3">
+            <div class="testimonials-container-box">
                 <img src="{{ asset('assets/person3.png') }}" alt="person" class="testimonials-person">
             </div>
         </div>
