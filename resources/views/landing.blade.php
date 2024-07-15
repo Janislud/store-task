@@ -43,7 +43,6 @@
 
     <section>
         <div class="deals-box">
-            <div class="deals-right"></div>
           <div class="deals-left">
             <div class="deals-heading">
                 <h2 class="deals-heading-h2">Exclusive deals <br> and offers</h2>
@@ -61,7 +60,7 @@
                 <a href="/deals" class="yellow-box {{ request()->is('deals') ? 'active' : '' }}">Learn more</a>
             </div>
           </div>
-          {{-- <div class="deals-right"></div> --}}
+          <div class="deals-right"></div>
         </div>
     </section>
     <section class="testimonials">
