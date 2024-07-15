@@ -127,7 +127,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgba(247, 248, 250, 1);
-    padding: 12em;
+    padding: 2em;
 }
 
 .deals-left, .deals-right {
@@ -148,11 +148,13 @@
 }
 
 .deals-heading-h2 {
-    font-size: 32px;
+    text-align: left;
+    font-size: 2rem;
     margin: 0;
 }
 
 .deals-heading-p {
+    text-align: left;
     font-size: 1rem;
     color: rgba(204, 164, 59, 1);
 }
@@ -163,7 +165,6 @@
 }
 
 .deals-list ul li {
-    font-size: 16px;
     list-style: none;
     margin: 1em 0;
     display: flex;
@@ -176,10 +177,21 @@
     margin-right: 0.5em;
 }
 
+.deals-btn {
+    margin-top: 1em;
+}
 
-.deals-right{
-    margin: 8em 8em 8em 3em;
-    padding: 15em 14em 15em 32.9em;
+.deals-btn button {
+    background-color: rgba(204, 164, 59, 1);
+    padding: 0.6em 2.5em;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.deals-right {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -426,8 +438,8 @@
 } */
 
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+/* @media screen and (min-width: 400px) and (max-width: 500px) {
     .deals-box {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
-}
+} */
