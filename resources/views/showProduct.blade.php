@@ -29,7 +29,7 @@
                             <form action="{{ route('cart.add', ['id' => $product->id]) }}" method="POST" id="cart-form">
                                 @csrf
                                 <input type="hidden" name="quantity" value="1" min="1">
-                                <button class="yellow-box" type="submit">Add to Cart</button>
+                                <button class="yellow-box cart-btn" type="submit">Add to Cart</button>
                             </form>
                         </div>
 

@@ -39,11 +39,14 @@ body {
     padding: 0 16px;
 }
 
-.shipping, .pr-price, .quantity, .item-quantity-toggle, .subscr-form, .subscr-details, .description {
+.shipping, .pr-price, .quantity, .item-count, .item-quantity-toggle, .subscr-form, .subscr-details, .description {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+.cart-btn {
+    margin-top: 20px;
+}
 
 .pr-price {
     color: #CCA43B;
@@ -80,34 +83,6 @@ label {
     border: 1px solid #E6E6E6;
     border-radius: 6px;
     padding: 10px 6px;
-}
-
-.item-count {
-    font-size: 18px;
-}
-
-.item-minus, .item-plus {
-    color: #CCA43B;
-    border: none;
-    background-color: #fff;
-    font: Roboto;
-    font-size: 18px;
-}
-
-.item-minus:disabled, .item-plus:disabled  {
-    color: black;
-}
-
-.item-quantity-toggle {
-    border: 1px solid #CCA43B;
-    padding: 2px 5px;
-    width: 75px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
 }
 
 .subscr-details {
