@@ -14,35 +14,70 @@ body {
     width: auto;
 }
 
-.product-img {
+.pdp__product-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     height: auto;
     align-items: center;
+    border-radius: 10px;
 }
 
-.main-wrapper {
-    max-width: 960px;
-    min-height: 80vh;
-    background-color: #fff;
+.pdp__content {
+    padding: 60px 0px;
+    height: calc(100vh - 6vh);
+
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-inline: auto;
 }
 
-.container {
+.pdp__content .container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 16px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-.headline, .shipping, .pr-price, .quantity, .item-count, .item-quantity-toggle, .subscr-form, .subscr-details, .description {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.pdp__slider {
+    max-width: 400px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+.pdp__slider .pdp__slider-wrapper {
+    max-width: 400px;
+    width: 100%;
+}
+
+.pdp__slider .swiper-slide img {
+    border-radius: 10px;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.pdp__details {
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pdp__amount {
+    display: flex;
+    gap: 20px;
+}
+
+
 
 .cart-btn {
     margin-top: 20px;
@@ -143,3 +178,43 @@ select {
     background: #CCA43B;
 }
 
+@media (max-width: 900px) {
+    .pdp__content {
+        height: auto;
+    }
+    .pdp__content .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+    }   
+    .pdp__content p, .pdp__content h1, .pdp__content label {
+        text-align: center;
+    }
+    .pdp__amount {
+        justify-content: center;
+    }
+    .pdp__addAddToCart form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .pdp__content .subscr-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pdp__content .subsrc-radio {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pdp__slider {
+        max-width: 320px;
+    }
+
+    .pdp__slider-wrapper.swiper {
+        max-width: 320px;
+    }
+}
