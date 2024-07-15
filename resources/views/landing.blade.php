@@ -16,8 +16,8 @@
 
         <div class="product-section-wrapper">
             <div class="products">
-                <h1>Products</h1>
-                <p>Order it for you or your beloved ones</p>
+                <h1 class="top-heading-h2">Products</h1>
+                <p class="top-heading-p">Order it for you or your beloved ones</p>
             </div>
         </div>
 
@@ -57,7 +57,7 @@
 
             </div>
             <div>
-                <a href="/about" class="yellow-box {{ request()->is('about') ? 'active' : '' }}">Learn more</a>
+                <a href="/deals" class="yellow-box {{ request()->is('deals') ? 'active' : '' }}">Learn more</a>
             </div>
           </div>
           <div class="deals-right"></div>
@@ -69,18 +69,27 @@
             <p class="testimonials-heading-p">Some quotes from our happy customers</p>
         </div>
         <div class="testimonials-container">
-            <div class="testimonials-container-box1">
+            <div class="testimonials-container-box">
                 <img src="{{ asset('assets/person1.png') }}" alt="person" class="testimonials-person">
+            <h1>“I love it!”</h1>
+            <p>Liv</p>
+
             </div>
 
-
-            <div class="testimonials-container-box2">
+            <div class="testimonials-container-box">
                 <img src="{{ asset('assets/person2.png') }}" alt="person" class="testimonials-person">
+            <h1>“Reccomended for everyone”</h1>
+            <p>Marco</p>
+
             </div>
 
 
-            <div class="testimonials-container-box3">
+            <div class="testimonials-container-box">
                 <img src="{{ asset('assets/person3.png') }}" alt="person" class="testimonials-person">
+            <h1>“Great product”</h1>
+            <p>Charli</p>
+
+
             </div>
         </div>
     </section>
