@@ -32,3 +32,48 @@
 .underline:hover::after {
     width: 100%;
 }
+
+/* Amount toggler */
+
+.amountToggler {
+    cursor: pointer;
+    border: 1px solid rgb(204, 164, 59);
+    padding: 0px 5px;
+    width: 75px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+
+    transition: .2s ease-in-out;
+}
+
+.amountToggler:hover {
+    box-shadow: inset 0px 0px 0px 1px rgb(204, 164, 59);
+}
+
+
+.amountToggler > *{
+    flex-basis: 100%;
+}
+
+.amountToggler p {
+    text-align: center;
+}
+
+.amountToggler #amountToggler-minus, #amountToggler-plus {
+    color: rgb(204, 164, 59);
+}
+
+.amountToggler #amountToggler-minus:disabled, #amountToggler:disabled  {
+    color: black;
+}
+
+.amountToggler button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+}
