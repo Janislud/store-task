@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.checkout')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/checkout.css">
-</head>
+@section('title', 'Details')
 
-<body>
-
+@section('content')
     <section id="checkout">
         <div class="container">
 
             <div class="stages">
                 <div class="img__wrapper">
-                    <img id="checkout-logo" src="./assets/Main-logo.svg" alt="logo" class="logo">
-
+                    <a href="/" id="checkout-logo">
+                    <img src="./assets/Main-logo.svg" alt="logo" class="logo">
+                    </a>
                 </div>
                 <div class="stages__wrapper">
                     @include ('Components.checkoutNavigation')
@@ -59,6 +52,9 @@
                     </div>
                     <div class="stages__bottom">
                         <p class="stages__back underline">Back to cart</p>
+                        {{-- <form action="{{ route('checkout.storeDetails') }}" method="POST">
+                        <button class="stages__forward accent-btn" type="submit">Go to shipping</button>
+                        </form> --}}
                         <button class="stages__forward accent-btn">Go to shipping</button>
                     </div>
                 </div>
@@ -67,6 +63,5 @@
             @include('Components.checkoutSideBar')
         </div>
     </section>
-</body>
+@endsection
 
-</html>
