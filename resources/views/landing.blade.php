@@ -8,9 +8,9 @@
                     Enjoy your shopping experience with Storefront!
                 </p>
 
-                <button class="yellow-box">
-                    Discover our collection
-                </button>
+                <a class="yellow-box" href="/products">
+                        Discover our collection
+                </a>
             </div>
         </div>
     </section>
