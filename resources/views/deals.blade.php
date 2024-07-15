@@ -9,7 +9,7 @@
                 <h1 class="underline">Deals</h1>
                 <p>At Storefront, we believe everyone deserves a touch of candlelit magic. That's why we're thrilled to offer a variety of deals and promotions to help you fill your home with the glow of handcrafted goodness at a delightful price.</p>
             </div>
-            <button type="button" class="collapsible"><h2>Current Offers:</h2></button>
+            <button type="button" class="deals-collapsible"><h2>Current Offers:</h2></button>
             <div class="deals-content">
                 <strong>Scent of the Month Discount (15% off):</strong> 
                 <p>Each month, we'll highlight a special fragrance with a tempting discount. Be sure to check back and discover your new favorite scent! (Current scent will be displayed here)
@@ -18,7 +18,7 @@
                 <strong>Free Shipping on Orders Over $50: </strong>
                 <p>Enjoy the convenience of free shipping on all domestic orders over $50. Sit back, relax, and let the candles come to you!</p>
             </div>
-            <button type="button" class="collapsible"><h2>Stay in the Light:</h2></button>
+            <button type="button" class="deals-collapsible"><h2>Stay in the Light:</h2></button>
             <div class="deals-content">
                 <strong>Subscribe & Save (15% off): </strong>
                 <p>Never run out of your favorite scents again! Sign up for our subscription service and enjoy 15% off your chosen candles delivered straight to your door at regular intervals.</p>
