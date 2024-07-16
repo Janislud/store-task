@@ -34,7 +34,7 @@ class CartController extends Controller
         }
 
         session()->put('cart', $cart);
-        return redirect()->back()->with('success', 'Product added to cart successfully!');
+        return redirect()->route("cart.view");
     }
 
     public function removeFromCart($id)
@@ -86,5 +86,4 @@ class CartController extends Controller
 
             //     return redirect()->route('checkout.confirmation')->with('success', 'Order placed successfully!');
     }
-
 }
