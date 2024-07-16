@@ -13,13 +13,13 @@
             </div>
             <div>
                 <p class="order__text">Shipping </p>
-                <p class="order__bold">{{$shipping}}</p>
+                <p class="order__bold">Shipping</p>
 
             </div>
         </div>
         <div class="order__total">
             <p class="order__text">Total</p>
-            <p class="order__bold">{{$totalOrderPrice}}</p>
+            <p class="order__bold">Total</p>
         </div>
     </div>
 </div>
