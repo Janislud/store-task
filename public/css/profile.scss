@@ -1,0 +1,20 @@
+section.profile {
+    height: calc(100vh - 6vh);
+    padding: 60px 0px;
+    .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0px 20px;
+        height: 100%;
+    }
+}
+
+.profile {
+    &__login {
+      height: 100%;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}

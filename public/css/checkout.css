@@ -284,18 +284,6 @@ section#checkout .stages__checkbox:checked {
   border: 2px solid #CCA43B;
   background-color: #CCA43B;
 }
-section#checkout .stages__input {
-  width: 100%;
-  padding: 8px 18px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 25.6px;
-  border: 0.5px solid rgb(137, 137, 137);
-}
-section#checkout .stages__input:focus {
-  border: 1px solid #CCA43B;
-  outline: none;
-}
 section#checkout .stages__sub {
   color: rgb(39, 39, 39);
   font-size: 20px;
