@@ -54,36 +54,4 @@ class CartController extends Controller
         $cart = session()->get('cart', []);
         return view('cart.view', compact('cart'));
     }
-
-    public function checkout(Request $request)
-
-        {
-            return view('checkoutStages.stageDetails');
-            // $cart = session()->get('cart', []);
-
-            //     if (empty($cart)) {
-            //         return redirect()->back()->with('error', 'Your cart is empty.');
-            //     }
-
-            //     // Create a new order
-            //     $order = new Order();
-            //     $order->user_id = auth()->id();
-            //     $order->total = array_sum(array_map(fn($item) => $item['quantity'] * $item['price'], $cart));
-            //     $order->save();
-
-            //     // Create order items
-            //     foreach ($cart as $productId => $item) {
-            //         $orderItem = new OrderItem();
-            //         $orderItem->order_id = $order->id;
-            //         $orderItem->product_id = $productId;
-            //         $orderItem->quantity = $item['quantity'];
-            //         $orderItem->price = $item['price'];
-            //         $orderItem->save();
-            //     }
-
-            //     // Clear the cart
-            //     session()->forget('cart');
-
-            //     return redirect()->route('checkout.confirmation')->with('success', 'Order placed successfully!');
-    }
 }

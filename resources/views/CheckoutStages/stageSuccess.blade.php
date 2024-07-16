@@ -30,7 +30,7 @@
                 </div>
             </div>
 
-            @include('Components.checkoutSideBar')
+            @include('Components.checkoutSideBar', ['cart' => $cart])
         </div>
     </section>
 @endsection

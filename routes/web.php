@@ -33,31 +33,31 @@ use Illuminate\Support\Facades\Route;
 //     ]);
 // });
 
-Route::get('/shipping', function () {
-    return view('CheckoutStages.stageShipping', [
-        "stageIndex" => 2,
-        "totalOrderPrice" => "9.99",
-        "userEmail" => "test@email.com",
-        "shippingAddress" => "Via Firenze 23, blablablabla",
-        "shipping" => "Standart Shipping"
-    ]);
-});
+// Route::get('/shipping', function () {
+//     return view('CheckoutStages.stageShipping', [
+//         "stageIndex" => 2,
+//         "totalOrderPrice" => "9.99",
+//         "userEmail" => "test@email.com",
+//         "shippingAddress" => "Via Firenze 23, blablablabla",
+//         "shipping" => "Standart Shipping"
+//     ]);
+// });
 
-Route::get('/payment', function () {
-    return view('CheckoutStages.stagePayment', [
-        "stageIndex" => 3,
-        "totalOrderPrice" => "9.99",
-        "shipping" => "Free shipping"
-    ]);
-});
+// Route::get('/payment', function () {
+//     return view('CheckoutStages.stagePayment', [
+//         "stageIndex" => 3,
+//         "totalOrderPrice" => "9.99",
+//         "shipping" => "Free shipping"
+//     ]);
+// });
 
-Route::get('/success', function () {
-    return view('CheckoutStages.stageSuccess', [
-        "stageIndex" => 4,
-        "totalOrderPrice" => "9.99",
-        "shipping" => "Free shipping"
-    ]);
-});
+// Route::get('/success', function () {
+//     return view('CheckoutStages.stageSuccess', [
+//         "stageIndex" => 4,
+//         "totalOrderPrice" => "9.99",
+//         "shipping" => "Free shipping"
+//     ]);
+// });
 
 Route::get('/', [HomePageController::class, 'index'])->name('home');
 Route::get('/products', [ProductPageController::class, 'index']);
@@ -70,17 +70,16 @@ Route::post('/cart/add/{id}', [CartController::class, 'addToCart'])->name('cart.
 Route::get('/cart', [CartController::class, 'viewCart'])->name('cart.view');
 Route::post('/cart/update', [CartController::class, 'updateQuantity'])->name('cart.updateQuantity');
 Route::post('/cart/remove/{id}', [CartController::class, 'removeFromCart'])->name('cart.remove');
-Route::post('/cart/checkout', [CartController::class, 'checkout'])->name('cart.checkout');
 
 Route::get('/checkout/details', [CheckoutController::class, 'showDetailsForm'])->name('checkoutStages.stageDetails');
-// store details
 Route::post('/checkout/details', [CheckoutController::class, 'storeDetails'])->name('checkout.storeDetails');
+
 Route::get('/checkout/shipping', [CheckoutController::class, 'showShippingForm'])->name('checkoutStages.stageShipping');
-//store shipping
 Route::post('/checkout/shipping', [CheckoutController::class, 'storeShipping'])->name('checkout.storeShipping');
+
 Route::get('/checkout/payment', [CheckoutController::class, 'showPaymentForm'])->name('checkoutStages.stagePayment');
-// store payment
 Route::post('/checkout/payment', [CheckoutController::class, 'storePayment'])->name('checkout.storePayment');
+
 Route::get('/checkout/success', [CheckoutController::class, 'showSuccess'])->name('checkoutStages.stageSuccess');
 
 

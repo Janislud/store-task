@@ -48,16 +48,15 @@
                 <div class="cart__bottom">
                     <div class="cart__bottom-price">
                         <div>
-                            <p class="cart__subTotal">Sub-total</p>
+                            <p class="cart__subTotal">Total</p>
                             <p class="cart__value">
                                 ${{ array_sum(array_map(fn($item) => $item['quantity'] * $item['price'], $cart)) }}</p>
                         </div>
                         <div>
-                            Tax and shipping cost will be calculated later
+                            Shipping cost will be calculated later
                         </div>
                     </div>
-                    <form action="{{ route('cart.checkout') }}" method="POST">
-                        @csrf
+                    <form action="{{ route('checkoutStages.stageDetails') }}" method="GET">
                         <button class="cart__checkout-btn accent-btn" type="submit">Check-out</button>
                     </form>
                 </div>

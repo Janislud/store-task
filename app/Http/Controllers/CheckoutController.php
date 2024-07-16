@@ -10,20 +10,34 @@ class CheckoutController extends Controller
 {
     public function showDetailsForm()
     {
-        return view('checkoutStages.stageDetails');
+        $cart = session()->get('cart', []);
+        return view('checkoutStages.stageDetails', compact('cart'));
     }
 
     // STORE DETAILS
     public function storeDetails(Request $request)
     {
-        $request->session()->put('checkoutStages.stageDetails', $request->all());
+        $validated = $request->validate([
+            'email' => 'required|email',
+            'first_name' => 'required|string|max:255',
+            'second_name' => 'required|string|max:255',
+            'address' => 'required|string|max:255',
+            'city' => 'required|string|max:255',
+            'postal_code' => 'required|string|max:255',
+            'country' => 'required|string|max:255',
+            'shipping_note' => 'nullable|string|max:255',
+        ]);
+
+        $request->session()->put('checkoutStages.stageDetails', $validated);
+
         return redirect()->route('checkoutStages.stageShipping');
     }
 
     public function showShippingForm(Request $request)
     {
         $details = $request->session()->get('checkoutStages.stageDetails');
-        return view('checkoutStages.stageShipping', compact('stageDetails'));
+        $cart = $request->session()->get('cart', []);
+        return view('checkoutStages.stageShipping', compact('details', 'cart'));
     }
 
     // STORE SHIPPING
@@ -37,7 +51,7 @@ class CheckoutController extends Controller
     {
         $details = $request->session()->get('checkoutStages.stageDetails');
         $shipping = $request->session()->get('checkoutStages.stageShipping');
-        return view('checkoutStages.stagePayment', compact('stageDetails', 'stageShipping'));
+        return view('checkoutStages.stagePayment', compact('details', 'shipping'));
     }
 
     // STORE PAYMENT
