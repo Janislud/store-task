@@ -1,3 +1,7 @@
+@extends('layouts.layout')
+
+@section('title', 'Product page')
+
 @section('content')
 <main>
     <section>
@@ -67,27 +71,63 @@
             <h4 class="testimonials-heading-h4">Testimonials</h4>
             <p class="testimonials-heading-p">Some quotes from our happy customers</p>
         </div>
-        <div class="testimonials-container">
-            <div class="testimonials-container-box">
-                <img src="{{ asset('assets/person1.png') }}" alt="person" class="testimonials-person">
-            <h4 class="testimonials-comment">“I love it!”</h1>
-            <p>Liv</p>
-
+        <div  class="testimonials-container swiper">
+            <div class="swiper-wrapper">
+                <div class="testimonials-container-box swiper-slide">
+                    <img src="{{ asset('assets/person1.png') }}" alt="person" class="testimonials-person">
+                    <h4 class="testimonials-comment">“I love it!”</h4>
+                    <p>Liv</p>
+                </div> 
+                <div class="testimonials-container-box swiper-slide">
+                    <img src="{{ asset('assets/person2.png') }}" alt="person" class="testimonials-person">
+                    <h4 class="testimonials-comment">“Reccomended for everyone”</h4>
+                    <p>Marco</p>
+                </div>
+                <div class="testimonials-container-box swiper-slide">
+                    <img src="{{ asset('assets/person3.png') }}" alt="person" class="testimonials-person">
+                    <h4 class="testimonials-comment">“Great product”</h4>
+                    <p>Charli</p>
+                </div>
+                <div class="testimonials-container-box swiper-slide">
+                    <img src="{{ asset('assets/person4.png') }}" alt="person" class="testimonials-person">
+                    <h4 class="testimonials-comment">“Captivating smell”</h4>
+                    <p>Myke</p>
+                </div>
+                <div class="testimonials-container-box swiper-slide">
+                    <img src="{{ asset('assets/person5.png') }}" alt="person" class="testimonials-person">
+                    <h4 class="testimonials-comment">“My partner loved it!”</h4>
+                    <p>Kira</p>
+                </div>
+                <div class="testimonials-container-box swiper-slide">
+                    <img src="{{ asset('assets/person6.png') }}" alt="person" class="testimonials-person">
+                    <h4 class="testimonials-comment">“Never dissapoints”</h4>
+                    <p>James</p>
+                </div>
+                    <div class="testimonials-container-box swiper-slide">
+                    <img src="{{ asset('assets/person7.png') }}" alt="person" class="testimonials-person">
+                    <h4 class="testimonials-comment">“Pleasant smell in the room for so long”</h4>
+                    <p>Lola</p>
+                </div>
+                <div class="testimonials-container-box swiper-slide">
+                    <img src="{{ asset('assets/person8.png') }}" alt="person" class="testimonials-person">
+                    <h4 class="testimonials-comment">“Exceptional quality!”</h4>
+                    <p>Kate</p>
+                </div>
+                    <div class="testimonials-container-box swiper-slide">
+                    <img src="{{ asset('assets/person9.png') }}" alt="person" class="testimonials-person">
+                    <h4 class="testimonials-comment">“Great, as always”</h4>
+                    <p>Jenny</p>
+                </div>
+                <div class="testimonials-container-box swiper-slide">
+                    <img src="{{ asset('assets/person10.png') }}" alt="person" class="testimonials-person">
+                    <h4 class="testimonials-comment">“Melted my heart”</h4>
+                    <p>Juan</p>  
+                </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
-                
-            <div class="testimonials-container-box">
-                <img src="{{ asset('assets/person2.png') }}" alt="person" class="testimonials-person">
-            <h4 class="testimonials-comment">“Reccomended for everyone”</h1>
-            <p>Marco</p>
-
-            </div>
-            <div class="testimonials-container-box">
-                <img src="{{ asset('assets/person3.png') }}" alt="person" class="testimonials-person">
-            <h4 class="testimonials-comment">“Great product”</h1>
-            <p>Charli</p>
-
-            
-            </div>
+        </div>
         </div>
     </section>
     <section>
@@ -111,4 +151,5 @@
             @endforeach
     </section>
 </main>
+@section('scripts')
 @endsection
