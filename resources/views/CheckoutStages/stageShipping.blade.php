@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.checkout')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/checkout.css">
-</head>
+@section('title', 'Shipping')
 
-<body>
-
+@section('content')
     <section id="checkout">
         <div class="container">
 
             <div class="stages">
                 <div class="img__wrapper">
-                    <img id="checkout-logo" src="./assets/Main-logo.svg" alt="logo" class="logo">
-
+                    <a href="/" id="checkout-logo">
+                        <img src="{{ asset('assets/Main-logo.svg') }}" alt="logo" class="logo">
+                    </a>
                 </div>
                 <div class="stages__wrapper">
                     @include ('Components.checkoutNavigation')
@@ -63,6 +56,4 @@
             @include('Components.checkoutSideBar')
         </div>
     </section>
-</body>
-
-</html>
+@endsection
