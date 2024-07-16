@@ -43,7 +43,11 @@ class CheckoutController extends Controller
     // STORE SHIPPING
     public function storeShipping(Request $request)
     {
-        $request->session()->put('checkoutStages.stageShipping', $request->all());
+        $validated = $request->validate([
+            'shipping_method' => 'required|string',
+        ]);
+
+        $request->session()->put('checkoutStages.stageShipping', $validated);
         return redirect()->route('checkoutStages.stagePayment');
     }
 
@@ -51,7 +55,8 @@ class CheckoutController extends Controller
     {
         $details = $request->session()->get('checkoutStages.stageDetails');
         $shipping = $request->session()->get('checkoutStages.stageShipping');
-        return view('checkoutStages.stagePayment', compact('details', 'shipping'));
+        $cart = $request->session()->get('cart', []);
+        return view('checkoutStages.stagePayment', compact('details', 'shipping', 'cart'));
     }
 
     // STORE PAYMENT
@@ -61,8 +66,9 @@ class CheckoutController extends Controller
         return redirect()->route('checkoutStages.stageSuccess');
     }
 
-    public function showSuccess()
+    public function showSuccess(Request $request)
     {
-        return view('checkoutStages.stageSuccess');
+        $cart = $request->session()->get('cart', []);
+        return view('checkoutStages.stageSuccess', compact('cart'));
     }
 }

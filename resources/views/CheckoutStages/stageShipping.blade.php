@@ -64,7 +64,7 @@
                 </div>
             </div>
 
-            @include('Components.checkoutSideBar', ['cart' => $cart])
+            @include('Components.checkoutSideBar', ['cart' => $cart, 'shippingMethod' => session('checkoutStages.stageShipping.shipping_method')])
         </div>
     </section>
 @endsection

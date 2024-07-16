@@ -15,6 +15,7 @@
                 <div class="stages__wrapper">
                     @include ('Components.checkoutNavigation')
                     <div class="stages__content stages__content_payment">
+                        <form action="{{ route('checkout.storePayment') }}" method="POST">
                             <div class="stages__shipement-details">
                                 <div class="stages__fancybox">
                                     <div class="stages__fancybox-item">
@@ -44,7 +45,7 @@
                                 <p class="stages__sub">Payment method</p>
                                 <div class="stages__card">
                                     <div class="stages__card-top">
-                                        <img src="./assets/bank-card.svg" alt="card">
+                                        <img src="{{ asset('assets/bank-card.svg') }}" alt="card" class="card">
                                         Credit Card
                                     </div>
                                     <div class="stages__card-inputs">
@@ -56,13 +57,6 @@
                                             <input class="stages__input" placeholder="CVV"></input>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="stages__tax">
-                                <p class="stages__sub">Tax Informations</p>
-                                <div class="stages__tax-inputs">
-                                    <input class="stages__input" placeholder="VAT number (optional)"></input>
-                                    <input class="stages__input" placeholder="PEC (optional)"></input>
                                 </div>
                             </div>
                             <form class="stages__billing">
@@ -80,13 +74,14 @@
                             </form>
                     </div>
                     <div class="stages__bottom">
-                        <p class="stages__back underline">Back to shipping</p>
-                        <button class="stages__forward accent-btn">Pay now</button>
+                        <a href="{{ route('checkout.storeShipping') }}" class="stages__back underline">Back to shipping</a>
+                        <button type="submit" class="stages__forward accent-btn">Pay now</button>
                     </div>
+                </form>
                 </div>
             </div>
 
-            @include('Components.checkoutSideBar', ['cart' => $cart])
+            @include('Components.checkoutSideBar', ['cart' => $cart, 'shippingMethod' => session('checkoutStages.stageShipping.shipping_method')])
         </div>
     </section>
 @endsection

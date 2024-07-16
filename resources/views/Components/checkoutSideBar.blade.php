@@ -17,8 +17,14 @@
         <div class="order__data">
             <div>
                 <p class="order__text">Shipping </p>
-                <p class="order__bold">Calculated at the next step</p>
 
+                @if($shippingMethod == 'standard')
+                    <p class="order__bold">Standard Shipping - Free</p>
+                @elseif($shippingMethod == 'express')
+                    <p class="order__bold">Express Shipping - $10.00</p>
+                @else
+                    <p class="order__bold">Calculated at the next step</p>
+                @endif
             </div>
         </div>
         <div class="order__total">
