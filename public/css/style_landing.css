@@ -426,16 +426,11 @@
     }
 
 }
-    .deals-list ul li {
+
+.deals-list ul li {
         font-size: 12px;
         display: block; 
-    }   
-
-<<<<<<< HEAD
-}
-
-=======
->>>>>>> b189e3da2bdeaffb26b354040b7ad87e6d6bab78
+}   
 
 @media screen and (min-width: 1257px) { 
     .deals-box {
