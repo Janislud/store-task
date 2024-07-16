@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="{{ asset('css/products.css') }}">
     <link rel="stylesheet" href="{{ asset('css/deals.css') }}">
     <link rel="stylesheet" href="{{ asset('css/default.css') }}">
+
     <link rel="stylesheet" href="{{asset('css/signup.css')}}">
+=======
+    <link rel="stylesheet" href="{{ asset('css/profile.css') }}">
+
     <title>@yield('title')</title>
 </head>
 
@@ -34,8 +38,8 @@
     {{-- Swiper.js initializing --}}
     <script src="{{ asset('js/slider.js') }}"></script>
 
-    
 
+    <script src="{{ asset('js/testimonials.js') }}"></script>
     @yield('scripts')
 </body>
 
