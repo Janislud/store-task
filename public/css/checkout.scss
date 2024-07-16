@@ -11,6 +11,27 @@ body {
     height: 100%;
 }
 
+.stages__input {
+    width: 100%;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.6px;
+    border: 0.5px solid rgb(137, 137, 137);
+    transition: .2s ease-in-out;
+    color: #947629;
+}
+
+.stages__input:hover {
+    box-shadow: 2px 2px 0px 1px #CCA43B;
+}
+
+
+.stages__input:focus {
+    border: 1px solid #CCA43B;
+    outline: none;
+}
+
 section#checkout {
     background-color: white;
     height: 100%;
@@ -57,6 +78,8 @@ section#checkout {
         align-items: flex-start;
         flex-direction: column;
     }
+
+   
 
     .stages {
         padding: 0;
@@ -332,19 +355,7 @@ section#checkout {
             }
         }
 
-        &__input {
-            width: 100%;
-            padding: 8px 18px;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 25.6px;
-            border: 0.5px solid rgb(137, 137, 137);
-
-            &:focus {
-                border: 1px solid #CCA43B;
-                outline: none;
-            }
-        }
+        
 
         &__sub {
             color: rgb(39, 39, 39);
