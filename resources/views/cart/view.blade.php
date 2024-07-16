@@ -20,7 +20,6 @@
                     <div class="cart__item">
                         <div class="cart__item-main">
                             <img class="cart__item-img" src="{{ $item['photo'] }}" alt="{{ $item['name'] }}">
-                            {{-- <img class="cart__item-img" src="#" alt="image">     --}}
                             <div>
                                 <h4 class="cart__item-name">{{ $item['name'] }}</h4>
                                 <form action="{{ route('cart.remove', $productId) }}" method="POST"
