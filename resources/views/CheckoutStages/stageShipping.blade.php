@@ -9,7 +9,7 @@
             <div class="stages">
                 <div class="img__wrapper">
                     <a href="/" id="checkout-logo">
-                    <img src="./assets/Main-logo.svg" alt="logo" class="logo">
+                        <img src="{{ asset('assets/Main-logo.svg') }}" alt="logo" class="logo">
                     </a>
                 </div>
                 <div class="stages__wrapper">

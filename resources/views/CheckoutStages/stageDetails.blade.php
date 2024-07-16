@@ -9,7 +9,7 @@
             <div class="stages">
                 <div class="img__wrapper">
                     <a href="/" id="checkout-logo">
-                    <img src="./assets/Main-logo.svg" alt="logo" class="logo">
+                    <img src="{{ asset('assets/Main-logo.svg') }}" alt="logo" class="logo">
                     </a>
                 </div>
                 <div class="stages__wrapper">
@@ -52,9 +52,6 @@
                     </div>
                     <div class="stages__bottom">
                         <p class="stages__back underline">Back to cart</p>
-                        {{-- <form action="{{ route('checkout.storeDetails') }}" method="POST">
-                        <button class="stages__forward accent-btn" type="submit">Go to shipping</button>
-                        </form> --}}
                         <button class="stages__forward accent-btn">Go to shipping</button>
                     </div>
                 </div>

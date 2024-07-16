@@ -53,7 +53,7 @@ class CartController extends Controller
 
     public function checkout(Request $request)
         {
-            return view('checkout.details');
+            return view('checkoutStages.stageDetails');
     // $cart = session()->get('cart', []);
 
     //     if (empty($cart)) {
