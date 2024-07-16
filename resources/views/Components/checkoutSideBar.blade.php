@@ -29,7 +29,7 @@
         </div>
         <div class="order__total">
             <p class="order__text">Total</p>
-            <p class="order__bold">${{ array_sum(array_map(fn($item) => $item['quantity'] * $item['price'], $cart)) }}</p>
+            <p class="order__bold">${{ array_sum(array_map(fn($item) => $item['quantity'] * $item['price'], $cart)) + ($shippingCost ?? 0) }}</p>
         </div>
     </div>
 </div>

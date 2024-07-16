@@ -34,8 +34,15 @@
                             <p class="cart__item-priceValue">${{ $item['price'] }}</p>
                         </div>
 
-                        <div data-id={{$productId}} onclick="dynamicReCalc(event, {{$productId}}, {{$item['price']}})" class="cart__item-quantity">
+                        {{-- SALABOT UN IZDOMĀT LOĢIKU LĪDZ GALAM!!!!!!! --}}
+                        {{-- <div data-id={{$productId}} onclick="dynamicReCalc(event, {{$productId}}, {{$item['price']}})" class="cart__item-quantity">
                             @include('Components.amountToggler', ['productId' => $productId])
+                        </div> --}}
+                        <div class="cart__item-quantity">
+                            <form action="{{ route('cart.update', $productId) }}" method="POST" class="cart__item-quantity-form">
+                                @csrf
+                                <input type="number" name="quantity" value="{{ $item['quantity'] }}" min="1" onchange="this.form.submit()">
+                            </form>
                         </div>
 
                         <div class="cart__item-total">
@@ -66,7 +73,7 @@
         </div>
     </section>
 
-    <script>
+    {{-- <script>
         function dynamicReCalc(e, id, price) {
             const value = document.querySelector(`.cart__item-quantity[data-id='${id}'] #amountToggler-quantityValue`).textContent;
             const productTotal = document.querySelector(`#cart__item-total-${id}`);
@@ -90,5 +97,5 @@
                 }
             `;
         }
-    </script>
+    </script> --}}
 @endsection

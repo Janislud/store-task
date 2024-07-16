@@ -14,23 +14,21 @@
                 </div>
                 <div class="stages__wrapper">
                     <div class="stages__content stages__content_success">
-                        <img src="./assets/success-img.png" alt="success">
+                        <img src="{{ asset('assets/success-img.png') }}" alt="success" class="success">
                         <p class="stages__title">Payment Confirmed</p>
-                        <p class="stages-orderId">ORDER #2039</p>
+                        <p class="stages-orderId">ORDER # {{ $order_id }}</p>
                         <p class="stages__descr">
                             Thank you for buying from Storefront. The nature is grateful to you. Now that your order is
                             confirmed it will be ready to ship in 2 days. Please check your inbox in the future for your
                             order updates.
                         </p>
-                        <button class="stages__forward accent-btn">Back to shopping</button>
+                        <a href="{{ route('products.index') }}" class="stages__forward accent-btn">Back to shopping</a>
                     </div>
 
                     {{-- very important to leave it here, or you be fired --}}
                     <div class="stages__bottom"></div> 
                 </div>
             </div>
-
-            @include('Components.checkoutSideBar', ['cart' => $cart, 'shippingMethod' => session('checkoutStages.stageShipping.shipping_method')])
         </div>
     </section>
 @endsection

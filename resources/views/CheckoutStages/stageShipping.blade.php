@@ -38,7 +38,7 @@
                             <p class="stages__sub">Shipping method</p>
                             <div class="stages__fancybox">
                                 <div class="stages__fancybox-radio">
-                                    <input type="radio" id="standard" name="shipping_method" value="standard" required>
+                                    <input type="radio" id="standard" name="shipping_method" value="standard" {{ session('checkoutStages.stageShipping.shipping_method') == 'standard' ? 'checked' : '' }} required>
                                     <label for="standard">
                                         <p>Standart Shipping</p>
                                         <p>Free</p>
@@ -47,7 +47,7 @@
                             </div>
                             <div class="stages__fancybox">
                                 <div class="stages__fancybox-radio">
-                                    <input type="radio" id="express" name="shipping_method" value="standard" required>
+                                    <input type="radio" id="express" name="shipping_method" value="express" {{ session('checkoutStages.stageShipping.shipping_method') == 'express' ? 'checked' : '' }} required>
                                     <label for="express">
                                         <p>Express Shipping</p>
                                         <p>$10.00</p>

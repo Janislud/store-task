@@ -2,16 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Order;
-use App\Models\OrderItem;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
 class CartController extends Controller
 {
-    // Add to cart
-
-    // Alex edit: add second arg with form input#quantity which pass the value of quantity from PDP toggler
     public function addToCart($id, Request $request)
     {
         $product = Product::with('photos')->findOrFail($id);
@@ -54,4 +49,17 @@ class CartController extends Controller
         $cart = session()->get('cart', []);
         return view('cart.view', compact('cart'));
     }
+
+    public function updateQuantity(Request $request, $id)
+{
+    $cart = session()->get('cart', []);
+
+    if (isset($cart[$id])) {
+        $cart[$id]['quantity'] = $request->quantity;
+        session()->put('cart', $cart);
+    }
+
+    return redirect()->route('cart.view')->with('success', 'Cart updated successfully!');
+}
+
 }
