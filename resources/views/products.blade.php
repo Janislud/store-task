@@ -8,7 +8,7 @@
             <h1>Products</h1>
             <p class="desc" >Order it for you or your beloved ones </p>
             <span class="pr-search">
-                <form action="{{ route('products.index') }}" method="GET">
+                <form class="search-bar" action="{{ route('products.index') }}" method="GET">
                     <input class="pr-searchbar" type="text" name="search" placeholder="Search" value="{{ request('search') }}">
                     <button class="search-btn" type="submit" value="search">&nbsp;</button>
                 </form>

@@ -69,26 +69,48 @@
         </div>
         <div class="testimonials-container">
             <div class="testimonials-container-box">
+<<<<<<< HEAD
                 <div>
                     <img src="{{ asset('assets/person1.png') }}" alt="person" class="testimonials-person"></img>
                 </div>
                 <strong>“I love it!”</strong>
                 <p>Liv</p>
+=======
+                <img src="{{ asset('assets/person1.png') }}" alt="person" class="testimonials-person">
+            <h4 class="testimonials-comment">“I love it!”</h1>
+            <p>Liv</p>
+
+>>>>>>> 17df9040f40d31232f70f126e5d0edf15bb90685
             </div>
                 <div>
             <div class="testimonials-container-box">
+<<<<<<< HEAD
                 <div>
                     <img src="{{ asset('assets/person2.png') }}" alt="person" class="testimonials-person"></img>
                 </div>
                 <strong>“Reccomended for everyone”</strong>
                 <p>Marco</p>
+=======
+                <img src="{{ asset('assets/person2.png') }}" alt="person" class="testimonials-person">
+            <h4 class="testimonials-comment">“Reccomended for everyone”</h1>
+            <p>Marco</p>
+
+>>>>>>> 17df9040f40d31232f70f126e5d0edf15bb90685
             </div>
             <div class="testimonials-container-box">
+<<<<<<< HEAD
                 <div>
                     <img src="{{ asset('assets/person3.png') }}" alt="person" class="testimonials-person"></img>
                 </div>
                 <strong>“Great product”</strong>
                 <p>Charli</p>
+=======
+                <img src="{{ asset('assets/person3.png') }}" alt="person" class="testimonials-person">
+            <h4 class="testimonials-comment">“Great product”</h1>
+            <p>Charli</p>
+
+
+>>>>>>> 17df9040f40d31232f70f126e5d0edf15bb90685
             </div>
         </div>
     </section>
