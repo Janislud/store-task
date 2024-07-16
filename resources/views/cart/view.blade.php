@@ -34,8 +34,15 @@
                             <p class="cart__item-priceValue">${{ $item['price'] }}</p>
                         </div>
 
-                        <div data-id={{$productId}} onclick="dynamicReCalc(event, {{$productId}}, {{$item['price']}})" class="cart__item-quantity">
+                        {{-- SALABOT UN IZDOMĀT LOĢIKU LĪDZ GALAM!!!!!!! --}}
+                        {{-- <div data-id={{$productId}} onclick="dynamicReCalc(event, {{$productId}}, {{$item['price']}})" class="cart__item-quantity">
                             @include('Components.amountToggler', ['productId' => $productId])
+                        </div> --}}
+                        <div class="cart__item-quantity">
+                            <form action="{{ route('cart.update', $productId) }}" method="POST" class="cart__item-quantity-form">
+                                @csrf
+                                <input type="number" name="quantity" value="{{ $item['quantity'] }}" min="1" onchange="this.form.submit()">
+                            </form>
                         </div>
 
                         <div class="cart__item-total">
@@ -48,16 +55,15 @@
                 <div class="cart__bottom">
                     <div class="cart__bottom-price">
                         <div>
-                            <p class="cart__subTotal">Sub-total</p>
+                            <p class="cart__subTotal">Total</p>
                             <p class="cart__value">
                                 ${{ array_sum(array_map(fn($item) => $item['quantity'] * $item['price'], $cart)) }}</p>
                         </div>
                         <div>
-                            Tax and shipping cost will be calculated later
+                            Shipping cost will be calculated later
                         </div>
                     </div>
-                    <form action="{{ route('cart.checkout') }}" method="POST">
-                        @csrf
+                    <form action="{{ route('checkoutStages.stageDetails') }}" method="GET">
                         <button class="cart__checkout-btn accent-btn" type="submit">Check-out</button>
                     </form>
                 </div>
@@ -67,7 +73,7 @@
         </div>
     </section>
 
-    <script>
+    {{-- <script>
         function dynamicReCalc(e, id, price) {
             const value = document.querySelector(`.cart__item-quantity[data-id='${id}'] #amountToggler-quantityValue`).textContent;
             const productTotal = document.querySelector(`#cart__item-total-${id}`);
@@ -91,5 +97,5 @@
                 }
             `;
         }
-    </script>
+    </script> --}}
 @endsection

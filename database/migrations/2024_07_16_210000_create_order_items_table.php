@@ -18,7 +18,8 @@ return new class extends Migration
             $table->foreignId('order_id')->references('id')->on('orders')->onDelete('cascade');
             $table->foreignId('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->integer('quantity');
-            $table->decimal('price', 8, 2);
+            $table->decimal('price', 10, 2);
+            $table->timestamps();
         });
     }
 

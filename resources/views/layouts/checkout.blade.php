@@ -12,6 +12,9 @@
         @yield('content')
     </div>
 
+    {{-- Data is not past manually --}}
+    {{-- @include('Components.checkoutSideBar', ['cart' => session()->get('cart', [])]) --}}
+
     @yield('scripts')
 </body>
 </html>
