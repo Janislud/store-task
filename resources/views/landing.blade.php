@@ -93,5 +93,25 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container-popular">
+            <div>
+                <h1 class="top-heading-h2">Popular</h1>
+                <p class="top-heading-p">Our top selling product that you may like</p>
+            </div>
+        </div>
+        <div class="products-wrapper-conteiner">
+            @foreach ($sliced as $product)
+                <div class="listing-section">
+                        <a class="product-card-link" href="/products/{{ $product->id }}">
+                                    <img class="images" src="{{ $product->photos[2]->image_url }}" alt="{{ $product->photos[2]->title }}"></img>
+                            <div class="product-desc">
+                                <h2 class="item">{{ $product->name }}</h2>
+                                <h3 class="price">{{ number_format($product->price, 2) }}$</h3>
+                            </div>
+                        </a>
+                </div>
+            @endforeach
+    </section>
 </main>
 @endsection
