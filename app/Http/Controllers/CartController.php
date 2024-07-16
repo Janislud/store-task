@@ -81,4 +81,24 @@ class CartController extends Controller
 
     //     return redirect()->route('checkout.confirmation')->with('success', 'Order placed successfully!');
     }
+
+
+    public function update(Request $request)
+    {
+        $productId = $request->input('id');
+        $quantity = $request->input('quantity');
+    
+        $cart = session()->get('cart', []);
+    
+        if (isset($cart[$productId])) {
+            $cart[$productId]['quantity'] = $quantity;
+            session()->put('cart', $cart);
+        }
+    
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Cart updated successfully',
+            'cart' => $cart
+        ]);
+    }
 }
