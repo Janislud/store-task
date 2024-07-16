@@ -249,7 +249,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-direction: column; */
+    flex-direction: column;
     /* top:-50px; 
     left:-35px;  */
     /* z-index:999; */
@@ -279,6 +279,15 @@
     max-width: 300px; 
 }
 
+.swiper2 {
+    position: relative;
+}
+
+.swiper2 .swiper-button-prev, .swiper-button-next{
+    position: absolute !important;
+    top:50% !important;
+    translate: 0% -50% !important;
+}
 
 /* /MOBILE / */
 
