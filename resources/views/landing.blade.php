@@ -71,14 +71,14 @@
         <div class="testimonials-container">
             <div class="testimonials-container-box">
                 <img src="{{ asset('assets/person1.png') }}" alt="person" class="testimonials-person">
-            <h1>“I love it!”</h1>
+            <h4 class="testimonials-comment">“I love it!”</h1>
             <p>Liv</p>
 
             </div>
 
             <div class="testimonials-container-box">
                 <img src="{{ asset('assets/person2.png') }}" alt="person" class="testimonials-person">
-            <h1>“Reccomended for everyone”</h1>
+            <h4 class="testimonials-comment">“Reccomended for everyone”</h1>
             <p>Marco</p>
 
             </div>
@@ -86,7 +86,7 @@
 
             <div class="testimonials-container-box">
                 <img src="{{ asset('assets/person3.png') }}" alt="person" class="testimonials-person">
-            <h1>“Great product”</h1>
+            <h4 class="testimonials-comment">“Great product”</h1>
             <p>Charli</p>
 
 
