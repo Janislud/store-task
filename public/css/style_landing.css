@@ -138,7 +138,6 @@
 }
 
 .deals-left {
-    border: 3px solid orange;
     padding: 5em;
 }
 
@@ -186,29 +185,28 @@
     display: inline;
 }
 
-.deals-btn {
-    margin-top: 1em;
-}
-
-.deals-btn button {
-    background-color: rgba(204, 164, 59, 1);
-    padding: 0.6em 6em;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
 .deals-right {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(https://images-cdn.ubuy.co.in/635f7bf7eea07a09b5459ed3-bubble-candle-soy-wax-candles-handmade.jpg);
     box-shadow: rgb(199, 198, 198) 0 0 15px;
-    border: 3px solid greenyellow;
     padding: 12em;
-}   
+}
+
+.yellow-box-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(204, 164, 59, 1);
+    height: 2em; 
+    width: 30%; 
+    color: white;
+    font-size: 1rem;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
 
 /* Tesimonials */
 
@@ -353,7 +351,7 @@
     }
 
     .deals-right {
-        padding: 8em;
+        padding: 14em;
     }
 
     .deals-list ul li {
@@ -378,7 +376,7 @@
     }
 
     .deals-right {
-        padding: 6em;
+        padding: 9em;
     }
 
     .deals-heading-h2 {
@@ -405,7 +403,7 @@
     }
 
     .deals-right {
-        padding: 4em;
+        padding: 6em;
     }
 
     .deals-heading-h2 {
@@ -432,8 +430,20 @@
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (min-width: 200px) and (max-width: 500px) {
     .deals-box {
         flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1071px) and (max-width: 1256px){
+    .yellow-box-btn {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 550px) {
+    .yellow-box-btn{
+        width: 60%;
     }
 }

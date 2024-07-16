@@ -57,7 +57,7 @@
 
             </div>
             <div>
-                <a href="/deals" class="yellow-box {{ request()->is('deals') ? 'active' : '' }}">Learn more</a>
+                <a href="/deals" class="yellow-box-btn {{ request()->is('deals') ? 'active' : '' }}">Learn more</a>
             </div>
           </div>
           <div class="deals-right"></div>
