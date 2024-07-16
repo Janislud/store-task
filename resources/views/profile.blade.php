@@ -108,7 +108,7 @@
                                     <div class="profile__items">
                                         <p>LightGray First Candle <span class="underline">x3</span></p>
                                     </div>
-                                    <p class="profile__total">Total $13.33</p>
+                                    <p class="profile__total">Total $132.33</p>
                                 </div>
                             </div>
                         </div>
