@@ -1,18 +1,13 @@
 
-.about .container {
+.deals-container {
   display: flex;
   height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.about__head p {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-.about__wrapper {
+
+.deals-wrapper {
   margin-top: 45px;
   width: 100%;
   display: flex;

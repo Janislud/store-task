@@ -54,7 +54,6 @@
                     <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><p class="bold-text">Hypoallergenic:</p>&nbsp;100% natural, human friendly ingredients</li>
                     <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><p class="bold-text">Trendy:</p>&nbsp;Scents and designs as seen in latest trends</li>
                 </ul>
-
             </div>
             <div>
                 <a href="/deals" class="yellow-box-btn {{ request()->is('deals') ? 'active' : '' }}">Learn more</a>
@@ -70,26 +69,26 @@
         </div>
         <div class="testimonials-container">
             <div class="testimonials-container-box">
-                <img src="{{ asset('assets/person1.png') }}" alt="person" class="testimonials-person">
-            <h1>“I love it!”</h1>
-            <p>Liv</p>
-
+                <div>
+                    <img src="{{ asset('assets/person1.png') }}" alt="person" class="testimonials-person"></img>
+                </div>
+                <strong>“I love it!”</strong>
+                <p>Liv</p>
             </div>
-
+                <div>
             <div class="testimonials-container-box">
-                <img src="{{ asset('assets/person2.png') }}" alt="person" class="testimonials-person">
-            <h1>“Reccomended for everyone”</h1>
-            <p>Marco</p>
-
+                <div>
+                    <img src="{{ asset('assets/person2.png') }}" alt="person" class="testimonials-person"></img>
+                </div>
+                <strong>“Reccomended for everyone”</strong>
+                <p>Marco</p>
             </div>
-
-
             <div class="testimonials-container-box">
-                <img src="{{ asset('assets/person3.png') }}" alt="person" class="testimonials-person">
-            <h1>“Great product”</h1>
-            <p>Charli</p>
-
-
+                <div>
+                    <img src="{{ asset('assets/person3.png') }}" alt="person" class="testimonials-person"></img>
+                </div>
+                <strong>“Great product”</strong>
+                <p>Charli</p>
             </div>
         </div>
     </section>
