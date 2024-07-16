@@ -64,8 +64,6 @@
     background-color: rgb(221, 179, 72);
 }
 
-/* products part */
-
 
 .products-background {
     height: 150px;
@@ -90,7 +88,6 @@
     width: auto;
     overflow: hidden;
     border-radius: 2% 2% 0 0;
-    /* border: 5px solid rgb(153, 105, 105); */
   }
 
 .images {
@@ -121,7 +118,7 @@
     border-radius: 10px;
 }
 
-/* exclusive deals and */
+
 
 .deals-box {
     display: flex;
@@ -209,7 +206,7 @@
     text-decoration: none;
 }
 
-/* Tesimonials */
+
 
 .testimonials {
     background-color: rgba(204, 164, 59, 0.1);
@@ -266,6 +263,20 @@
     width: 50%;
     height: auto;
 }
+
+
+.learn-more-btn {
+    text-decoration: none;
+}
+
+
+
+.container-popular {
+    padding: 2em;
+}
+
+
+=======
 
 /* /MOBILE / */
 
@@ -336,8 +347,6 @@
 /* / DESC */
 
 
-/* exclusive deals and offers */
-
 
 @media screen and (max-width: 1024px) {
     .deals-box {
@@ -360,13 +369,13 @@
 
     .deals-list ul li {
         
-        display: block; /* Make list items block elements */
+        display: block; 
     }
 }
 
 @media screen and (min-width: 0px) and (max-width: 10000px) {
     .deals-list ul li{
-        display: block; /* Make list items block elements */
+        display: block; 
     }
 }
 
@@ -393,7 +402,7 @@
 
     .deals-list ul li {
         font-size: 14px;
-        display: block; /* Make list items block elements */
+        display: block;
     }
 }
 
@@ -421,10 +430,8 @@
 }
     .deals-list ul li {
         font-size: 12px;
-        display: block; /* Ensure list items are block elements */
-
-}
-
+        display: block; 
+    }   
 }
 
 @media screen and (min-width: 1257px) { 
@@ -446,15 +453,29 @@
     }
 }
 
+
+@media screen and (min-width: 275px) and (max-width: 349px) {
+    .yellow-box-btn{
+        width: 55%;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 580px){
+    .yellow-box-btn {
+        width: 40%;
+        font-size: 13px;
+    }
+} 
+
 @media screen and (min-width: 280px) and (max-width: 550px) {
     .yellow-box-btn {
         width: 60%;
     }
-}
+
 
 @media screen and (min-width: 275px) and (max-width: 800px) {
     .testimonials-container {
         flex-direction: column;
-
     }
 }
