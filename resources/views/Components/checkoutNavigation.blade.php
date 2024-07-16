@@ -27,9 +27,9 @@
             @break
     @endswitch --}}
 
-        <li><a href="/" class="stages__navigation_completed {{ request()->is('/') ? 'active' : '' }}">Cart</a></li>
-        <li><a href="/" class="stages__navigation_completed {{ request()->is('/') ? 'active' : '' }}">Details</a></li>
-        <li><a href="/" class="stages__navigation_completed {{ request()->is('/') ? 'active' : '' }}">Shipping</a></li>
-        <li><a href="/" class="stages__navigation_current {{ request()->is('/') ? 'active' : '' }}">Payment</a></li>
+        <p><a href="/" class="stages__navigation_completed {{ request()->is('/') ? 'active' : '' }}">Cart</a></p>
+        <p><a href="/" class="stages__navigation_completed {{ request()->is('/') ? 'active' : '' }}">Details</a></p>
+        <p><a href="/" class="stages__navigation_completed {{ request()->is('/') ? 'active' : '' }}">Shipping</a></p>
+        <p><a href="/" class="stages__navigation_current {{ request()->is('/') ? 'active' : '' }}">Payment</a></p>
 
 </div>

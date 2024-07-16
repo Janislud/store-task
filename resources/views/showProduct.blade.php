@@ -46,10 +46,9 @@
                 <script>
                     function submitForm() {
                         const quantity = document.getElementById('amountToggler-quantityValue').textContent;
-                        const form = document.getElementById('cart-form');
                         const hiddenInput = document.querySelector("input#quantity");
                         hiddenInput.value = quantity;
-                        form.submit();
+                        document.getElementById('cart-form').submit();
                     }
                 </script>
 

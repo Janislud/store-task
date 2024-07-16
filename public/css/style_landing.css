@@ -50,13 +50,14 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(204, 164, 59, 1);
-    height: 2em;
-    width: 30%;
     color: white;
     font-size: 1rem;
     border: 0;
     cursor: pointer;
     text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    max-width: 210px;
 }
 
 .yellow-box:hover {
@@ -116,7 +117,7 @@
 
 .listing-section {
     box-shadow: 0px 5px 5px gray;
-    max-width: 300px;
+    max-width: 275px;
     border-radius: 10px;
 }
 
@@ -417,7 +418,7 @@
         font-size: 0.875rem;
     }
 
-
+}
     .deals-list ul li {
         font-size: 12px;
         display: block; /* Ensure list items are block elements */
