@@ -4,6 +4,12 @@
     background-color: rgb(204, 164, 59)!important;
     border: 1px solid transparent!important;
     transition: .15s ease-in-out!important;
+
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
 }
 
 .accent-btn:hover {
@@ -111,8 +117,12 @@
     font-weight: 400;
     line-height: 25.6px;
     border: 0.5px solid rgb(137, 137, 137);
+    color: #947629;
+    transition: .2s ease-in-out;
+}
 
-    
+.stages__input:hover {
+    box-shadow: 2px 2px 0px 1px #CCA43B;
 }
 
 .stages__input:focus {
@@ -121,5 +131,5 @@
 }
 
 .isHidden {
-    display: none;
+    display: none!important;
 }
