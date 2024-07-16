@@ -63,7 +63,7 @@ Route::get('/', [HomePageController::class, 'index'])->name('home');
 Route::get('/products', [ProductPageController::class, 'index']);
 Route::get('/products/{id}', [ProductController::class, 'showProduct']);
 Route::get('/about', [AboutPageController::class, 'index']);
-// Route::get('/deals', [DealsPageController::class, 'index']);
+Route::get('/deals', [DealsPageController::class, 'index']);
 Route::get('/profile', [ProfilePageController::class, 'index']);
 
 Route::post('/cart/add/{id}', [CartController::class, 'addToCart'])->name('cart.add');

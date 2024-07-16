@@ -11,7 +11,13 @@
   margin-top: 45px;
   width: 100%;
   display: flex;
+  flex-direction: column;
   gap: 10px;
+}
+
+.deals-collapsible,
+.deals-content {
+  width: 100%;
 }
 
 .deals-collapsible {
@@ -39,7 +45,7 @@
   .deals-collapsible:after {
     content: "\02795";
     font-size: 13px;
-    color: white;
+    color: #fff;
     float: right;
     margin-left: 5px;
   }
@@ -57,3 +63,25 @@
     margin-right: 0;
     padding-left: 40px;
   }
+
+
+@media screen and (min-width: 275px) and (max-width: 768px) {
+  .deals-collapsible {
+    padding: 12px; 
+  }
+  .deals-content {
+    padding: 8px 12px; 
+  }
+  .deals-container p {
+    padding: 12px; 
+  }
+  .deals-container p {
+    padding: 12px; 
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    .inner-box {
+        width: 80%;
+    }
+}
