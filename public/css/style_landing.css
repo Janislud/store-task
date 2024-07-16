@@ -50,13 +50,14 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(204, 164, 59, 1);
-    height: 2em;
-    width: 30%;
     color: white;
     font-size: 1rem;
     border: 0;
     cursor: pointer;
     text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    max-width: 210px;
 }
 
 .yellow-box:hover {
@@ -113,7 +114,7 @@
 
 .listing-section {
     box-shadow: 0px 5px 5px gray;
-    max-width: 300px;
+    max-width: 275px;
     border-radius: 10px;
 }
 
@@ -213,25 +214,30 @@
 } 
 
 .testimonials-heading {
-    padding-top: 3em;
-    padding-bottom: 1em;
-    gap: 2em;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    gap: 15px;
     display: flex;
     flex-direction: column;    
 }
 
 .testimonials-heading-h4{
     font-size: 40px;
+
 }
 
 .testimonials-heading-p {
     font-size: 18px;
+
 }
 
 .testimonials-container {
+    margin: 0 auto;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
+    align-items: center; 
 }
 
 .testimonials-container-box:hover { 
@@ -239,11 +245,14 @@
 }
 
 .testimonials-container-box {
-    padding: 5em;
+    margin: 0 auto;
+    padding: 2em;
     top:-50px; 
     left:-35px; 
-    z-index:999;
+    z-index: 999;
     cursor: pointer; 
+    flex-direction: column;
+    flex-wrap: wrap;
     -webkit-transition-property: all; 
     -webkit-transition-duration: 0.3s; 
     -webkit-transition-timing-function: ease;
@@ -255,6 +264,7 @@
     height: auto;
 }
 
+
 .learn-more-btn {
     text-decoration: none;
 }
@@ -265,6 +275,8 @@
     padding: 2em;
 }
 
+
+=======
 
 /* /MOBILE / */
 
@@ -415,7 +427,7 @@
         font-size: 0.875rem;
     }
 
-
+}
     .deals-list ul li {
         font-size: 12px;
         display: block; 
@@ -441,6 +453,7 @@
     }
 }
 
+
 @media screen and (min-width: 275px) and (max-width: 349px) {
     .yellow-box-btn{
         width: 55%;
@@ -455,7 +468,13 @@
     }
 } 
 
-@media screen and (min-width: 300px) and (max-width: 800px) {
+@media screen and (min-width: 280px) and (max-width: 550px) {
+    .yellow-box-btn {
+        width: 60%;
+    }
+
+
+@media screen and (min-width: 275px) and (max-width: 800px) {
     .testimonials-container {
         flex-direction: column;
     }

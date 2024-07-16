@@ -8,6 +8,8 @@ allTogglers.forEach(toggler => {
     const inc = toggler.querySelector("button#amountToggler-plus");
     const dec = toggler.querySelector("button#amountToggler-minus");
     const value = toggler.querySelector("p#amountToggler-quantityValue");
+
+    value === 1 ? dec.setAttribute("disabled", "true") : "";
     
 
     inc.addEventListener("click", () => {
@@ -24,7 +26,6 @@ allTogglers.forEach(toggler => {
         }
         if (+value.textContent === 1) {
             dec.setAttribute("disabled", "true")
-            console.log("worl")
         }
     })
 

@@ -20,7 +20,7 @@
                 @forelse ($products as $product)
                     <div class="listing-section">
                         <a class="product-card-link" href="/products/{{ $product->id }}">
-                            <img class="product-img" src="{{ $product->photos[0]->image_url }}" alt="{{ $product->title }}" width="300">
+                            <img class="product-img" src="{{ $product->photos[0]->image_url }}" alt="{{ $product->title }}" width="275">
                             <div class="product-desc">
                                 <h2 class="item">{{ $product->name }}</h2>
                                 <h3 class="price">{{ number_format($product->price, 2) }}$</h3>
