@@ -10,42 +10,45 @@ class CheckoutController extends Controller
 {
     public function showDetailsForm()
     {
-        return view('checkout.details');
+        return view('checkoutStages.stageDetails');
     }
 
+    // STORE DETAILS
     public function storeDetails(Request $request)
     {
-        $request->session()->put('checkout.details', $request->all());
-        return redirect()->route('checkout.shipping');
+        $request->session()->put('checkoutStages.stageDetails', $request->all());
+        return redirect()->route('checkoutStages.stageShipping');
     }
 
     public function showShippingForm(Request $request)
     {
-        $details = $request->session()->get('checkout.details');
-        return view('checkout.shipping', compact('details'));
+        $details = $request->session()->get('checkoutStages.stageDetails');
+        return view('checkoutStages.stageShipping', compact('stageDetails'));
     }
 
+    // STORE SHIPPING
     public function storeShipping(Request $request)
     {
-        $request->session()->put('checkout.shipping', $request->all());
-        return redirect()->route('checkout.payment');
+        $request->session()->put('checkoutStages.stageShipping', $request->all());
+        return redirect()->route('checkoutStages.stagePayment');
     }
 
     public function showPaymentForm(Request $request)
     {
-        $details = $request->session()->get('checkout.details');
-        $shipping = $request->session()->get('checkout.shipping');
-        return view('checkout.payment', compact('details', 'shipping'));
+        $details = $request->session()->get('checkoutStages.stageDetails');
+        $shipping = $request->session()->get('checkoutStages.stageShipping');
+        return view('checkoutStages.stagePayment', compact('stageDetails', 'stageShipping'));
     }
 
+    // STORE PAYMENT
     public function storePayment(Request $request)
     {
-        $request->session()->put('checkout.payment', $request->all());
-        return redirect()->route('checkout.success');
+        $request->session()->put('checkoutStages.stagePayment', $request->all());
+        return redirect()->route('checkoutStages.stageSuccess');
     }
 
     public function showSuccess()
     {
-        return view('checkout.success');
+        return view('checkoutStages.stageSuccess');
     }
 }

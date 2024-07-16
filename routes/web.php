@@ -25,13 +25,13 @@ use Illuminate\Support\Facades\Route;
 
 
 // Checkout stagin routes
-Route::get('/details', function () {
-    return view('CheckoutStages.stageDetails', [
-        "stageIndex" => 1,
-        "totalOrderPrice" => "$9.99",
-        "shipping" => "Calculated at the next step"
-    ]);
-});
+// Route::get('/details', function () {
+//     return view('CheckoutStages.stageDetails', [
+//         "stageIndex" => 1,
+//         "totalOrderPrice" => "$9.99",
+//         "shipping" => "Calculated at the next step"
+//     ]);
+// });
 
 Route::get('/shipping', function () {
     return view('CheckoutStages.stageShipping', [
@@ -63,7 +63,7 @@ Route::get('/', [HomePageController::class, 'index'])->name('home');
 Route::get('/products', [ProductPageController::class, 'index']);
 Route::get('/products/{id}', [ProductController::class, 'showProduct']);
 Route::get('/about', [AboutPageController::class, 'index']);
-Route::get('/deals', [DealsPageController::class, 'index']);
+// Route::get('/deals', [DealsPageController::class, 'index']);
 Route::get('/profile', [ProfilePageController::class, 'index']);
 
 Route::post('/cart/add/{id}', [CartController::class, 'addToCart'])->name('cart.add');
@@ -72,13 +72,16 @@ Route::post('/cart/update', [CartController::class, 'updateQuantity'])->name('ca
 Route::post('/cart/remove/{id}', [CartController::class, 'removeFromCart'])->name('cart.remove');
 Route::post('/cart/checkout', [CartController::class, 'checkout'])->name('cart.checkout');
 
-Route::get('/checkout/details', [CheckoutController::class, 'showDetailsForm'])->name('checkout.details');
+Route::get('/checkout/details', [CheckoutController::class, 'showDetailsForm'])->name('checkoutStages.stageDetails');
+// store details
 Route::post('/checkout/details', [CheckoutController::class, 'storeDetails'])->name('checkout.storeDetails');
-Route::get('/checkout/shipping', [CheckoutController::class, 'showShippingForm'])->name('checkout.shipping');
+Route::get('/checkout/shipping', [CheckoutController::class, 'showShippingForm'])->name('checkoutStages.stageShipping');
+//store shipping
 Route::post('/checkout/shipping', [CheckoutController::class, 'storeShipping'])->name('checkout.storeShipping');
-Route::get('/checkout/payment', [CheckoutController::class, 'showPaymentForm'])->name('checkout.payment');
+Route::get('/checkout/payment', [CheckoutController::class, 'showPaymentForm'])->name('checkoutStages.stagePayment');
+// store payment
 Route::post('/checkout/payment', [CheckoutController::class, 'storePayment'])->name('checkout.storePayment');
-Route::get('/checkout/success', [CheckoutController::class, 'showSuccess'])->name('checkout.success');
+Route::get('/checkout/success', [CheckoutController::class, 'showSuccess'])->name('checkoutStages.stageSuccess');
 
 
 Route::get('/products', [ProductSearchController::class, 'index'])->name('products.index');
