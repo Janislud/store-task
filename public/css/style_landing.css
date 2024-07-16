@@ -276,8 +276,6 @@
 }
 
 
-=======
-
 /* /MOBILE / */
 
 @media screen and (min-width: 275px)  {
@@ -432,7 +430,7 @@
         font-size: 12px;
         display: block; 
     }   
-}
+
 
 @media screen and (min-width: 1257px) { 
     .deals-box {
@@ -472,7 +470,7 @@
     .yellow-box-btn {
         width: 60%;
     }
-
+}
 
 @media screen and (min-width: 275px) and (max-width: 800px) {
     .testimonials-container {
