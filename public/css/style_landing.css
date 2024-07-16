@@ -127,7 +127,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgba(247, 248, 250, 1);
-    padding: 2em;
+    padding: 8em;
+    flex-direction: row-reverse;
 }
 
 .deals-left, .deals-right {
@@ -137,8 +138,7 @@
 }
 
 .deals-left {
-    border: 3px solid orange;
-    padding: 1em;
+    padding: 5em;
 }
 
 .deals-heading {
@@ -165,6 +165,7 @@
 }
 
 .deals-list ul li {
+    font-size: 16px;
     list-style: none;
     margin: 1em 0;
     display: flex;
@@ -175,20 +176,13 @@
     width: 1.2em;
     height: 1.2em;
     margin-right: 0.5em;
+    vertical-align: middle;
+    flex-shrink: 0;
 }
 
-.deals-btn {
-    margin-top: 1em;
-}
-
-.deals-btn button {
-    background-color: rgba(204, 164, 59, 1);
-    padding: 0.6em 2.5em;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
+.bold-text {
+    font-weight: bold;
+    display: inline;
 }
 
 .deals-right {
@@ -197,11 +191,22 @@
     background-position: center;
     background-image: url(https://images-cdn.ubuy.co.in/635f7bf7eea07a09b5459ed3-bubble-candle-soy-wax-candles-handmade.jpg);
     box-shadow: rgb(199, 198, 198) 0 0 15px;
-    border: 3px solid greenyellow;
-    padding: 0;
-}   
+    padding: 12em;
+}
 
-
+.yellow-box-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(204, 164, 59, 1);
+    height: 2em; 
+    width: 30%; 
+    color: white;
+    font-size: 1rem;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
 
 /* Tesimonials */
 
@@ -256,19 +261,6 @@
 .learn-more-btn {
     text-decoration: none;
 }
-
-/* images for item listing */
-#image-1 {background-image: url("../media/candle1.png");}
-#image-2 {background-image: url("../media/candle2.png");}
-#image-3 {background-image: url("../media/candle3.png");}
-#image-4 {background-image: url("../media/candle4.png");}
-#image-5 {background-image: url("../media/candle5.png");}
-#image-6 {background-image: url("../media/candle6.png");}
-#image-7 {background-image: url("../media/candle7.png");}
-#image-8 {background-image: url("../media/candle8.png");}
-
-
-
 
 
 /* /MOBILE / */
@@ -343,110 +335,120 @@
 /* exclusive deals and offers */
 
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+    .deals-box {
+        flex-direction: column;
+        padding: 6em;
+    }
+
+    .deals-left, .deals-right {
+        flex: 1 1 100%;
+        margin: 1em 0;
+    }
+
+    .deals-left {
+        padding: 4em;
+    }
+
+    .deals-right {
+        padding: 14em;
+    }
+
+    .deals-list ul li {
+        
+        display: block; /* Make list items block elements */
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 10000px) {
+    .deals-list ul li{
+        display: block; /* Make list items block elements */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .deals-box {
+        padding: 4em;
+    }
+
+    .deals-left {
+        padding: 3em;
+    }
+
+    .deals-right {
+        padding: 9em;
+    }
+
     .deals-heading-h2 {
         font-size: 1.5rem;
     }
 
     .deals-heading-p {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
-    .deals-btn button {
-        padding: 0.5em 2em;
-        font-size: 0.875rem;
-    }
-
-    .deals-right {
-        padding: 8em;
-    }
-
-    .testimonials-container div {
-        flex: 1 1 45%;
+    .deals-list ul li {
+        font-size: 14px;
+        display: block; /* Make list items block elements */
     }
 }
 
 @media screen and (max-width: 480px) {
+    .deals-box {
+        padding: 2em;
+    }
+
+    .deals-left {
+        padding: 2em;
+    }
+
+    .deals-right {
+        padding: 6em;
+    }
+
     .deals-heading-h2 {
         font-size: 1.25rem;
     }
 
     .deals-heading-p {
-        font-size: 0.75rem;
+        font-size: 0.875rem;
     }
 
-    .deals-btn button {
-        padding: 0.4em 1.5em;
-        font-size: 0.75rem;
-    }
 
-    .deals-right {
-        padding: 6em;
-    }
+    .deals-list ul li {
+        font-size: 12px;
+        display: block; /* Ensure list items are block elements */
 
-    .testimonials-container div {
-        flex: 1 1 100%;
-    }
 }
 
-@media screen and (max-width: 1545px) {
-    .deals-list ul li{
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 1481px) {
-    
-    .deals-heading-h2{
-        font-size: 30px;
-    }
-    
-    
-    .deals-list ul li{
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 1417px) { 
-    .deals-box {
-        padding: 9em;
-    }
-}
-
-@media screen and (max-width: 1321px) { 
-    .deals-box {
-        padding: 7em;
-    }
-}
-
-@media screen and (max-width: 1257px) { 
-    .deals-box {
-        padding: 6em;
-    }
-}
-
-@media screen and (max-width: 1257px) { 
-    .deals-box {
-        padding: 5em;
-    }
-}
-
-@media screen and (max-width: 1193px) { 
-    .deals-box {
-        padding: 4.5em;
-    }
 }
 
 @media screen and (min-width: 1257px) { 
     .deals-box {
         padding: 5em;
+
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (min-width: 200px) and (max-width: 500px) {
     .deals-box {
         flex-direction: column;
     }
 }
-=========
->>>>>>>>> Temporary merge branch 2
+
+@media screen and (min-width: 1071px) and (max-width: 1256px){
+    .yellow-box-btn {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 550px) {
+    .yellow-box-btn{
+        width: 60%;
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    .testimonials-container {
+        flex-direction: column;
+
+    }
+}

@@ -1,5 +1,5 @@
 <div class="stages__navigation">
-    @switch ($stageIndex)
+    {{-- @switch ($stageIndex)
         @case(1)
             <p class="stages__navigation_completed">Cart</p>
             <p class="stages__navigation_active">Details</p>
@@ -25,5 +25,11 @@
             <p class="stages__navigation_completed">Payment</p>
             <p class="stages__navigation_completed">Success</p>
             @break
-    @endswitch
+    @endswitch --}}
+
+        <li><a href="/" class="stages__navigation_completed {{ request()->is('/') ? 'active' : '' }}">Cart</a></li>
+        <li><a href="/" class="stages__navigation_completed {{ request()->is('/') ? 'active' : '' }}">Details</a></li>
+        <li><a href="/" class="stages__navigation_completed {{ request()->is('/') ? 'active' : '' }}">Shipping</a></li>
+        <li><a href="/" class="stages__navigation_current {{ request()->is('/') ? 'active' : '' }}">Payment</a></li>
+
 </div>
