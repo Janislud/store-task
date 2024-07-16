@@ -206,6 +206,9 @@
     text-decoration: none;
 }
 
+.yellow-box-btn:hover {
+    background-color: rgb(221, 179, 72);
+}
 
 
 .testimonials {
