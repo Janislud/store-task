@@ -50,20 +50,19 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(204, 164, 59, 1);
-    height: 2em;
-    width: 30%;
     color: white;
     font-size: 1rem;
     border: 0;
     cursor: pointer;
     text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    max-width: 210px;
 }
 
 .yellow-box:hover {
     background-color: rgb(221, 179, 72);
 }
-
-/* products part */
 
 
 .products-background {
@@ -89,7 +88,6 @@
     width: auto;
     overflow: hidden;
     border-radius: 2% 2% 0 0;
-    /* border: 5px solid rgb(153, 105, 105); */
   }
 
 .images {
@@ -116,11 +114,11 @@
 
 .listing-section {
     box-shadow: 0px 5px 5px gray;
-    max-width: 300px;
+    max-width: 275px;
     border-radius: 10px;
 }
 
-/* exclusive deals and */
+
 
 .deals-box {
     display: flex;
@@ -165,7 +163,7 @@
 }
 
 .deals-list ul li {
-    font-size: 16px;
+    font-size: 16px!important;
     list-style: none;
     margin: 1em 0;
     display: flex;
@@ -208,7 +206,10 @@
     text-decoration: none;
 }
 
-/* Tesimonials */
+.yellow-box-btn:hover {
+    background-color: rgb(221, 179, 72);
+}
+
 
 .testimonials {
     background-color: rgba(204, 164, 59, 0.1);
@@ -216,50 +217,71 @@
 } 
 
 .testimonials-heading {
-    padding-top: 3em;
-    padding-bottom: 1em;
-    gap: 2em;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    gap: 15px;
     display: flex;
     flex-direction: column;    
 }
 
 .testimonials-heading-h4{
     font-size: 40px;
+
 }
 
 .testimonials-heading-p {
     font-size: 18px;
+
 }
 
 .testimonials-container {
+    margin: 10px auto;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
 }
 
 .testimonials-container-box:hover { 
-    transform: scale(1.2); 
+    /* transform: scale(1.2);  */
 }
 
 .testimonials-container-box {
-    padding: 5em;
-    top:-50px; 
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* top:-50px; 
     left:-35px; 
-    z-index:999;
+    z-index:999; */
     cursor: pointer; 
-    -webkit-transition-property: all; 
+    /* -webkit-transition-property: all; 
     -webkit-transition-duration: 0.3s; 
-    -webkit-transition-timing-function: ease;
+    -webkit-transition-timing-function: ease; */
 }
 
 .testimonials-person {
     border-radius: 50%;
-    width: 50%;
+    width: 100%;
     height: auto;
+    margin-bottom: 15px;
 }
+
 
 .learn-more-btn {
     text-decoration: none;
+}
+
+
+
+.container-popular {
+    padding: 2em;
+}
+
+.testimonials-comment {
+    margin-bottom: 10px;
+    max-width: 300px; 
 }
 
 
@@ -332,8 +354,6 @@
 /* / DESC */
 
 
-/* exclusive deals and offers */
-
 
 @media screen and (max-width: 1024px) {
     .deals-box {
@@ -356,13 +376,13 @@
 
     .deals-list ul li {
         
-        display: block; /* Make list items block elements */
+        display: block; 
     }
 }
 
 @media screen and (min-width: 0px) and (max-width: 10000px) {
     .deals-list ul li{
-        display: block; /* Make list items block elements */
+        display: block; 
     }
 }
 
@@ -389,7 +409,7 @@
 
     .deals-list ul li {
         font-size: 14px;
-        display: block; /* Make list items block elements */
+        display: block;
     }
 }
 
@@ -414,14 +434,12 @@
         font-size: 0.875rem;
     }
 
+}
 
-    .deals-list ul li {
+.deals-list ul li {
         font-size: 12px;
-        display: block; /* Ensure list items are block elements */
-
-}
-
-}
+        display: block; 
+}   
 
 @media screen and (min-width: 1257px) { 
     .deals-box {
@@ -436,19 +454,14 @@
     }
 }
 
-@media screen and (min-width: 1071px) and (max-width: 1256px){
-    .yellow-box-btn {
-        width: 55%;
-    }
-}
-
-@media screen and (min-width: 280px) and (max-width: 550px) {
-    .yellow-box-btn{
-        width: 60%;
-
-@media screen and (min-width: 300px) and (max-width: 800px) {
+@media screen and (min-width:275px) and (max-width:600px) {
     .testimonials-container {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+    .testimonials-container-box {
+        width: 30%;
 
     }
 }

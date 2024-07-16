@@ -54,7 +54,6 @@
                     <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><p class="bold-text">Hypoallergenic:</p>&nbsp;100% natural, human friendly ingredients</li>
                     <li><img src="{{ asset('assets/check-sign.svg') }}" alt="check-icon" class="check-sign"><p class="bold-text">Trendy:</p>&nbsp;Scents and designs as seen in latest trends</li>
                 </ul>
-
             </div>
             <div>
                 <a href="/deals" class="yellow-box-btn {{ request()->is('deals') ? 'active' : '' }}">Learn more</a>
@@ -71,27 +70,45 @@
         <div class="testimonials-container">
             <div class="testimonials-container-box">
                 <img src="{{ asset('assets/person1.png') }}" alt="person" class="testimonials-person">
-            <h1>“I love it!”</h1>
+            <h4 class="testimonials-comment">“I love it!”</h1>
             <p>Liv</p>
 
             </div>
-
+                
             <div class="testimonials-container-box">
                 <img src="{{ asset('assets/person2.png') }}" alt="person" class="testimonials-person">
-            <h1>“Reccomended for everyone”</h1>
+            <h4 class="testimonials-comment">“Reccomended for everyone”</h1>
             <p>Marco</p>
 
             </div>
-
-
             <div class="testimonials-container-box">
                 <img src="{{ asset('assets/person3.png') }}" alt="person" class="testimonials-person">
-            <h1>“Great product”</h1>
+            <h4 class="testimonials-comment">“Great product”</h1>
             <p>Charli</p>
 
-
+            
             </div>
         </div>
+    </section>
+    <section>
+        <div class="container-popular">
+            <div>
+                <h1 class="top-heading-h2">Popular</h1>
+                <p class="top-heading-p">Our top selling product that you may like</p>
+            </div>
+        </div>
+        <div class="products-wrapper-conteiner">
+            @foreach ($sliced as $product)
+                <div class="listing-section">
+                        <a class="product-card-link" href="/products/{{ $product->id }}">
+                                    <img class="images" src="{{ $product->photos[2]->image_url }}" alt="{{ $product->photos[2]->title }}"></img>
+                            <div class="product-desc">
+                                <h2 class="item">{{ $product->name }}</h2>
+                                <h3 class="price">{{ number_format($product->price, 2) }}$</h3>
+                            </div>
+                        </a>
+                </div>
+            @endforeach
     </section>
 </main>
 @endsection

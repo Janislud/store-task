@@ -1,5 +1,25 @@
 
-/* Style the button that is used to open and close the collapsible content */
+.deals-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.deals-wrapper {
+  margin-top: 45px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.deals-collapsible,
+.deals-content {
+  width: 100%;
+}
+
 .deals-collapsible {
     background-color: #fff;
     cursor: pointer;
@@ -10,12 +30,11 @@
     outline: none;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
   .deals-active, .deals-collapsible:hover {
     background-color: #CCA43B;
   }
-  
-  /* Style the collapsible content. Note: hidden by default */
+
   .deals-content {
     padding: 0 18px;
     display: none;
@@ -24,13 +43,45 @@
   } 
 
   .deals-collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: "\02795";
     font-size: 13px;
-    color: white;
+    color: #fff;
     float: right;
     margin-left: 5px;
   }
   
   .deals-active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796";
   }
+
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
+
+
+@media screen and (min-width: 275px) and (max-width: 768px) {
+  .deals-collapsible {
+    padding: 12px; 
+  }
+  .deals-content {
+    padding: 8px 12px; 
+  }
+  .deals-container p {
+    padding: 12px; 
+  }
+  .deals-container p {
+    padding: 12px; 
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    .inner-box {
+        width: 80%;
+    }
+}
