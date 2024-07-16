@@ -33,20 +33,25 @@
                         'productId' => 'HARDCODED_ID',
                         'item' => ['quantity' => 1],
                     ])
-
                 </div>
-
-
-
-
 
                 <div class="pdp__addAddToCart">
                     <form action="{{ route('cart.add', ['id' => $product->id]) }}" method="POST" id="cart-form">
                         @csrf
-                        <input type="hidden" name="quantity" value="1" min="1">
-                        <button class="yellow-box cart-btn accent-btn" type="submit">Add to Cart</button>
+                        <input type="hidden" id="quantity" name="quantity" value="1" min="1">
+                        <button class="yellow-box cart-btn accent-btn" onclick="submitForm()" type="button">Add to Cart</button>
                     </form>
                 </div>
+
+                <script>
+                    function submitForm() {
+                        const quantity = document.getElementById('amountToggler-quantityValue').textContent;
+                        const form = document.getElementById('cart-form');
+                        const hiddenInput = document.querySelector("input#quantity");
+                        hiddenInput.value = quantity;
+                        form.submit();
+                    }
+                </script>
 
 
                 <form class="subscr-form">
