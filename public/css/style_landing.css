@@ -445,5 +445,10 @@
 @media screen and (min-width: 280px) and (max-width: 550px) {
     .yellow-box-btn{
         width: 60%;
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    .testimonials-container {
+        flex-direction: column;
+
     }
 }
