@@ -86,3 +86,6 @@ Route::get('/checkout/success', [CheckoutController::class, 'showSuccess'])->nam
 
 Route::get('/products', [ProductSearchController::class, 'index'])->name('products.index');
 
+
+
+
