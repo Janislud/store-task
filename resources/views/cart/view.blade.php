@@ -34,13 +34,13 @@
                             <p class="cart__item-priceValue">${{ $item['price'] }}</p>
                         </div>
 
-                        <div class="cart__item-quantity">
+                        <div data-id={{$productId}} onclick="dynamicReCalc(event, {{$productId}}, {{$item['price']}})" class="cart__item-quantity">
                             @include('Components.amountToggler', ['productId' => $productId])
                         </div>
 
                         <div class="cart__item-total">
                             <p class="cart__item-priceValue cart__item-priceValue-mob">Total: </p>
-                            <p class="cart__item-totalValue">${{ $item['quantity'] * $item['price'] }}</p>
+                            <p id="cart__item-total-{{$productId}}" class="cart__item-totalValue">${{ $item['quantity'] * $item['price'] }}</p>
                         </div>
                     </div>
                 @endforeach
@@ -67,4 +67,29 @@
         </div>
     </section>
 
+    <script>
+        function dynamicReCalc(e, id, price) {
+            const value = document.querySelector(`.cart__item-quantity[data-id='${id}'] #amountToggler-quantityValue`).textContent;
+            const productTotal = document.querySelector(`#cart__item-total-${id}`);
+            const cartTotal = document.querySelector(".cart__bottom-price .cart__value");
+
+            const newValue = (+price * + value).toFixed(2);
+
+            productTotal.textContent = `$${newValue}`;
+
+            console.log()
+
+            cartTotal.textContent = `
+            $
+                ${
+                    [
+                        ...document.querySelectorAll(".cart__item-totalValue")
+                    ].
+                    map(item => item.textContent.slice(1)).
+                    reduce((a, c) => a += +c, 0).
+                    toFixed(2)
+                }
+            `;
+        }
+    </script>
 @endsection
