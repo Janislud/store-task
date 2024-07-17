@@ -13,6 +13,7 @@
             <div class="nav-dropdown-content">
                 <li><a href="/about" class="nav-item {{ request()->is('about') ? 'active' : '' }}">About</a></li>
                 <li><a href="/deals" class="nav-item {{ request()->is('deals') ? 'active' : '' }}">Deals</a></li>
+                <li><a href="/faq" class="nav-item {{ request()->is('faq') ? 'active' : '' }}">FAQ</a></li>
             </div>
             </div>
         </ul>
