@@ -13,7 +13,7 @@
                     </a>
                 </div>
                 <div class="stages__wrapper">
-                    @include ('Components.checkoutNavigation')
+                    @include ('Components.checkoutNavigation', ["stageIndex" => 3])
                     <div class="stages__content stages__content_payment">
                         <form action="{{ route('checkout.storePayment') }}" method="POST">
                             @csrf
