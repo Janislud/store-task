@@ -174,12 +174,9 @@ nav {
 @media screen and (min-width: 275px) and (max-width: 768px) {
     .nav-dropbtn {
         margin-top: 10px;
-        display: hidden;
      }
     .nav-dropdown-content {
         align-items: center;
         position: relative;
-        z-index: 20;
-        
     }
 }
