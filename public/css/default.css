@@ -12,10 +12,6 @@
     color: rgb(204, 164, 59)!important;
 }
 
-.accent-btn:disabled {
-    opacity: .5;
-}
-
 .underline {
     cursor: pointer;
     position: relative;
