@@ -19,6 +19,7 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
+    padding-bottom: 20px;
 }
 
 .nav-links li {
@@ -38,7 +39,7 @@ nav {
 .icons button {
     background: none;
     border: none;
-    padding: 0 10px;
+
 }
 
 .icons img {

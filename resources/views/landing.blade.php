@@ -155,5 +155,4 @@
             @endforeach
     </section>
 </main>
-@section('scripts')
 @endsection
