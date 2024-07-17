@@ -12,8 +12,7 @@ body {
 
 section#checkout {
   background-color: white;
-  height: 100%;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 section#checkout input[type=radio] {
   -webkit-appearance: none;
@@ -41,10 +40,11 @@ section#checkout .container {
   max-width: 100%;
   display: flex;
   padding-left: 20px;
-  height: 100%;
+  min-height: 100vh;
 }
 section#checkout .stages,
 section#checkout .order {
+  min-height: 100vh;
   padding: 20px 0px;
   padding-right: 20px;
   flex-basis: 100%;
@@ -53,10 +53,29 @@ section#checkout .order {
   align-items: flex-start;
   flex-direction: column;
 }
+section#checkout .order__items {
+  pointer-events: auto;
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+}
+section#checkout .order__items::-webkit-scrollbar {
+  height: 5px;
+  background-color: #b8b8b8;
+}
+section#checkout .order__items::-webkit-scrollbar-thumb {
+  background-color: #d6d6d6;
+}
+section#checkout .order__items::-webkit-scrollbar-button {
+  background-color: #c7b382;
+  width: 2px;
+}
+section#checkout .order__item {
+  width: 100px;
+}
 section#checkout .stages {
   padding: 0;
   display: flex;
-  height: 100%;
   align-items: center;
 }
 section#checkout .stages__wrapper {

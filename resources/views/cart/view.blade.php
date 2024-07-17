@@ -39,9 +39,15 @@
                             @include('Components.amountToggler', ['productId' => $productId])
                         </div> --}}
                         <div class="cart__item-quantity">
-                            <form action="{{ route('cart.update', $productId) }}" method="POST" class="cart__item-quantity-form">
+                            <form id="form-{{$productId}}" onclick="submitCartForm({{$productId}})" action="{{ route('cart.update', $productId) }}" method="POST" class="cart__item-quantity-form">
                                 @csrf
-                                <input type="number" name="quantity" value="{{ $item['quantity'] }}" min="1" onchange="this.form.submit()">
+                                 <input type="hidden" id="quantity" name="quantity" value={{$item["quantity"]}} min="1">
+                                 <div>
+                                    @include('Components.amountToggler', [
+                                        'productId' => $productId,
+                                        'item' => ['quantity' => $item['quantity']],
+                                    ])
+                                </div>
                             </form>
                         </div>
 
@@ -73,6 +79,17 @@
         </div>
     </section>
 
+    <script>
+        function submitCartForm(id) {
+            const form = document.querySelector(`#form-${id}`);
+            console.log(form)
+            console.log(`#form-${id}`);
+            const input = form.querySelector("input#quantity");
+            const value = form.querySelector("#amountToggler-quantityValue").textContent;
+            input.value = value;
+            form.submit();
+        }
+    </script>
     {{-- <script>
         function dynamicReCalc(e, id, price) {
             const value = document.querySelector(`.cart__item-quantity[data-id='${id}'] #amountToggler-quantityValue`).textContent;

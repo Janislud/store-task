@@ -1,6 +1,7 @@
 <div class="order">
     <div class="order__content">
-        @foreach($cart as $id => $details)
+        <div class="order__items">
+            @foreach($cart as $id => $details)
                 <div class="order__item">
                     <img src="{{ $details['photo'] }}" alt="{{ $details['name'] }}" class="order__item-photo" width="100">
                     <div>
@@ -10,6 +11,7 @@
                     </div>
                 </div>
             @endforeach
+        </div>
         <div class="order__coupon">
             <input class="order__coupon-input" type="text" placeholder="Coupon code">
             <button class="order__coupon-addBtn" type="submit">Add code</button>
