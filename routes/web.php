@@ -51,3 +51,4 @@ Route::get('/checkout/success/{order_id}', [CheckoutController::class, 'showSucc
 
 Route::get('/products', [ProductSearchController::class, 'index'])->name('products.index');
 
+

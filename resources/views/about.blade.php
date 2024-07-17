@@ -51,6 +51,7 @@
             </div>
            
             <p class="about__thanks">Thank you for choosing Storefront! 😊🙏🏾</p>
+
         </div>
     </div>
     <script>
