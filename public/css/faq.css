@@ -1,0 +1,110 @@
+.faq-title-underline {
+    font-size: 40px;
+}
+
+.faq-subtitle {
+    font-size: 20px;
+    margin-left: 1.7em;
+}
+
+.faq-title-underline, .faq-subtitle {
+    align-items: right;
+}
+
+.faq-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-content-wrapper {
+    margin-top: 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq-collapsible,
+.faq-content {
+    width: 100%;
+    text-align: center;
+}
+
+.faq-collapsible {
+    background-color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+.faq-collapsible-title {
+    transition: color 0.3s ease;
+}
+
+.faq-collapsible-title:hover,
+.faq-active .faq-collapsible-title {
+    color: #CCA43B;
+}
+
+.faq-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.faq-collapsible:after {
+    content: none;
+    font-size: 13px;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+}
+
+.faq-active:after {
+    content: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+.faq-thanks-container {
+    display: flex;
+    /* margin-top: 2em;
+    margin-bottom: 6.2em; */
+    padding: 3em 0 4.8em 0;
+    justify-content: center;
+}
+
+
+
+@media screen and (min-width: 275px) and (max-width: 768px) {
+    .faq-collapsible {
+        padding: 12px;
+    }
+    .faq-content {
+        padding: 8px 12px;
+    }
+    .faq-container p {
+        padding: 12px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    .faq-inner-box {
+        width: 80%;
+    }
+}

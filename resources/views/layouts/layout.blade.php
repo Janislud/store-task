@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('css/products.css') }}">
     <link rel="stylesheet" href="{{ asset('css/deals.css') }}">
     <link rel="stylesheet" href="{{ asset('css/default.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/faq.css') }}">
     <title>@yield('title')</title>
 </head>
 
