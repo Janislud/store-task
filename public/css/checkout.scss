@@ -13,8 +13,7 @@ body {
 
 section#checkout {
     background-color: white;
-    height: 100%;
-    max-height: 100vh;
+    min-height: 100vh;
 
     input[type="radio"] {
         appearance: none;
@@ -44,11 +43,12 @@ section#checkout {
         max-width: 100%;
         display: flex;
         padding-left: 20px;
-        height: 100%;
+        min-height: 100vh;
     }
 
     .stages,
     .order {
+        min-height: 100vh;
         padding: 20px 0px;
         padding-right: 20px;
         flex-basis: 100%;
@@ -58,10 +58,35 @@ section#checkout {
         flex-direction: column;
     }
 
+    .order {
+        &__items {
+            pointer-events: auto    ;
+            display: flex;
+            gap: 20px;
+            overflow-x: scroll;
+
+            &::-webkit-scrollbar {
+                height: 5px;
+                background-color: #b8b8b8;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #d6d6d6;
+            }
+
+            &::-webkit-scrollbar-button {
+                background-color: #c7b382;
+                width: 2px;
+            }
+        }
+        &__item {
+            width: 100px;
+        }
+    }
+
     .stages {
         padding: 0;
         display: flex;
-        height: 100%;
         align-items: center;
 
         &__wrapper {
