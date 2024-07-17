@@ -31,9 +31,10 @@
 
     {{-- Swiper.js cdn, for pdp slider --}}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    {{-- Testimonial scripts --}}
+    <script src="{{ asset('js/testimonials.js') }}"></script>
     {{-- Swiper.js initializing --}}
     <script src="{{ asset('js/slider.js') }}"></script>
-    <script src="{{ asset('js/testimonials.js') }}"></script>
     @yield('scripts')
 </body>
 
