@@ -9,23 +9,23 @@
             <div class="stages">
                 <div class="img__wrapper">
                     <a href="/" id="checkout-logo">
-                    <img src="{{ asset('assets/Main-logo.svg') }}" alt="logo" class="logo">
+                        <img src="{{ asset('assets/Main-logo.svg') }}" alt="logo" class="logo">
                     </a>
                 </div>
                 <div class="stages__wrapper">
-                    @include ('Components.checkoutNavigation')
+                    @include ('Components.checkoutNavigation', ["stageIndex" => 1])
                     <div class="stages__content">
                         <form action="{{ route('checkout.storeDetails') }}" method="POST">
                             @csrf
                         <div class='stages__contact'>
                             <div class="stages__contact-row">
                                 <p class="stages__sub">Contact</p>
-                                <div class="stages__acount-check">
+                                {{-- <div class="stages__acount-check">
                                     <p class="order__text">Do you have an account?</p>
                                     <p class="order__text underline">Login</p>
-                                </div>
+                                </div> --}}
                             </div>
-                            <input type="text" name="email" class="stages__input" placeholder="Email or mobile phone number" required value="{{ session('checkoutStages.stageDetails.email') }}">
+                            <input type="text" name="email" class="stages__input" placeholder="Email" required value="{{ session('checkoutStages.stageDetails.email') }}">
                             <div class="stages__checkbox-wrapper">
                                 <input type="checkbox" name="newsletter" class="stages__checkbox">
                                 <p class="stages__text">Add me to Candleaf newsletter for a 10% discount</p>
