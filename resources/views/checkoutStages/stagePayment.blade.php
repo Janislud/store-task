@@ -60,7 +60,7 @@
                                        
                                         <div class="stages__2input">
                                             <div class="stages__input-wrapper">
-                                                <input class="stages__input" name="expiry_date" placeholder="Expiration (MM/YY)" required></input>
+                                                <input cardExpDateInput class="stages__input" name="expiry_date" placeholder="Expiration (MM/YY)" required></input>
                                             </div>
                                             <div class="stages__input-wrapper">
                                                 <input class="stages__input" name="cvv" placeholder="CVV" required></input>
