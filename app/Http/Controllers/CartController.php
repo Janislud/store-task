@@ -2,16 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Order;
-use App\Models\OrderItem;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
 class CartController extends Controller
 {
-    // Add to cart
-
-    // Alex edit: add second arg with form input#quantity which pass the value of quantity from PDP toggler
     public function addToCart($id, Request $request)
     {
         $product = Product::with('photos')->findOrFail($id);
@@ -55,35 +50,16 @@ class CartController extends Controller
         return view('cart.view', compact('cart'));
     }
 
-    public function checkout(Request $request)
+    public function updateQuantity(Request $request, $id)
+{
+    $cart = session()->get('cart', []);
 
-        {
-            return view('CheckoutStages.stageDetails');
-            // $cart = session()->get('cart', []);
-
-            //     if (empty($cart)) {
-            //         return redirect()->back()->with('error', 'Your cart is empty.');
-            //     }
-
-            //     // Create a new order
-            //     $order = new Order();
-            //     $order->user_id = auth()->id();
-            //     $order->total = array_sum(array_map(fn($item) => $item['quantity'] * $item['price'], $cart));
-            //     $order->save();
-
-            //     // Create order items
-            //     foreach ($cart as $productId => $item) {
-            //         $orderItem = new OrderItem();
-            //         $orderItem->order_id = $order->id;
-            //         $orderItem->product_id = $productId;
-            //         $orderItem->quantity = $item['quantity'];
-            //         $orderItem->price = $item['price'];
-            //         $orderItem->save();
-            //     }
-
-            //     // Clear the cart
-            //     session()->forget('cart');
-
-            //     return redirect()->route('checkout.confirmation')->with('success', 'Order placed successfully!');
+    if (isset($cart[$id])) {
+        $cart[$id]['quantity'] = $request->quantity;
+        session()->put('cart', $cart);
     }
+
+    return redirect()->route('cart.view')->with('success', 'Cart updated successfully!');
+}
+
 }

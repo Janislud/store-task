@@ -71,7 +71,7 @@
             <h4 class="testimonials-heading-h4">Testimonials</h4>
             <p class="testimonials-heading-p">Some quotes from our happy customers</p>
         </div>
-        <div  class="testimonials-container swiper">
+        <div  class="testimonials-container swiper2">
             <div class="swiper-wrapper">
                 <div class="testimonials-container-box swiper-slide">
                     <img src="{{ asset('assets/person1.png') }}" alt="person" class="testimonials-person">
@@ -123,10 +123,14 @@
                     <h4 class="testimonials-comment">“Melted my heart”</h4>
                     <p>Juan</p>  
                 </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
+
+            
+
         </div>
         </div>
     </section>
@@ -151,5 +155,4 @@
             @endforeach
     </section>
 </main>
-@section('scripts')
 @endsection

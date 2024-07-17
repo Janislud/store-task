@@ -279,6 +279,15 @@
     max-width: 300px; 
 }
 
+.swiper2 {
+    position: relative;
+}
+
+.swiper2 .swiper-button-prev, .swiper-button-next{
+    position: absolute !important;
+    top:50% !important;
+    translate: 0% -50% !important;
+}
 
 /* /MOBILE / */
 
