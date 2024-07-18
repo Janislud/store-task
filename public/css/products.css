@@ -1,7 +1,5 @@
-
-
 .pr-searchbar {
-    margin: 34px 16px auto;
+    margin: 34px 0px auto;
     font-size: 16px;
     padding: 8px 20px;
     border: none;
@@ -112,18 +110,15 @@
 .search-bar {
     display: flex;
     flex-wrap: wrap;
-}
-
-@media screen and (max-width: 480px) { /* Adjust breakpoint as needed */
-    .pr-search {
-        content: ''; /* Hide search icon on very small screens */
-    }
-}
-
-
-.search-bar {
-    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+@media screen and (max-width: 480px) { 
+    .pr-search {
+        content: '';
+    }
 }
 
 @media screen and (min-width:275px) and (max-width:450px) {
