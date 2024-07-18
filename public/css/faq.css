@@ -86,6 +86,7 @@ ul {
 
 .faq-thanks-container {
     display: flex;
+    flex-wrap: wrap;
     padding: 3em 0 4.8em 0;
     justify-content: center;
 }
