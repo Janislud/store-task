@@ -70,6 +70,7 @@
     content: "\2796";
   }
 
+<<<<<<< HEAD
   ul {
     list-style-type: none;
     padding: 0;
@@ -94,6 +95,16 @@
   }
   li p:first-child {
     font-weight: bold;
+=======
+  .deal-list {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+>>>>>>> 6423e95c5a0b0a0b18f22eda590a2d94bcdcbf98
   }
 
 .deals-closer {

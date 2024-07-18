@@ -50,7 +50,7 @@
                 </div>
                 <button type="button" class="deals-collapsible"><h2>Flash Sales & Promotions</h2></button>
                 <div class="deals-content">
-                    <ul>
+                    <ul class="deal-list">
                         <li><strong>Keep your eye out </strong>for our exciting flash sales and limited-time promotions throughout the year. We love surprising our customers with special deals, so be sure to follow us on social media and subscribe to our newsletter to stay in the loop!</li>
                         <li><strong>Looking for the perfect present? </strong>Throughout the year, we may offer special gift-with-purchase promotions. It's a great way to treat yourself or surprise a loved one with a touch of Storefront magic.</li>
                         <li><strong>We're constantly striving </strong>to bring you the best deals and offers on our handcrafted candles. Be sure to check back often to discover new ways to save and fill your home with the beautiful glow and delightful scents of Storefront!</li>
