@@ -338,17 +338,57 @@ section#checkout .stages__input:focus {
   outline: none;
 }
 section#checkout .stages__input:hover {
-  box-shadow: 2px 2px 0px 1px #CCA43B;
+  box-shadow: 2px 2px 0px 1px rgb(137, 137, 137);
 }
 section#checkout .stages__input-wrapper:has(input[required]) {
   position: relative;
 }
 section#checkout .stages__input-wrapper:has(input[required])::before {
-  content: "*";
-  color: black;
+  content: attr(data-message);
+  color: rgba(255, 255, 255, 0);
   position: absolute;
   top: 4px;
   right: 8px;
+  width: 6px;
+  height: 6px;
+  font-size: 0px;
+  transform: rotate(-90deg);
+  transition: width 0s ease-in-out, height 0s ease-in-out, background 0 linear, color 0s;
+}
+section#checkout .stages__input-wrapper:has(input[required]):hover::before {
+  color: rgb(255, 255, 255);
+  transform: rotate(0deg);
+  width: 100px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, color 0.5s;
+}
+section#checkout .stages__input-wrapper:has(input[data-untouched=true])::before {
+  background: linear-gradient(to bottom right, #fff 0%, #fff 50%, rgb(137, 137, 137) 50%, rgb(137, 137, 137) 100%);
+}
+section#checkout .stages__input-wrapper:has(input[data-untouched=true]):hover::before {
+  background: rgb(137, 137, 137);
+  font-size: 12px;
+}
+section#checkout .stages__input-wrapper:has(input[data-validated=false])::before {
+  background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #aa2e0f 50%, #aa2e0f 100%);
+}
+section#checkout .stages__input-wrapper:has(input[data-validated=false]):hover::before {
+  background: #aa2e0f;
+  font-size: 12px;
+}
+section#checkout .stages__input-wrapper:has(input[data-validated=true])::before {
+  background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #CCA43B 50%, #CCA43B 100%);
+}
+section#checkout .stages__input-wrapper:has(input[data-validated=true]):hover::before {
+  width: 6px;
+  height: 6px;
+  transform: rotate(-90deg);
+  border-radius: 0px;
+  transition: width 0s, height 0s;
 }
 section#checkout .stages__sub {
   color: rgb(39, 39, 39);
@@ -478,7 +518,8 @@ section#checkout .order__total .order__bold {
     flex-direction: column;
     padding: 0;
   }
-  section#checkout .stages, section#checkout .order {
+  section#checkout .stages,
+  section#checkout .order {
     height: auto;
   }
   section#checkout .stages__navigation {

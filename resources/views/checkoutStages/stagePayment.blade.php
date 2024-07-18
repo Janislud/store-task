@@ -50,20 +50,20 @@
                                         Credit Card
                                     </div>
                                     <div class="stages__card-inputs">
-                                        <div class="stages__input-wrapper">
-                                            <input class="stages__input" name="card_number" placeholder="Card Number" required></input>
+                                        <div data-message="required field" class="stages__input-wrapper">
+                                            <input cardNumberInput class="stages__input" name="card_number" placeholder="Card Number" required></input>
                                         </div>
-                                        <div class="stages__input-wrapper">
-                                        <input class="stages__input" name="holder_name" placeholder="Holder Name" required></input>
+                                        <div data-message="required field" class="stages__input-wrapper">
+                                            <input class="stages__input" name="holder_name" placeholder="Holder Name" required></input>
 
                                         </div>
                                        
                                         <div class="stages__2input">
-                                            <div class="stages__input-wrapper">
+                                            <div data-message="required field" class="stages__input-wrapper">
                                                 <input cardExpDateInput class="stages__input" name="expiry_date" placeholder="Expiration (MM/YY)" required></input>
                                             </div>
-                                            <div class="stages__input-wrapper">
-                                                <input class="stages__input" name="cvv" placeholder="CVV" required></input>
+                                            <div data-message="required field" class="stages__input-wrapper">
+                                                <input cardCvv class="stages__input" name="cvv" placeholder="CVV" required></input>
                                             </div>
                                         </div>
                                     </div>
