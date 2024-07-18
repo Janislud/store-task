@@ -38,6 +38,8 @@
     <script src="{{ asset('js/slider.js') }}"></script>
     {{-- Deals js collapsible functionality --}}
     <script src="{{ asset('js/deals.js') }}"></script>
+    {{-- Faq js collapsible functionality --}}
+    <script src="{{ asset('js/faq.js') }}"></script>
     @yield('scripts')
 </body>
 
