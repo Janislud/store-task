@@ -23,7 +23,7 @@ let testimonialsSwiper = new Swiper('.testimonials-swiper', {
     1280: {
         slidesPerView: 5,
         spaceBetween: 50,
-    }
+      }
     },
     loop: true,
     autoplay: true,
