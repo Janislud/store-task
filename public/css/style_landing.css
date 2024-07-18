@@ -274,9 +274,6 @@
 }
 
 .testimonials-swiper .swiper-button-prev, .swiper-button-next{
-    position: absolute !important;
-    top:50% !important;
-    translate: 0% -50% !important;
 }
 
 
