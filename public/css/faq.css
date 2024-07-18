@@ -86,11 +86,15 @@ ul {
 
 .faq-thanks-container {
     display: flex;
-    flex-wrap: wrap;
-    padding: 3em 0 4.8em 0;
     justify-content: center;
+    align-items: center; 
+    padding: 3em 1em 4.8em 1em;
+    width: 100%;
 }
 
+.faq-thanks {
+    text-align: center; 
+}
 
 @media screen and (min-width: 275px) and (max-width: 768px) {
     .faq-collapsible {
@@ -101,6 +105,16 @@ ul {
     }
     .faq-container p {
         padding: 12px;
+    }
+}
+
+@media screen and (max-width: 341px) {
+    .faq-thanks-container {
+        padding: 2em 1em 3.8em 1em; 
+    }
+
+    .faq-thanks {
+        font-size: 16px; 
     }
 }
 
