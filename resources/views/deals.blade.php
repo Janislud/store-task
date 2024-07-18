@@ -12,20 +12,41 @@
             <div class="deals-wrapper">
                 <button type="button" class="deals-collapsible"><h2>Current Offers</h2></button>
                 <div class="deals-content">
-                    <strong>Scent of the Month Discount (15% off):</strong> 
-                    <p>Each month, we'll highlight a special fragrance with a tempting discount. Be sure to check back and discover your new favorite scent!</p>
-                    <strong>New Customer Welcome (10% off): </strong><p>Welcome to the Storefront family! Use code WELCOME10 at checkout to receive 10% off your first purchase.</p>
-                    <strong>Bulk Buy Savings (10% off): </strong><p>Stock up on your favorite scents! Buy 3 or more candles and save 10% with code BULKCANDLE.</p>
-                    <strong>Free Shipping on Orders Over $50: </strong>
-                    <p>Enjoy the convenience of free shipping on all domestic orders over $50. Sit back, relax, and let the candles come to you!</p>
+                    <div class="deals-row">
+                        <div class="deals-column">
+                            <strong>Scent of the Month Discount (15% off):</strong> 
+                            <p>Each month, we'll highlight a special fragrance with a tempting discount. Be sure to check back and discover your new favorite scent!</p>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="deals-column">
+                            <strong>New Customer Welcome (10% off): </strong>
+                            <p>Welcome to the Storefront family! Use code WELCOME10 at checkout to receive 10% off your first purchase.</p>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="deals-column">
+                            <strong>Bulk Buy Savings (10% off): </strong>
+                            <p>Stock up on your favorite scents! Buy 3 or more candles and save 10% with code BULKCANDLE.</p>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="deals-column">
+                            <strong>Free Shipping on Orders Over $50: </strong>
+                            <p>Enjoy the convenience of free shipping on all domestic orders over $50. Sit back, relax, and let the candles come to you!</p>
+                        </div>
+                    </div>
                 </div>
-                <div></div>
                 <button type="button" class="deals-collapsible"><h2>Stay in the Light</h2></button>
                 <div class="deals-content">
-                    <strong>Subscribe & Save (15% off): </strong>
-                    <p>Never run out of your favorite scents again! Sign up for our subscription service and enjoy 15% off your chosen candles delivered straight to your door at regular intervals.</p>
-                    <strong>Join our Candle Club (Exclusive Offers & Early Access): </strong>
-                    <p>Become a Storefront Candle Club member and unlock a world of exclusive benefits. Enjoy members-only discounts, early access to new releases, and invitations to special events. Sign up on our website today!</p>
+                    <div class="deals-row">
+                        <div class="deals-column">
+                            <strong>Subscribe & Save (15% off): </strong>
+                            <p>Never run out of your favorite scents again! Sign up for our subscription service and enjoy 15% off your chosen candles delivered straight to your door at regular intervals.</p>
+                        </div> 
+                        <div class="vl"></div>
+                        <div class="deals-column">
+                            <strong>Join our Candle Club (Exclusive Offers & Early Access): </strong>
+                            <p>Become a Storefront Candle Club member and unlock a world of exclusive benefits. Enjoy members-only discounts, early access to new releases, and invitations to special events. Sign up on our website today!</p>
+                        </div>
+                    </div>
                 </div>
                 <button type="button" class="deals-collapsible"><h2>Flash Sales & Promotions</h2></button>
                 <div class="deals-content">
@@ -35,25 +56,9 @@
                         <li><strong>We're constantly striving </strong>to bring you the best deals and offers on our handcrafted candles. Be sure to check back often to discover new ways to save and fill your home with the beautiful glow and delightful scents of Storefront!</li>
                     </ul>
                 </div>
-                <p class="about__thanks">Thank you for choosing Storefront! 😊🙏🏾</p>
+                <p class="deals-closer">Thank you for choosing Storefront! 😊🙏🏾</p>
                 </div>
+            </div>
         </div>
     </div>
-
-<script>
-        var coll = document.getElementsByClassName("deals-collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("deals-active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-            content.style.display = "none";
-            } else {
-            content.style.display = "block";
-            }
-        });
-        } 
-</script>
 @endsection

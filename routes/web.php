@@ -4,7 +4,7 @@ use App\Http\Controllers\AboutPageController;
 use App\Http\Controllers\DealsPageController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
-use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\HomeProductController;
 use App\Http\Controllers\PhotosController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductPageController;
@@ -23,7 +23,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomePageController::class, 'index'])->name('home');
+Route::get('/', [HomeProductController::class, 'index']);
+Route::get('/featured', [HomeProductController::class, 'featuredProducts']);
+
 Route::get('/products', [ProductPageController::class, 'index']);
 Route::get('/products/{id}', [ProductController::class, 'showProduct']);
 Route::get('/about', [AboutPageController::class, 'index']);

@@ -35,6 +35,8 @@
     <script src="{{ asset('js/testimonials.js') }}"></script>
     {{-- Swiper.js initializing --}}
     <script src="{{ asset('js/slider.js') }}"></script>
+    {{-- Deals js collapsible functionality --}}
+    <script src="{{ asset('js/deals.js') }}"></script>
     @yield('scripts')
 </body>
 

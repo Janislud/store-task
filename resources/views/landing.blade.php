@@ -26,21 +26,19 @@
         </div>
 
     </section>
-
     <section class="conteiner">
         <div class="products-wrapper-conteiner">
-        @foreach ($sliced as $product)
+        @foreach ($randomProducts as $product)
             <div class="listing-section">
-                    <a class="product-card-link" href="/products/{{ $product->id }}">
-                                <img class="images" src="{{ $product->photos[0]->image_url }}" alt="{{ $product->photos[0]->title }}"></img>
-                        <div class="product-desc">
-                            <h2 class="item">{{ $product->name }}</h2>
-                            <h3 class="price">{{ number_format($product->price, 2) }}$</h3>
-                        </div>
-                    </a>
+                <a class="product-card-link" href="/products/{{ $product->id }}">
+                    <img class="images" src="{{ $product->photos[0]->image_url }}" alt="{{ $product->photos[0]->title }}"></img>
+                    <div class="product-desc">
+                        <h2 class="item">{{ $product->name }}</h2>
+                        <h3 class="price">{{ number_format($product->price, 2) }}$</h3>
+                    </div>
+                </a>
             </div>
         @endforeach
-
         </div>
 
     </section>
@@ -85,10 +83,10 @@
             </div>
         </div>
         <div class="products-wrapper-conteiner">
-            @foreach ($sliced as $product)
+            @foreach ($featuredProducts as $product)
                 <div class="listing-section">
                         <a class="product-card-link" href="/products/{{ $product->id }}">
-                                    <img class="images" src="{{ $product->photos[2]->image_url }}" alt="{{ $product->photos[2]->title }}"></img>
+                                    <img class="images" src="{{ $product->photos[0]->image_url }}" alt="{{ $product->photos[0]->title }}"></img>
                             <div class="product-desc">
                                 <h2 class="item">{{ $product->name }}</h2>
                                 <h3 class="price">{{ number_format($product->price, 2) }}$</h3>

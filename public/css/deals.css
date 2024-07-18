@@ -31,16 +31,32 @@
   }
   
 
-  .deals-active, .deals-collapsible:hover {
+.deals-active, .deals-collapsible:hover {
     background-color: #CCA43B;
-  }
+}
 
-  .deals-content {
+.deals-content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
     background-color: #fff;
-  } 
+} 
+
+.deals-row {
+  display: flex;
+  flex-direction: row;
+}
+  
+.deals-column {
+  flex: 50%;
+  margin: 2vh;
+}
+
+.vl {
+  border-left: 2px solid #CCA43B;
+  height: auto;
+  top: 0;
+}
 
   .deals-collapsible:after {
     content: "\02795";
@@ -55,28 +71,42 @@
   }
 
   ul {
-    display: block;
-    list-style-type: disc;
-    margin-top: 1em;
-    margin-bottom: 1 em;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 40px;
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  li::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  li p {
+    margin-left: 30px;
+  }
+  li p:first-child {
+    font-weight: bold;
   }
 
+.deals-closer {
+  margin-top: 45px;
+  text-align: center;
+}
 
 @media screen and (min-width: 275px) and (max-width: 768px) {
-  .deals-collapsible {
-    padding: 12px; 
-  }
-  .deals-content {
-    padding: 8px 12px; 
-  }
   .deals-container p {
     padding: 12px; 
   }
-  .deals-container p {
-    padding: 12px; 
+  .deals-row {
+    flex-direction: column;
   }
 }
 
