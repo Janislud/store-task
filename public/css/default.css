@@ -91,7 +91,7 @@
     height: 24px;
     background-color: rgba(255, 255, 255, .5);
     border: 1px solid rgb(204, 164, 59);
-    translate: 0% 50%;
+    translate: 0% 50%!important;
 
     transition: .2s ease-in-out;
     

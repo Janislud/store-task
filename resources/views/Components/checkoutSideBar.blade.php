@@ -12,10 +12,16 @@
                 </div>
             @endforeach
         </div>
+
+        {{-- SALABOT CEĻU --}}
+        {{-- <form action="{{ route('apply.coupon') }}" method="POST"> --}}
+            {{-- @csrf --}}
         <div class="order__coupon">
-            <input class="order__coupon-input" type="text" placeholder="Coupon code">
+            <input class="order__coupon-input" name="coupon_code" type="text" placeholder="Coupon code">
             <button class="order__coupon-addBtn" type="submit">Add code</button>
         </div>
+        {{-- </form> --}}
+        
         <div class="order__data">
             <div>
                 <p class="order__text">Shipping </p>

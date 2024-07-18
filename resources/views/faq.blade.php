@@ -9,7 +9,7 @@
         <div class="faq-section" id="faq">
             <div class="faq-container">
                 <div class="faq-header">
-                    <h1 class="faq-title-underline">Do You have Questions?</h1>
+                    <h2 class="faq-title-underline">Do You have Questions?</h1>
                     <p class="faq-subtitle">We have answers (well, most of the times!)</p>
                 </div>
                 <div class="faq-content-wrapper">
