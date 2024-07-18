@@ -1,14 +1,17 @@
+.faq-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+
 .faq-title-underline {
     font-size: 40px;
 }
 
 .faq-subtitle {
     font-size: 20px;
-    margin-left: 1.7em;
-}
-
-.faq-title-underline, .faq-subtitle {
-    align-items: right;
 }
 
 .faq-container {
@@ -83,12 +86,9 @@ ul {
 
 .faq-thanks-container {
     display: flex;
-    /* margin-top: 2em;
-    margin-bottom: 6.2em; */
     padding: 3em 0 4.8em 0;
     justify-content: center;
 }
-
 
 
 @media screen and (min-width: 275px) and (max-width: 768px) {
