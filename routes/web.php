@@ -10,6 +10,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductPageController;
 use App\Http\Controllers\ProductSearchController;
 use App\Http\Controllers\ProfilePageController;
+use App\Http\Controllers\CouponController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -51,3 +52,4 @@ Route::get('/checkout/success/{order_id}', [CheckoutController::class, 'showSucc
 
 Route::get('/products', [ProductSearchController::class, 'index'])->name('products.index');
 
+Route::get('/coupons', [CouponController::class, 'coupon']);
