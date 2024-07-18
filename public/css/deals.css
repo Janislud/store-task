@@ -54,7 +54,7 @@
     content: "\2796";
   }
 
-  ul {
+  .deal-list {
     display: block;
     list-style-type: disc;
     margin-top: 1em;
