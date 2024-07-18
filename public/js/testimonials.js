@@ -2,25 +2,31 @@ let testimonialsSwiper = new Swiper('.testimonials-swiper', {
     slidesPerView: 5,
     speed: 300,
     spaceBetween: 20,
+    centeredSlides: true,
     breakpoints: {
     275: {
-      slidesPerView: 1,
-      spaceBetween: 20
+        slidesPerView: 1,
+        spaceBetween: 10,
     },
     640: {
-      slidesPerView: 3,
-      spaceBetween: 20
+        slidesPerView: 2,
+        spaceBetween: 20,
     },
-    720: {
-      slidesPerView: 4,
-      spaceBetween: 20
+    768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
     },
-    1000: {
+    1024: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+    },
+    1280: {
         slidesPerView: 5,
-        spaceBetween: 20
-      }
+        spaceBetween: 50,
+    }
     },
     loop: true,
+    autoplay: true,
     navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

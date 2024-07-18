@@ -4,12 +4,9 @@ use App\Http\Controllers\AboutPageController;
 use App\Http\Controllers\DealsPageController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
-<<<<<<< HEAD
 use App\Http\Controllers\HomeProductController;
-=======
 use App\Http\Controllers\FaqPageController;
 use App\Http\Controllers\HomePageController;
->>>>>>> 6423e95c5a0b0a0b18f22eda590a2d94bcdcbf98
 use App\Http\Controllers\PhotosController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductPageController;
