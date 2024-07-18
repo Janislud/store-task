@@ -25,7 +25,7 @@
                                     <p class="order__text underline">Login</p>
                                 </div> --}}
                                 </div>
-                                <div class="stages__input-wrapper">
+                                <div data-message="required field" class="stages__input-wrapper">
                                     <input emailInput type="text" name="email" class="stages__input" placeholder="Email" required
                                         value="{{ session('checkoutStages.stageDetails.email') }}">
                                 </div>
@@ -38,17 +38,17 @@
                             <div class="stages__address">
                                 <p class="stages__sub">Your Address</p>
                                 <div class="stages__2input">
-                                    <div class="stages__input-wrapper">
+                                    <div data-message="required field" class="stages__input-wrapper">
                                         <input type="text" name="first_name" class="stages__input" placeholder="Name"
                                             required value="{{ session('checkoutStages.stageDetails.first_name') }}">
                                     </div>
-                                    <div class="stages__input-wrapper">
+                                    <div data-message="required field" class="stages__input-wrapper">
                                         <input type="text" name="second_name" class="stages__input"
                                             placeholder="Second Name" required
                                             value="{{ session('checkoutStages.stageDetails.second_name') }}">
                                     </div>
                                 </div>
-                                <div class="stages__input-wrapper">
+                                <div data-message="required field" class="stages__input-wrapper">
                                     <input type="text" name="address" class="stages__input" placeholder="Address" required
                                     value="{{ session('checkoutStages.stageDetails.address') }}">
                                 </div>
@@ -58,16 +58,16 @@
                                     value="{{ session('checkoutStages.stageDetails.shipping_note') }}">
                                 </div>
                                 <div class="stages__2input">
-                                    <div class="stages__input-wrapper">
+                                    <div data-message="required field" class="stages__input-wrapper">
                                         <input type="text" name="city" class="stages__input" placeholder="City" required
                                         value="{{ session('checkoutStages.stageDetails.city') }}">
                                     </div>
-                                    <div class="stages__input-wrapper">
+                                    <div data-message="required field" class="stages__input-wrapper">
                                         <input type="text" name="postal_code" class="stages__input" placeholder="Postal Code"
                                         required value="{{ session('checkoutStages.stageDetails.postal_code') }}">
                                     </div>
                                 </div>
-                                <div class="stages__input-wrapper">
+                                <div data-message="required field" class="stages__input-wrapper">
                                     <input type="text" name="country" class="stages__input" placeholder="Contry/Region"
                                     required value="{{ session('checkoutStages.stageDetails.country') }}">
                                 </div>
