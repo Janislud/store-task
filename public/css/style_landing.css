@@ -16,8 +16,6 @@
     background-position: center;
     background-size: cover;
     height: 800px;
-    box-shadow: rgb(185, 185, 185) 0 0 15px;
-    background-color: rgba(247, 248, 250, 1);
 }
 
 .inner-box {

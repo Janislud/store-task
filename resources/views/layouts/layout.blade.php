@@ -23,9 +23,9 @@
 <body>
     @include('Components.navigation')
 
-    <div class="content">
+    <main class="content">
         @yield('content')
-    </div>
+    </main>
 
     @include('Components.footer')
     <script src="{{ asset('js/navbar.js') }}"></script>
