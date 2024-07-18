@@ -194,7 +194,8 @@
     align-items: center;
     background-color: rgba(204, 164, 59, 1);
     height: 2em; 
-    width: 30%; 
+    width: 100%;
+    max-width: 10em; 
     color: white;
     font-size: 1rem;
     border: 0;
@@ -430,12 +431,30 @@
         font-size: 0.875rem;
     }
 
-}
+    .yellow-box-btn{
+        width: 100%;
+        max-width: 8em;
+        max-height: 2em;
+        font-size: 1em;
+    }
+
+    .deals-list{
+        margin-bottom: 3em;
+    }
 
 .deals-list ul li {
         font-size: 12px;
         display: block; 
-}   
+    }   
+}
+
+@media screen and (min-width: 275px) and (max-width: 327px) {
+    .deals-list ul li {
+        display: block;
+        font-size: 14px!important;
+    }
+}
+
 
 @media screen and (min-width: 1257px) { 
     .deals-box {
