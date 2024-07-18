@@ -5,8 +5,17 @@
         </a>
         <ul class="nav-links">
             <li><a href="/" class="nav-item {{ request()->is('/') ? 'active' : '' }}">Home</a></li>
-            <li><a href="/products" class="nav-item {{ request()->is('products') ? 'active' : '' }}">Products</a></li>
-            <li><a href="/about" class="nav-item {{ request()->is('about') ? 'active' : '' }}">About</a></li>
+            <li><a href="/products" class="nav-item {{ request()->is('products') ? 'active' : '' }}">Products</a></li>  
+            <div class="nav-dropdown">    
+            <button class="nav-item nav-dropbtn">Company 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="nav-dropdown-content">
+                <li><a href="/about" class="nav-item {{ request()->is('about') ? 'active' : '' }}">About</a></li>
+                <li><a href="/deals" class="nav-item {{ request()->is('deals') ? 'active' : '' }}">Deals</a></li>
+                <li><a href="/faq" class="nav-item {{ request()->is('faq') ? 'active' : '' }}">FAQ</a></li>
+            </div>
+            </div>
         </ul>
         <div class="icons">
             <button class="btn">

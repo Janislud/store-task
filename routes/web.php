@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutPageController;
 use App\Http\Controllers\DealsPageController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\FaqPageController;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\PhotosController;
 use App\Http\Controllers\ProductController;
@@ -30,6 +31,7 @@ Route::get('/products/{id}', [ProductController::class, 'showProduct']);
 Route::get('/about', [AboutPageController::class, 'index']);
 Route::get('/deals', [DealsPageController::class, 'index']);
 Route::get('/profile', [ProfilePageController::class, 'index']);
+Route::get('/faq', [FaqPageController::class,'index']);
 
 Route::post('/cart/add/{id}', [CartController::class, 'addToCart'])->name('cart.add');
 Route::get('/cart', [CartController::class, 'viewCart'])->name('cart.view');
@@ -53,3 +55,4 @@ Route::get('/checkout/success/{order_id}', [CheckoutController::class, 'showSucc
 Route::get('/products', [ProductSearchController::class, 'index'])->name('products.index');
 
 Route::get('/coupons', [CouponController::class, 'coupon']);
+

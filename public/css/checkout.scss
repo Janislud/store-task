@@ -84,6 +84,10 @@ section#checkout {
         }
     }
 
+    button.stages__forward:disabled {
+        opacity: .5;
+    }
+
     .stages {
         padding: 0;
         display: flex;
@@ -111,10 +115,10 @@ section#checkout {
                 .stages__forward {
                     margin-top: 50px;
                 }
+                
             }
 
             &_payment {
-                overflow-y: scroll;
 
                 &::-webkit-scrollbar {
                     width: 2px;
@@ -364,10 +368,55 @@ section#checkout {
             font-weight: 400;
             line-height: 25.6px;
             border: 0.5px solid rgb(137, 137, 137);
+            transition: .2s ease-in-out, border 0s;
 
+
+            &[data-validated="true"] {
+                border: 0.5px solid #CCA43B;
+                border-right: 3px solid #CCA43B;
+                color: #CCA43B;
+
+                &:hover {
+                    box-shadow: 2px 1px 0px 1px #CCA43B;
+                }
+                &:focus {
+                    border: 1px solid #CCA43B;
+                }
+            }
+
+            &[data-validated="false"] {
+                border: 0.5px solid #aa2e0f;
+                border-right: 3px solid #aa2e0f;
+                color: #aa2e0f;
+
+                &:hover {
+                    box-shadow: 2px 1px 0px 1px #aa2e0f;
+                }
+                &:focus {
+                    border: 1px solid #aa2e0f;
+                }
+            }
             &:focus {
-                border: 1px solid #CCA43B;
                 outline: none;
+            }
+          
+
+            &:hover {
+                box-shadow: 2px 2px 0px 1px #CCA43B;
+            }
+            &:required {
+                // border-right: 2px solid #CCA43B;
+            }
+        }
+
+        &__input-wrapper:has(input[required]) {
+            position: relative;
+            &::before {
+                content: "*";
+                color: black;
+                position: absolute;
+                top: 4px;
+                right: 8px;
             }
         }
 
@@ -384,10 +433,11 @@ section#checkout {
             font-size: 16px;
             font-weight: 500;
             line-height: 25.6px;
-
+            a {
+                text-decoration: none;
+            }
             p {
                 position: relative;
-
                 &:after {
                     content: "";
                     position: absolute;

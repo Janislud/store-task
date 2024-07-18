@@ -13,7 +13,7 @@
                     </a>
                 </div>
                 <div class="stages__wrapper">
-                    @include ('Components.checkoutNavigation')
+                    @include ('Components.checkoutNavigation', ["stageIndex" => 3])
                     <div class="stages__content stages__content_payment">
                         <form action="{{ route('checkout.storePayment') }}" method="POST">
                             @csrf
@@ -50,12 +50,21 @@
                                         Credit Card
                                     </div>
                                     <div class="stages__card-inputs">
-
-                                        <input class="stages__input" name="card_number" placeholder="Card Number" required></input>
+                                        <div class="stages__input-wrapper">
+                                            <input class="stages__input" name="card_number" placeholder="Card Number" required></input>
+                                        </div>
+                                        <div class="stages__input-wrapper">
                                         <input class="stages__input" name="holder_name" placeholder="Holder Name" required></input>
+
+                                        </div>
+                                       
                                         <div class="stages__2input">
-                                            <input class="stages__input" name="expiry_date" placeholder="Expiration (MM/YY)" required></input>
-                                            <input class="stages__input" name="cvv" placeholder="CVV" required></input>
+                                            <div class="stages__input-wrapper">
+                                                <input cardExpDateInput class="stages__input" name="expiry_date" placeholder="Expiration (MM/YY)" required></input>
+                                            </div>
+                                            <div class="stages__input-wrapper">
+                                                <input class="stages__input" name="cvv" placeholder="CVV" required></input>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -85,4 +94,5 @@
             @include('Components.checkoutSideBar', ['cart' => $cart, 'shippingMethod' => session('checkoutStages.stageShipping.shipping_method')])
         </div>
     </section>
+    <script src={{asset("js/validation.js")}}></script>
 @endsection

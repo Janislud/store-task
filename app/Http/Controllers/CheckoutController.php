@@ -26,7 +26,7 @@ class CheckoutController extends Controller
             'city' => 'required|string|max:255',
             'postal_code' => 'required|string|max:255',
             'country' => 'required|string|max:255',
-            'shipping_note' => 'nullable|string|max:255',
+            'shipping_note' => 'nullable|string|max:255'
         ]);
 
         $request->session()->put('checkoutStages.stageDetails', $validated);
@@ -38,7 +38,11 @@ class CheckoutController extends Controller
     {
         $details = $request->session()->get('checkoutStages.stageDetails');
         $cart = $request->session()->get('cart', []);
+        if (!isset($details)) {
+            return view('checkoutStages.stageDetails', compact('cart'));
+        }
         return view('checkoutStages.stageShipping', compact('details', 'cart'));
+
     }
 
     // STORE SHIPPING
@@ -51,8 +55,8 @@ class CheckoutController extends Controller
         $shippingCost = $validated['shipping_method'] == 'express' ? 10.00 : 0.00;
 
         $request->session()->put('checkoutStages.stageShipping', [
-        'shipping_method' => $validated['shipping_method'],
-        'shipping_cost' => $shippingCost,
+            'shipping_method' => $validated['shipping_method'],
+            'shipping_cost' => $shippingCost,
         ]);
         return redirect()->route('checkoutStages.stagePayment');
     }
@@ -65,6 +69,15 @@ class CheckoutController extends Controller
         $cart = $request->session()->get('cart', []);
         $shippingMethod = $shipping['shipping_method'] ?? null;
         $shippingCost = $shipping['shipping_cost'] ?? 0.00;
+
+        if (!isset($details)) {
+            return view('checkoutStages.stageDetails', compact('cart'));
+        }
+
+        if (!isset($shipping)) {
+            return view('checkoutStages.stageShipping', compact('cart'));
+        }
+
         return view('checkoutStages.stagePayment', compact('details', 'shipping', 'cart', 'shippingMethod', 'shippingCost'));
     }
 
