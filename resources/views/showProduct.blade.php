@@ -4,7 +4,6 @@
 
 @section('content')
     <div class="pdp__content">
-
         <div class="container">
             <div class="pdp__slider">
                 <div class="pdp__slider-wrapper swiper">
@@ -24,8 +23,6 @@
             <div class="pdp__details">
                 <h1>{{ $product->name }}</h1>
                 <p class="pr-price">${{ $product->price }}</p>
-
-                {{-- SALABOT +/- ielikt grozā --}}
 
                 <div class="pdp__amount">
                     <p class="quantity">Quantity</p>
@@ -52,13 +49,12 @@
                     }
                 </script>
 
-
                 <form class="subscr-form">
                     <div class="enhanced-radio">
                         <input type="radio" class="radio" name="subscription" id="choice1" value="onetime"
                             checked></input>
                         <span class="radio-look"></span>
-                        <label class="form-control">One time purchaise</label>
+                        <label class="form-control">One time purchase</label>
                     </div>
                     <div class="subsrc-radio">
                         <div class="enhanced-radio">
@@ -82,6 +78,6 @@
     </div>
 @endsection
 
-
 @section('scripts')
+    <script src="{{ asset('js/amountToggler.js') }}"></script>
 @endsection

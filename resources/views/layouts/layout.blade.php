@@ -7,16 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/about.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/cart.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style_landing.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/pdp.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/products.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/deals.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/default.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/faq.css') }}">
+    {{-- <link rel="stylesheet" href="./css/index.css"> --}}
+    <link rel="stylesheet" href="../css/index.css">
     <title>@yield('title')</title>
 </head>
 
@@ -27,19 +19,20 @@
         @yield('content')
     </main>
 
-    @include('Components.footer')
-    <script src="{{ asset('js/navbar.js') }}"></script>
+    <script src="https://{{request()->getHost()}}/js/swiper.js"></script>
+    <script src="https://{{request()->getHost()}}/js/amountToggler.js"></script>
+    {{-- <script src="https://0fc8-159-148-207-225.ngrok-free.app/js/amountToggler.js"></script> --}}
 
-    {{-- Swiper.js cdn, for pdp slider --}}
+    <script src="https://{{request()->getHost()}}/js/navbar.js"></script>
+    <script src="https://{{request()->getHost()}}/js/testimonials.js"></script>
+    <script src="https://{{request()->getHost()}}/js/deals.js"></script>
+    <script src="https://{{request()->getHost()}}/js/slider.js"></script>
+    <script src="https://{{request()->getHost()}}/js/faq.js"></script>
+   
+
+    @include('Components.footer')
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    {{-- Testimonial scripts --}}
-    <script src="{{ asset('js/testimonials.js') }}"></script>
-    {{-- Swiper.js initializing --}}
-    <script src="{{ asset('js/slider.js') }}"></script>
-    {{-- Deals js collapsible functionality --}}
-    <script src="{{ asset('js/deals.js') }}"></script>
-    {{-- Faq js collapsible functionality --}}
-    <script src="{{ asset('js/faq.js') }}"></script>
+    
     @yield('scripts')
 </body>
 

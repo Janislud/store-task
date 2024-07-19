@@ -18,7 +18,19 @@
             {{-- @csrf --}}
         <div class="order__coupon">
             <input class="order__coupon-input" name="coupon_code" type="text" placeholder="Coupon code">
-            <button class="order__coupon-addBtn" type="submit">Add code</button>
+            <button onclick="handleCouponDiscount()" class="order__coupon-addBtn" type="submit">Add code</button>
+
+            <script>
+                function handleCouponDiscount () {
+                    const input = document.querySelector(".order__coupon-input");
+                    const showValue = document.querySelector(".order__total .order__bold");
+
+                    if (input.value) {
+                        showValue.textContent = `$${(+(showValue.textContent.slice(1)) * .9).toFixed(2)}`;
+                    }
+                }
+            </script>
+
         </div>
         {{-- </form> --}}
         

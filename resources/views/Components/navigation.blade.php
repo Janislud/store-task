@@ -18,11 +18,11 @@
             </div>
         </ul>
         <div class="icons">
-            <button class="btn">
+            {{-- <button class="btn">
                 <a href="/profile">
                     <img src="{{ request()->is('profile') ? asset('assets/Profile-gold.svg') : asset('assets/Profile.svg') }}" alt="profile-icon" class="">
                 </a>
-            </button>
+            </button> --}}
             <button class="btn">
                 <a href="/cart" >
                     <img src="{{ asset(request()->is('cart') ? 'assets/Cart-gold.svg' : 'assets/Cart.svg') }}" alt="cart-icon">

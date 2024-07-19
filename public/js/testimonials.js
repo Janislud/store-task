@@ -31,8 +31,10 @@ let testimonialsSwiper = new Swiper('.testimonials-swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
     },
-});
+}
+);
 
+document.addEventListener('DOMContentLoaded', function () {
 const testimonialsData = [
     {
         image: 'assets/person1.webp',
@@ -84,33 +86,39 @@ const testimonialsData = [
         comment: '“Melted my heart”',
         author: 'Juan'
     },
-];
+    ]
+
   
 const testimonialsSliderWrapper = document.querySelector('.testimonials-container.testimonials-swiper .swiper-wrapper');
 
-testimonialsData.forEach(testimonial => {
-  const testimonialSlide = document.createElement('div');
-  testimonialSlide.classList.add('testimonials-container-box');
-  testimonialSlide.classList.add('swiper-slide');
+if (testimonialsSliderWrapper) {
+    testimonialsData.forEach(testimonial => {
+        const testimonialSlide = document.createElement('div');
+        testimonialSlide.classList.add('testimonials-container-box');
+        testimonialSlide.classList.add('swiper-slide');
 
-  try {
-    const image = document.createElement('img');
-    image.src = testimonial.image;
-    image.alt = 'person';
-    image.classList.add('testimonials-person');
-    testimonialSlide.appendChild(image);
+        try {
+            const image = document.createElement('img');
+            image.src = testimonial.image;
+            image.alt = 'person';
+            image.classList.add('testimonials-person');
+            testimonialSlide.appendChild(image);
 
-    const comment = document.createElement('h4');
-    comment.textContent = testimonial.comment;
-    comment.classList.add('testimonials-comment');
-    testimonialSlide.appendChild(comment);
+            const comment = document.createElement('h4');
+            comment.textContent = testimonial.comment;
+            comment.classList.add('testimonials-comment');
+            testimonialSlide.appendChild(comment);
 
-    const author = document.createElement('p');
-    author.textContent = testimonial.author;
-    testimonialSlide.appendChild(author);
-  } catch (error) {
-    console.error('Error creating testimonial box:', error);
-  }
+            const author = document.createElement('p');
+            author.textContent = testimonial.author;
+            testimonialSlide.appendChild(author);
+        } catch (error) {
+            console.error('Error creating testimonial box:', error);
+        }
 
-  testimonialsSliderWrapper.appendChild(testimonialSlide);
+        testimonialsSliderWrapper.appendChild(testimonialSlide);
+    });
+} else {
+    // console.error('testimonialsSliderWrapper not found. Make sure your HTML structure is correct.');
+}
 });

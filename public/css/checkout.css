@@ -467,7 +467,7 @@ section#checkout .order__coupon-input:focus {
 section#checkout .order__coupon-addBtn {
   width: 150px;
   height: 40px;
-  padding: 7px 20px;
+  padding: 7px 5px;
   border-radius: 4px;
   background: rgb(168, 168, 168);
   color: rgb(255, 255, 255);

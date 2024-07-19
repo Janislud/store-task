@@ -92,5 +92,5 @@
 
         </div>
     </section>
-    <script src={{asset("js/validation.js")}}></script>
+    {{-- <script src={{asset("js/validation.js")}}></script> --}}
 @endsection

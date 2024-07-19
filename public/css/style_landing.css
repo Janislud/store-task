@@ -238,6 +238,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    overflow-x:hidden;
 }
 
 .testimonials-container-box:hover { 
