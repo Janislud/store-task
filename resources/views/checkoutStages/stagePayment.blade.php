@@ -94,5 +94,4 @@
             @include('Components.checkoutSideBar', ['cart' => $cart, 'shippingMethod' => session('checkoutStages.stageShipping.shipping_method')])
         </div>
     </section>
-    <script src={{asset("js/validation.js")}}></script>
 @endsection
