@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    {{-- <link rel="stylesheet" href="./css/index.css"> --}}
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="{{secure_asset("/css/index.css")}}">
     <title>@yield('title')</title>
 </head>
 

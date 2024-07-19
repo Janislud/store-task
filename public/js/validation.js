@@ -6,7 +6,7 @@ const validatePattern = {
     cvv: /^\d{3}$/
 }
 
-if (window.location.pathname.split("/").includes("checkout")) {
+if (window.location.pathname.split("/").includes("checkout") && !window.location.pathname.split("/").includes("success")) {
     const allStageInputWrappers = document.querySelectorAll(".stages .stages__input-wrapper");
     const allStageInputs = document.querySelectorAll(".stages .stages__input-wrapper input");
 
